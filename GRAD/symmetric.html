@@ -1,0 +1,143 @@
+<head>
+<script type="text/javascript" src="../common/LaTeXMathML.js"></script>
+<link rel="stylesheet" type="text/css" href="../common/LaTeXMathML.standardartic
+le.css" />
+
+
+<script type="text/javascript">
+<!--
+function switchMenu(obj) {
+        var el = document.getElementById(obj);
+        if ( el.style.display != "none" ) {
+                el.style.display = 'none';
+        }
+        else {
+                el.style.display = '';
+        }
+}
+//-->
+</script>
+
+<script type="text/javascript">
+newcommand("\\nle","\u2270")
+newcommand("\\EE","{\\mathbf E}")
+newcommand("\\pp","{\\mathtt p}")
+newcommand("\\Z","{\\mathbb Z}")
+newcommand("\\Q","{\\mathbb Q}")
+</script>
+
+<title> E.G. Research Background Pages</title>
+</head>
+<HTML>
+
+
+<BODY BGCOLOR=white TEXT=black>
+
+WORK IN PROGRESS!!!
+ 
+\section{Intro notes on symmetric group}
+\subsection{Overview}
+
+This subject has been active for well over 100 years, including 
+significant contributions from Young, Schur, Frobenius, 
+Brauer, Weyl, Garnir, James, Jucys, Murphy
+and many others (see reference page). 
+
+Books on 
+(or including) the subject include Rutherford, Robinson, Hamermesh ,...
+
+It is an easy exercise 
+ to see that conjugacy classes of $S_n$ are indexed by the set
+$\Lambda_n$ of integer partitions of $n$
+(Young diagrams are simple but rather profound pictures of 
+integer partitions).
+It then follows from general theorems that the 
+complex irreducible representations of $S_n$ 
+are indexed in the same way.
+As is usual in group theory, 
+it is not quite so obvious how to build the representation 
+associated to partition $\lambda$, but for example the trivial module has
+$\lambda = (n)$, and there is another
+easily constructed 1-dimensional representation 
+-- the alternating representation --  with 
+$\lambda = (1^n)$. 
+One immediately has an element $e_n = \sum_{g \in G} g \; \in\Z G$
+(with $G = S_n$)
+that generates the trivial module as a left (or right) ideal,
+and a similar element generating the alternating module. 
+Both elements may be normalised as idempotents in $\Q S_n$. 
+Young's work showed how,
+using the natural inclusion $S_{n-1} \rightarrow S_n$,
+to build from these elements a certain collection of 
+primitive orthogonal elements $e_{\lambda}$ indexed by $\Lambda_n$. 
+(Again these are normalisable as idempotents over $\Q$.)
+The left ideals $\Z S_n e_{\lambda}$ have bases indexed by the set
+of standard Young tableaux of shape $\lambda$. 
+It follows that upon base change to $\Q$ these are a set of inequivalent
+irreducible modules. 
+From here one has various options, such as beautiful combinatorial
+arguments related to the Robinson-Schensted correspondence,
+to show that this set of irreducibles is complete.
+
+In terms of fundamental invariants this is essentially the end of
+the story for the complex representation theory. However there are 
+important related questions concerning the construction of 
+explicit representations satisfying constraints (such as orthogonality).
+Young settled the main problems in this area with his `forms'.
+
+The story for representation theory over algebraically closed fields
+in other characteristics (or over other commutative rings) 
+is another matter. This remains almost entirely open, despite being the
+focus of intense research over very many years.
+For this reason (and others) there are a range of contemporary approaches
+to the representation theory of the symmetric group that seek
+to relate the problem to other problems -- perhaps problems with 
+a more accessible intrinsic structure. 
+
+
+
+
+\subsection{Notation}
+
+Here $S$ is a set. 
+For $i$ any suitable symbol, $S^i = S \times \{ i \}$.
+<br>
+(The notation $S^2 = S \times S$ is also used, but our intention
+will always be clear by context.)
+
+$\Gamma(S)$ is the set of loop-free undirected graphs on $S$. 
+
+%\newcommand{\EE}{{\mathbf E}}
+
+$\EE(S)$ is the set of partitions on $S$ (in natural bijection 
+with the set of equivalence relations on $S$). 
+
+%$\nle$ 
+
+Let
+\[
+\pp: \Gamma(S) \rightarrow \EE(S)
+\]
+denote the map which takes graph $g$ to the partition into connected
+components. 
+A <em> diagram </em> for $q \in \EE(S)$ is any graph $g$ such that $\pp(g) =q$.
+
+Let
+\[
+TC: S\times S \rightarrow S\times S
+\]
+be reflexive, symmetric transitive (RST) closure. 
+Define
+\[
+* : \EE(S) \times \EE(T) \rightarrow \EE(S \cup T)
+\]
+by $\rho * \nu = TC( \rho \cup \nu )$. 
+
+
+Define $\sigma : \Z \rightarrow \Z$ by $\sigma(i)=i+1$.
+Define $\sigma_- : \Z \rightarrow \Z$ by 
+$\sigma_-(2)=1$
+and $\sigma_-(i)=i$ otherwise.
+
+</BODY>
+</HTML>

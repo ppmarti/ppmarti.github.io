@@ -1,0 +1,18 @@
+
+Cor.5.2
+Note that in case char.k = p 
+then | \delta | means the smallest |d| over d \in \Z
+such that d in the class \delta.
+(The proof uses a bound, so it must be the smallest.)
+
+Thm.6.3
+(1) Note that | \delta | is interpreted as above.
+(2) In the proof note that if r=s=2 then 
+\delta_i \in \{ 0,1,-1 \} 
+and if | \delta | = 1
+then one of \delta_i is zero and so 
+the required hom must be constructed in another way
+(but this can be done - explicitly, since the rank
+is low - hint: look for a 2-step rather than
+1-step hom).  
+ 

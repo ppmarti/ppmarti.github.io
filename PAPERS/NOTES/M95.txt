@@ -1,0 +1,9 @@
+
+P. P. Martin. The partition algebra and the Potts model transfer matrix spectrum in high dimensions
+J. of Physics A 19 (2000), 3669-3695. 
+RIMS Kyoto 1995 preprint: RIMS-1022.
+
+Home of the kodoku projector,
+an example of which is Chi in Section 3 here.
+
+

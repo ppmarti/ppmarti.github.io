@@ -1,0 +1,15 @@
+Parametrizations of flag varieties
+
+Joint with with K. Rietsch (Kings).
+
+Let G be reductive algebraic group and B a Borel subgroup. The flag
+variety is the quotient G/B. We give an explicit description of the
+elements of G/B depending on a choice of reduced expression for the
+longest element in the Weyl group of G, compatible with the
+components
+of the Deodhar decomposition of G/B. The factors appearing in the
+description are given by a generalisation of the
+Berenstein-Zelevinsky
+chamber ansatz. We obtain a new proof of Lusztig's conjectured cell
+decomposition of the totally nonnegative part of G/B.
+

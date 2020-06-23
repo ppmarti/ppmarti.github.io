@@ -1,0 +1,20 @@
+
+    Ch.5: p.120: l-3: 'The left sided ideal...'
+    p.91: l-12: '... jk=-kj=-i' 
+    p.123: l-1: '...$\Delta(1)=1 \otimes 1$ and...' 
+
+Ch.6:
+  p.132: l-4: 'opportunity'
+  p.133: l-11: reference missing from bibliography
+  p.134: l-3: 'pieces'
+  p.138 l1: this depicts the case $(i i+1)(i.)(i i+1) = (i i+1)$
+  p.147 l-10: $x(x^2 -2)$
+  p.151 l6: $(e_m, e_m)$ needs to be normalised by $Q^{-p/2}$ to make the 
+normalisation in (6.35) work.
+
+Ch.7:
+  p.167 l-7: 'consisting'
+  p.171 line above Cor.16.1: `no indecomposable representation' of course means
+        no distinct such representation.
+
+    See http://www1.maths.leeds.ac.uk/~ppmartin/ZEROS/PMARPISM.html for more typos. 

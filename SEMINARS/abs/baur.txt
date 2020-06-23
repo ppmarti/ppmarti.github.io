@@ -1,0 +1,20 @@
+
+Frieze patterns:   
+
+> Frieze patterns were introduced and studied by Coxeter and then Conway-Coxeter in the 70's. They are arrays of a 
+> finite number of shifted infinite rows of positive integers, satisfying the unimodular rule: in each square formed by four entries, 
+> the product of the horizontal entries is one more than the product of the vertical entries. An example is here: 
+> 
+> 0 0 0 0 0 0 0 0 0 0 
+>  1 1 1 1 1 1 1 1 1 
+> 2 1 3 1 2 2 1 3 1 2
+>  1 2 2 1 3 1 2 2 1 
+> 1 1 1 1 1 1 1 1 1 
+>  0 0 0 0 0 0 0 0 0 
+> 
+> Conway-Coxeter have shown that such patterns are invariant under a glide symmetry and hence are peridoci. Furthermore, 
+> they are characterized by triangulations of polygons. We will briefly recall this and then consider infinite frieze patterns 
+> of positive integers. We show that they are also characterized by triangulations of surfaces. As in the finite case, we are 
+> able to give a geometric interpretation of all entries of an infinite frieze via matching numbers. This is joint work with M.J. Parsons 
+> and M. Tschabold (both from Graz). 
+

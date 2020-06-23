@@ -1,0 +1,21 @@
+
+[M94]
+In Sec.6.2.2, N.B., the equivalence is not a congruence, 
+so $P_n^{\sim}(Q) = KS_n^{\sim}$ (writing $S_n^{\sim}$ for the
+set of classes of $S_n$ under $\sim$) is not a quotient algebra,
+and the construction should be understood combinatorially. 
+(With the benefit of hindsight) A good way to notate this
+is in the categorical terms introduced in Sec.7.
+
+In consequence Prop.12 concerns representations of $P_n(Q)$.
+The Outline proof of Prop.12 is somewhat terse. Since not every
+row of the gram matrix is diagonal dominated one needs to note
+the partial order on basis elements by the number of isolated
+parts. Each row is diagonal dominated if one ignores columns
+labelled by elements higher in this partial order. Now consider
+the Laplace expansion.
+ 
+
+[MS93] contains a version of the same construct $\sim$ as in [M94,Sec.6.2.2]
+above , which can be understood in the same way. 
+

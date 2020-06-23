@@ -1,0 +1,12 @@
+
+Typos
+
+p.03 [1.2] (line 4 of this para.) ... S_1^+[3] = S_1^+[2] \otimes ...
+
+p.10 line 3: \gamma_2^t 
+
+p.12 [1.24] Let c be a loop particle
+
+p.13 [1.28] ...  C.f --> Cf. 
+
+

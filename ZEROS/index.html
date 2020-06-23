@@ -1,0 +1,160 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css"
+href="../CSS/default.css" />
+
+
+
+</head>
+<body>
+<span class="head1">
+<a href="../research.html">BACK</a>
+</span>
+<hr>
+<h1> Partition Function Zeros </h1>
+
+<img alt='tilting module' align="right" style='border:1px solid gray' 
+height='230' src='../SEMINARS/q4sq310.gif'>
+
+This page is under construction. 
+The initial idea was to provide some notes that would be of interest to 
+my graduate student 
+<a href="valani/yogi/index.html"> Yogi Valani</a>, 
+who 
+was studying Potts model partition
+functions using transfer matrix algebra techniques (mainly computer based).
+<br>
+(Yogi has successfully completed his PhD, but I'll leave the notes up,
+since 
+they may eventually be of interest to others too.)
+<br><br>
+The aim is to study 
+the way in which equilibrium statistical mechanics models
+phase transitions (possibly multiple), by studying the 
+distribution of zeros of the partition function Z 
+in the complex T plain close to phase transition point. 
+<br>
+This is typically done by studying the exactly computed partition function
+on finite lattices (arranging for the Hamiltonian to be integral, so that
+Z is polynomial in exp(beta), where beta=1/kT).
+<br>
+<br>
+This programme is comprehensively explained in the literature. 
+But this literature is 
+spread far and wide, and some of it is hard work. 
+Accordingly, this
+page will take the form, in part, of 
+<br>
+(1) a kind of FAQ.
+The assumption is that the reader has _seen_ the literature,
+but that some further explanation is useful.
+<br>
+(2) a collection of results and pointers to results.
+(So email me if you want me to add something relevant.)
+<br>
+For example, 
+<ul><li>
+here is <a href="valani/yogi/index.html">Valani's </a> page 
+containing many beautiful and intriguing Potts model examples. 
+<li>
+thesis results page <a href="."> here (to follow) </a> of 
+<a href="http://www.iium.edu.my/staff/show/8033">Dr Fatimah Zakaria </a> (IIUM Kuantan), another of my former students.
+</ul>
+The figure on the right is for a clock model not a Potts model,
+and animates the zero distribution over 3 different lattice sizes
+(see later for details).
+
+<br clear=all>
+
+<img alt='zeros' align="right" height='480' src='q2n4l2cubic104.gif'>
+
+
+<p></p>
+<a href="zero-refs.html"><h4>References </h4></a>
+My main reference (just because it is something that does the job,
+and that I am familiar with) is:
+<br>
+[M91] P Martin, Potts models and related problems in statistical mechanics,
+World Scientific 1991.
+<br>
+For others follow the <a href="zero-refs.html">link to references.</a>
+
+<h4>Definitions</h4>
+At its simplest,
+the Potts model partition function Z can be considered to be a map from pairs
+consisting of a natural number and a graph, to polynomials. 
+That is, for each such pair there is a polynomial. 
+See
+<a href="http://www.maths.leeds.ac.uk/~ppmartin/pdf/inv-thy.pdf"> here.</a>
+
+However, the graph in question is a representation of a physical system,
+such that the number of vertices is of order 10^26
+(that is, of the order of Avogadro's number). 
+No interesting Z can be computed for a graph of this size.
+In practice, then, it is necessary to compute Z for a 
+sequence of graphs approaching (in some sense) a limit, 
+such that the large graph of interest may be studied by studying the limit. 
+<br>
+This may sound hopeless, but a good model for this situation is given in [M91]
+Chapter 11. There one considers a certain sequence of graphs. 
+
+
+<h4>Connections to physics</h4>
+<a href="SM1-1.html">Here.</a>
+
+<p>
+<h4> Generalities </h4>
+What does a Potts model partition function look like, as a polynomial?
+<a href="valani/polynomials/2-03x03x09-110"> Here </a> is an example.
+
+<p>
+<h4>Library of zeros data, model by model (under construction)</h4>
+<ul>
+<li> 1d Ising model, and generalities
+<li> 2d Ising model -- The control case (via Onsager's solution)
+<li> <a href="Q2d3sq.html">3d Ising model</a> (many results included here
+are courtesy of Y Valani [V11])
+<li> Q-state Potts models
+    <ul>
+     <li> 2d, square lattice 
+(e.g. 
+<a href="http://iopscience.iop.org/article/10.1088/0305-4470/19/16/025/meta">here</a>
+, [M91]) / other lattices
+           <ul> 
+             <li> Q=3
+<a href="http://iopscience.iop.org/article/10.1088/0305-4470/19/9/016/meta;jsessionid=5217A9350BC2298029612EBF6F2FA367.c1">/other</a>
+<a href="pdf/q3tri2x.pdf">/other</a>
+(triangular and square up to size 12x13 with P/O boundaries)
+<a href="./sfz1.html"> here </a>
+             <li> Q=4
+             <li> Ice model realisation [M86] (up to 10x20)
+           </ul>
+     <li> 3d
+           <ul>
+               <li> Q=3
+e.g.
+<a href="http://www.sciencedirect.com/science/article/pii/0550321383905291">here</a>
+           </ul>
+    </ul>
+<li> Clock models [M91,M88]
+</ul>
+
+<p>
+
+<h4> Computation </h4>
+Some code snippets to follow.
+
+
+<p>
+<hr>
+<p></p>
+ 
+
+
+
+<p> zeros (c) Paul Martin  </p>
+
+
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+
+the kodoku(na) projector
+
+the notes for this talk are not here yet. but in a nutshell it simply notes
+the use of the Chi projector from [M95] in various guises such 
+as [MM13a], dilute TL and so on. 
+
+
+[MM13a]
+P. P. Martin and V. Mazorchuk. On the representation theory of partial Brauer algebras
+The Quarterly Journal of Mathematics (2013); doi: 10.1093/qmath/has043
+

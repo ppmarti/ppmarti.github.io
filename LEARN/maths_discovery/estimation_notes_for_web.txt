@@ -1,0 +1,82 @@
+
+ESTIMATION
+1. Introduction
+2. Rough sizes of things/numbers
+3. Fermi method
+4. Getting in deeper/Applications
+
+
+1.Intro
+
+What's the difference between general knowledge, a guess, and an estimate?
+
+(You might just know how many countries there are in the EU.
+Or you might not have any idea, and take a wild guess.
+Or you might know some related facts and work out an `informed' guess
+from that.)
+
+Often we might want an answer to a numerical question - how accurate to
+we need to be? Sometimes we can look up the answer, but often questions
+are less tangible, and have an unattainable exact answer. Whether it's
+to win a jar of sweets, or to see through a dubious headline, it's 
+important to be able to estimate with reasonable accuracy and confidence.
+
+(Example: suppose we won the contract to polish all the floors in the
+university. How much floor polish should we get?
+Nobody knows the exact area of all the floors! What would that even mean?!...)
+
+Sometimes it is dangerous to trust calculators and computers for these
+things. They are good at arithmetic, but don't _understand_.
+You can use the greater sophistication of your brain to sanity check.
+
+Discuss: What is the difference in the way a PC `thinks' to the way
+you think?
+
+
+2. Rough sizes of things/numbers
+
+One good trick is to have in your imagination some examples of differently
+numbered things. For example, can you think of something familiar that has
+100 things? 1000 things? 10,000 things?
+
+Rather than continuing to add zeros here, we might use "scientific notation", 
+which just displays the "number of zeros" in a quantity. This is especially
+useful for huge numbers, like the number of atoms in a grain of sand. This
+could be written 80 000 000 000 000 000 000, but is perhaps more readable
+as 8x10^19, that is, 8 with 19 zeros after it. These zeros represent
+"orders of magnitude".
+
+(Exercise: Think of naturally occuring sets that have the sizes
+1, 10, 100, 1000, 10000, ..., 10^6, ..., 10^100, ..., 10^(10^10), ...)
+
+What about units? What are good units for measuring things in?
+Some things formally make sense as whole numbers (or `real' numbers).
+Some are measured in funny units (grams, megatons, Sieverts, dollars,...)
+
+
+3. Fermi method
+
+Enrico Fermi was an Italian nuclear physicist in the first half
+of the twentieth century. He was well-known for being excellent
+at scientific estimation, and gave his name to the "Fermi method".
+
+The idea is to break an estimation problem up into a combination of 
+smaller sub-problems. We make an order of magnitude estimate for each, 
+and hope that any errors we make will roughly cancel each other out
+when the estimates are combined to give an estimate for the original
+problem. This method often produces surprisingly accurate estimates, 
+although may need some practice! 
+
+
+4. Getting in deeper
+
+When we make an estimate it can be useful to think about what we are
+going to us it for. 
+
+Discuss: What might an estimate be useful for?
+
+
+5. Links
+
+https://www.theguardian.com/environment/2017/feb/03/fukushima-daiichi-radiation-levels-highest-since-2011-meltdown
+

@@ -1,0 +1,109 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.51 [en] (X11; I; Linux 2.2.5-15 i686) [Netscape]">
+   <meta name="Author" content="Paul P Martin">
+   <meta name="Description" content="Might be useful one day...">
+   <title>PPM: Reference Section</title>
+</head>
+<body bgcolor="#FFFFFF">
+&nbsp;
+<a href="http://www.maths.leeds.ac.uk/~ppmartin/">BACK</a> or 
+<a href="http://www.maths.leeds.ac.uk/">Mathematics Department Home</a>
+<p>
+<hr WIDTH="100%">
+<p><b>emacs folding mode</b>
+<br> 
+<a href="folding.el">folding.el</a> 
+provides a folding mode for emacs, that is a mode
+in which regions of text can be folded away (hidden from view in emacs).
+This is very useful in editing large documents.
+(Authorship of the code historically is documented in the file.
+Most recent contribs to this version are D Woodcock (c 1996) and myself
+(c 1996 to present).)
+<p>
+basic usage is that something like (example for .tex file): 
+<p>
+%{{{ fold name <br>
+lots of text over many lines <br>
+%}}} <br>
+<br>
+appearing as raw text, would in folding mode appear folded simply as
+<p> %{{{ fold name... <p>
+...but this can be "opened" or "entered" by a suitable click.
+<br>
+Such folds can be arbitrarily nested (TL combinatorics! ;-).
+<br><hr>
+<p>
+<b>Development/Issues</b>
+<br>
+Emacs-24: folding mode (as I have had it) is broken in emacs-24
+<br>
+what to do?
+<br> This begs the question of 
+<br>
+<b>how folding.el is _supposed_ to work.</b>
+<br>
+e.g <br>
+<i>kill-region</i> (fld-kill-region)
+is modified from the default emacs lisp command
+(to avoid breaking folding mode by deleting an unmathced set 
+of fold marks). <br>
+...And this throws an error in emacs-24.
+One thing to say about this is that simply reverting to the default
+kill-region and risking fold breaking is an option!
+<br> ...Although  kill-region (default) would not 
+work if asked to kill a region containing a complete folded fold
+(as we might reasonably do). So, better proceed as below.
+<p>
+<i>(fld-)kill-region</i> 
+<br> ...calls the command <br>
+<ul><li>
+<i>fld-check-region 
+</i>
+<br> ...which checks a region for unmatched fold marks
+<br> it calls 
+<ul> <li>the default <i>save-match-data</i>
+</li>
+</ul>
+<li><i>kill-new</i>  (a fld-redefun of the default emacs lisp function)
+<br>... which appears to be where the problem lies
+<br> so in the latext version (folding.el -> folding24.el) the fld-redefun
+of kill-new is dropped in favour of the default emacs lisp version.
+<br> NB This means that ctrl-w is not idiot proof!
+<br> but it does delete within folds and including complete folds,
+with ctrl-y working OK.
+<li>
+ ...
+</ul>
+
+...
+<br> the above mod is implemeted in the latest test version (still in 
+testing for now).
+<br> More to follow.
+
+<hr>
+
+<ul>
+<li> emacs <a href="folding.html"> folding </a>  </li>
+</ul>
+
+<hr WIDTH="100%">
+<p><a href="http://www.maths.leeds.ac.uk/~ppmartin/">BACK</a>
+<br>&nbsp;
+</body>
+</html>
+
+
+
+<!{{{> <! Local Variables >
+
+<!--  Local Variables:  -->
+<!--  mode: html  -->
+<!--  folded-file: t   -->
+<!--  fold-top-mark: "<!{{{>"  -->
+<!--  fold-bottom-mark: "<!}}}>"  -->
+<!--  End:  -->
+<!}}}>
+

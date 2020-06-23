@@ -1,0 +1,150 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<!{{{> <!head>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.75 [en] (X11; U; Linux
+   2.4.0 i686) [Netscape]">
+<!   <base href="/home/ppm/common/">
+</head>
+<!}}}>
+<body text="#000000" bgcolor="#FFFFFF" link="#0000EE" vlink="#551A8B" alink="#FF0000">
+
+<img src="lib/B3x0139.gif" height=250 width=250 align=RIGHT>
+<a href="../index.html">BACK</a> <br>
+<h2><font face="Arial,Helvetica">
+A TILTING ANIMATION HOMEPAGE
+</font></h2>
+<font face="Arial,Helvetica"><font size=+1>
+<!{{{> <!contents>
+<ul>
+<!--  <li><a href="#pf">Content 1</a> -->
+</ul>
+<!}}}>
+</font></font>
+
+Disclaimer:
+There is no support available for the tilting animation software here. 
+It works on at least one platform, and includes the source. YMMV.
+<p>
+We are not major players in the tilting module world (see rather
+[Donkin] and references therein),
+but our work lends itself very well to online viewing. 
+And thus to having a homepage. (If you, a major player, would like to
+be linked (or for us to house your online contribution) it would be
+great - let us know.)
+<p>
+We have a reasonably fast implementation of [Soergel]'s procedure for
+computing the standard module content of tilting modules. This
+implementation generates vast amounts of such data.
+<br>
+By virtue of the alcove geometric labelling scheme for standard module
+weights this data is geometric. 
+<br>
+All else being equal, a good way to explore this geometrical data is
+to apply alcove geometry to a virtual reality (typically 3D in our
+examples). 
+<br>
+We animate our viewing of individual tilting modules, and the
+iterative procedure. 
+We do the former so that we may explore the `shape' of the tilting
+module in its geometric setting; we do the latter to help search for
+patterns of various kinds in the evolution of tilting modules as the
+`label' alcove moves away from the fundamental alcove. 
+
+<p>
+<hr>
+<p>
+
+Requirements: <br>
+To view some `films' of animated tilting modules you need only visit
+the <a href="library.html">library</a> 
+(under construction, but see 
+<a href="lib/trub3x.gif">this</a> or 
+<a href="http://www.staff.city.ac.uk/~sg387/giffiles/trub3x.gif">this</a>).
+<br>
+To explore the alcove world in which tilting modules live you need 
+<a href="http://www.geomview.org/">geomview</a>. 
+<br>
+To create your own using our `tilt' package 
+(Copyright (C) 2000 Paul Martin and Dave Woodcock)
+you need a reasonably complete linux, gcc, perl etc.
+(see the tarball for details).
+<p>
+Download: <br>
+<ul>
+<li>
+Its all in the <a href="TILT-0.6.3.tgz">tarball (FC6/7, gcc-4 tested)</a>. 
+Unpack and follow the instructions. <br>
+-- this new version compiles in particular under Fedora Cores 6 and 7
+<br>
+(including: fixes to conform to gcc4 standards compliance and 
+some new behaviour in perl installations;
+<br>
+AND a nice new G2 schematum!).
+<br>
+<li> I will shortly also release a binary version that should 
+simply run out-of-the-box on suitable platforms 
+(with geomview etc).
+<li>
+Previous <a href="TILT-0.6.1.tgz">version (rh9, gcc-3.2)</a>. 
+<li>
+Older <a href="TILT-0.5.tgz">version (rh9, gcc-3.2)</a>. 
+</ul>
+<p>
+INSTALL: <br>
+Assuming you have all the gear, 
+it is probably enough to go into the tilt/ directory and do
+<br> ./configure --prefix=WRITE_THE_DIR_NAME_HERE
+<br> make bootstrap
+<br> make all
+<br> ./tilt
+<br> But see the READMEs too. 
+<p>
+CONFIGURATION: <br>
+The easiest level of configuration is to use or construct
+a type-specific config file called a schematum. <br>
+Examples here:
+ <a href="schemata/index.html"> schemata etc</a>, 
+including user contributed examples. 
+<p>
+<hr>
+<p>
+References and bibliography: <br>
+[Donkin] S Donkin, 1993, On tilting modules for algebraic groups,
+Math.Z. 212, 39-60.
+<br> [Soergel] W Soergel, 1997, Charakterformeln fur Kipp-Moduln uber
+Kac-Moody-Algebren, Representation Theory 1, 115-32.
+<br>[Lusztig] G Lusztig, 1980, Hecke algebras and Jantzen's generic
+decomposition patterns, Adv. in Math. 37, 121-164.
+<br> [MartinWoodcock] P P Martin and D Woodcock, 1998, On quantum
+spin-chain spectra and the structure of Hecke algebras and q-groups at
+roots of unity, J. Phys. A31, 10131-54.
+<br> [MartinWoodcock03] P P Martin and D Woodcock, 2003, Generalised
+blob algebras and alcove geometry, LMS JCM 6, 249-296.
+<br><a href="tiltref.html"> more </a>
+
+<p>
+Notes: <br>
+Getting tilt to compile under gcc-3.2 required some massaging
+cf. the previous version. We havn't yet eliminated all the C++ ISO
+non-conforming warnings etc.. It's not compliant, but they're only
+warnings. 
+
+<hr WIDTH="100%">
+P P Martin  7/3/04
+<br>
+P P Martin 16/10/07
+
+</body>
+</html>
+
+<!{{{> <! Local Variables >
+
+<!--  Local Variables:  -->
+<!--  mode: html  -->
+<!--  folded-file: t   -->
+<!--  fold-top-mark: "<!{{{>"  -->
+<!--  fold-bottom-mark: "<!}}}>"  -->
+<!--  End:  -->
+<!}}}>

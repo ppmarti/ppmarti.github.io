@@ -1,0 +1,7 @@
+
+    First arXiv version contains some typos. 
+
+    SS4.1: definition of representation R: '...$...\otimes I_{6^{n-i}}$'. 
+
+    Other details to follow.
+

@@ -1,0 +1,83 @@
+/*
+definitions 15/7/13
+for loop-braid rep checking
+*/
+
+g1:matrix(
+  [q,0,0,0,0,0,0,0],
+  [0,0,1/q,0,0,0,0,0],
+  [0,1/q,0,0,0,0,0,0],
+  [0,0,0,q,0,0,0,0],
+  [0,0,0,0,q,0,0,0],
+  [0,0,0,0,0,0,1/q,0],
+  [0,0,0,0,0,1/q,0,0],
+  [0,0,0,0,0,0,0,q]);
+
+g2:matrix(
+  [q,0,0,0,0,0,0,0],
+  [0,q,0,0,0,0,0,0],
+  [0,0,0,0,1/q,0,0,0],
+  [0,0,0,0,0,1/q,0,0],
+  [0,0,1/q,0,0,0,0,0],
+  [0,0,0,1/q,0,0,0,0],
+  [0,0,0,0,0,0,q,0],
+  [0,0,0,0,0,0,0,q]);
+
+/*
+(g2.g1.g2)-(g1.g2.g1);
+
+returns the zero matrix
+*/
+
+s1:g1, q=r;
+
+s2:g2, q=r;
+
+/*
+(g1.g2.s1)-(s2.g1.g2);
+
+returns zero matrix
+*/
+
+h1:matrix(
+[q,0,0,0,0,0,0,0,0],
+[0,0,0,r,0,0,0,0,0],
+[0,0,0,0,0,0,r,0,0],
+[0,r,0,0,0,0,0,0,0],
+[0,0,0,0,q,0,0,0,0],
+[0,0,0,0,0,0,0,r,0],
+[0,0,r,0,0,0,0,0,0],
+[0,0,0,0,0,r,0,0,0],
+[0,0,0,0,0,0,0,0,q]);
+
+h0:h1, r=1/q;       /* should be our usual q-param form of sigma_1 */
+j1:kronecker_product(h0, ident(3));
+j2:kronecker_product(ident(3), h0);
+sig0:ratsimp((h0 - (h0)^^(-1))/(q-q^(-1)));
+sigu:ident(9)-sig0;
+sig01:kronecker_product(sig0, ident(3));
+sig02:kronecker_product(ident(3), sig0);
+sigu1:kronecker_product(sigu, ident(3));
+sigu2:kronecker_product(ident(3), sigu);
+sigff:sigu1.sigu2.sigu1 - sigu1;  /* 27x27 matrix with embedded 6x6 of 1s */
+
+/*  j1.j2.j1  - j2.j1.j2   returns zero matrix
+*/
+
+h2:h0, q=r;
+k1:j1, q=r;
+k2:j2, q=r;
+
+/*  j1.j2.k1 - k2.j1.j2 = 0  
+*/
+
+s21:h2, r=1;
+u21:ident(9)-s21;
+u31:kronecker_product(u21, ident(3));
+u32:kronecker_product(ident(3), u21);
+ee3:u31.u32.u31-u31;
+eee3:kronecker_product(ee3, ident(3));
+j43:kronecker_product(ident(9), h0);
+
+/* eee3.j43.eee3-(2*q*eee3) == 0
+*/

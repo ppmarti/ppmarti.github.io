@@ -1,0 +1,21 @@
+
+arXiv version v2 still contains some minor typos, e.g.:
+
+p.6
+
+e_{n,t} definition: j advances in steps of 2 within given range
+
+B_{n,t} definition: quotient by  B_n e_{n,t-1} B_n
+  (cf. B_{n,t} e_{n,t})
+
+
+
+
+Published version notes:
+
+For the example in Fig.16(a) note that the removable box 
+that we have in mind to remove is the [4] (as we should have 
+stated explicitly, since there is more than one possibility, but 
+did not!).
+The resultant balanced subpartition is not maximal in this case.
+ 

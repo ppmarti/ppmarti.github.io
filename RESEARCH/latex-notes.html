@@ -1,0 +1,101 @@
+<HTML>
+
+<title>Paul Martin's LaTeX Homepage</title>
+
+<BODY BGCOLOR=white TEXT=black>
+
+<IMG SRC="../puremathweb5.gif" USEMAP="#puremathweb" ALIGN="right" style='border:0px solid gray'>
+<MAP NAME="puremathweb">
+<AREA COORDS="1,1,201,31" HREF="http://www.maths.leeds.ac.uk/pure/geometry/" ALT
+="geometry">
+<AREA COORDS="1,121,91,151" HREF="http://www.maths.leeds.ac.uk/pure/algebra/" AL
+T="algebra">
+<AREA COORDS="206,91,301,121" HREF="http://www.maths.leeds.ac.uk/pure/analysis/"
+ ALT="analysis">
+<AREA COORDS="116,211,301,241" HREF="http://www.maths.leeds.ac.uk/pure/logic/" A
+LT="logic">
+</MAP>
+
+ 
+<a href="../index.html"><h3>Paul Martin Home</h3></a>
+
+<h3>LaTeX</h3>
+
+<ul>
+
+<li> <a href="http://omega.albany.edu:8008/Symbols.html">LaTeX symbols</a></li>
+<li> <a href="http://en.wikibooks.org/wiki/LaTeX/Mathematics">LaTeX/Mathematics</a>
+<li> AMS maths issues (for AMS journal classes etc) 
+<li> macros 
+</ul>
+
+<h3>AMS LaTeX Issues</h3>
+<ul><li> 
+The problem: one has ones own latex macros, but then one needs to approximate
+some (AMS) journal style. How does one interpolate?
+
+Here we say something about what goes into 
+ams classes and styles.
+<br>
+For example, what about the \proof{} macro?
+<br> 
+The main point of the TrAMS cls file (tran-l.cls) is the line 
+<pre>\LoadClass{amsart}[1996/10/24]
+</pre>
+which loads amsart.cls.
+In <pre> amsart.cls </pre> we have:
+<hr>
+<pre>
+\newenvironment{proof}[1][\proofname]{\par
+  \pushQED{\qed}%
+  \normalfont \topsep6\p@\@plus6\p@\relax
+  \trivlist
+  \item[\hskip\labelsep
+        \itshape
+    #1\@addpunct{.}]\ignorespaces
+}{%
+  \popQED\endtrivlist\@endpefalse
+}
+</pre>
+<hr>
+This leads to too much space between the Lemma (say) and the proof.
+In (for example) my macro file 
+<pre>
+martinCAPromantheo-macros.tex
+</pre>
+I have a \mlem{} Lemma environment, which emulates AMS.
+However it does not play well with \proof{} when it ends in an 
+equation environment -- too much space. 
+
+<li> </li>
+</ul>
+
+<h3>macros (to do)</h3>
+
+<ul><li>Theorems etc</li>
+</ul>
+
+<hr>
+
+<IMG SRC="../mathweb2.gif" USEMAP="#mathweb2" style='border:0px'>
+<MAP NAME="mathweb2">
+<AREA COORDS="376,96,501,146" HREF="http://www.maths.leeds.ac.uk/~ppmartin/SEMINARS/SMDG.html" 
+ALT="algebra">
+<AREA COORDS="376,1,501,51" HREF="http://www.maths.leeds.ac.uk/applied/Research/int.html" AL
+T="algebra">
+<AREA COORDS="376,191,501,241" HREF="http://www.maths.leeds.ac.uk/pure/algebra/"
+ ALT="algebra">
+<AREA COORDS="1,1,201,31" HREF="http://www.maths.leeds.ac.uk/pure/geometry/" ALT
+="geometry">
+<AREA COORDS="1,121,91,151" HREF="http://www.maths.leeds.ac.uk/pure/algebra/" AL
+T="algebra">
+<AREA COORDS="206,91,301,121" HREF="http://www.maths.leeds.ac.uk/pure/analysis/"
+ ALT="analysis">
+<AREA COORDS="116,211,301,241" HREF="http://www.maths.leeds.ac.uk/pure/logic/" A
+LT="logic">
+</MAP>
+
+
+</BODY>
+
+</HTML>

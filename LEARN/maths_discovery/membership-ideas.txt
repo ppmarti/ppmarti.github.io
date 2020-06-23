@@ -1,0 +1,38 @@
+
+what is most `important' membership to you?
+some important ones can be membership of the
+species (determines some rights in law)
+state   (determines some rights in law)
+company (who pays you?...)
+team    (who's got your back?...)
+family  (who's really got your back... maybe)
+...see how this is going? tighter and tighter groupings.
+keeping going, ever tighter, we end with
+membership of the self.
+
+who do you feel more affinity with?
+your friend
+your sister
+your own self from yesterday or tomorrow?
+your own self at age 1 or 91?
+
+notion of the self?
+where does it come from?
+the egg that became your body was created in your _mother_'s embryo!
+the ash from your cremation is apparently not great plant food
+ (unlike plant ash), but ok in small doses.
+
+is it interesting to consider the notion of the self?
+is it safe?
+
+
+topology:
+every possible human characterisitic (height, weight, 
+ age, hair length, charm, piano grade, ...)
+represent each characteristic as a line, e.g. from short to tall.
+then every point in a multidimensional space is a particular specification
+ of all characteristics - and some of these points have individuals 
+ who have exactly that height, weight and so on.
+
+
+

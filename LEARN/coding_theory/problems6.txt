@@ -1,0 +1,39 @@
+
+Problems 6 (first draft)
+
+1. Let C, C' be q-ary block length n codes.
+Is their intersection a code?
+Is their union a code?
+   What about the linear property?
+   What about the cyclic property?
+ 
+
+2. Let C, C' be q-ary block length n linear codes.
+
+(a) Show that their intersection is also such a code.
+
+(b) Suppose that C, C' are also cyclic. 
+ (i) Show that their intersection is cyclic.
+
+Suppose C, C' have generator polynomials g, g' respectively.
+What can you say about the generator for the intersection in 
+terms of these. 
+
+ (ii) Show that C+C' (as defined in lectures) is a cyclic code.
+
+What can you say about the generator for C+C' in terms of g and g'?
+(Hint: consider our discussion of Euclid's algorithm in class.)
+
+
+3. Construct a minimum distance 99 code. 
+Compare the rate of repetition codes and the G_23 Golay code.
+
+
+4. Find all irreducible quadratics in F_2[x].
+
+
+5. Find all irreducible cubics in F_2[x]. 
+Consider the problem of finding irreducible quartics. What is new here?
+
+
+

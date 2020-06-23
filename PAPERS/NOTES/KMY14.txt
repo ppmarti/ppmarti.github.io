@@ -1,0 +1,13 @@
+
+here numberings are as in the update version.
+
+a precise link to a section of [54] with a calculation indicative of the
+`routine calculation' omitted in the proof of 4.26 is here:
+
+<a href="../../GRAD/NOTES/notes-pdf/lecturesLeedsPt1.dvi-317-347.pdf">lecture notes Ch.15</a>
+
+(This is a chapter on the ordinary partition algebra. But the argument
+for the Kadar-Yu algebras is directly analogous.
+Section numbers in the lecture notes are not super-stable, since the
+notes vary from year to year, but currently the Lemma number is around 15.4.10.)
+
