@@ -128,12 +128,12 @@
     { "from": "Almateari", "to": "Match-categories" },
     { "from": "Alsubhi", "to": "Match-categories" },
     { "from": "Alotaibi", "to": "Kadar-Yu" },
-    { "from": "Free folk", "to": "Night's Watch" },
-    { "from": "Free folk", "to": "Baratheon" },
-    { "from": "Bolton", "to": "Greyjoy" },
-    { "from": "Baratheon", "to": "Greyjoy" },
-    { "from": "Greyjoy", "to": "Tyrell" },
-    { "from": "Bracken", "to": "Blackwood" },
+    { "from": "Kadar-Yu", "to": "Partition-algebra" },
+    { "from": "Peyen", "to": "Combinatorics" },
+    { "from": "TMA", "to": "Blob-algebra" },
+    { "from": "Computation", "to": "TMA" },
+    { "from": "Computation", "to": "Partition-algebra" },
+    { "from": "Baby", "to": "Partition-algebra" },
     { "from": "Baratheon", "to": "Bolton" },
     { "from": "Baratheon", "to": "Frey" }
   ]
