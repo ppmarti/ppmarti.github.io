@@ -114,11 +114,11 @@
     }
   ],
   "edges": [
-    { "from": "Lannister", "to": "Tully" },
-    { "from": "Lannister", "to": "Baratheon" },
-    { "from": "Stark", "to": "Lannister" },
-    { "from": "Lannister", "to": "Darry" },
-    { "from": "Greyjoy", "to": "Stark" },
+    { "from": "Partition-algebra", "to": "Blob-algebra" },
+    { "from": "Partition-algebra", "to": "Match-categories" },
+    { "from": "Combinatorics", "to": "Partition-algebra" },
+    { "from": "Partition-algebra", "to": "Potts-model" },
+    { "from": "higher-gauge-theory", "to": "Blob-algebra" },
     { "from": "Stark", "to": "Greyjoy" },
     { "from": "Bolton", "to": "Stark" },
     { "from": "Baratheon", "to": "Lannister" },
