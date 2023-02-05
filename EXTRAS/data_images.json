@@ -43,35 +43,35 @@
       }
     },
     {
-      "id": "Bolton",
+      "id": "Tiger categories",
       "height": 50,
       "fill": {
         "src": "https://awoiaf.westeros.org/images/thumb/0/0c/House_Bolton.svg/500px-House_Bolton.svg.png"
       }
     },
     {
-      "id": "Brotherhood without Banners",
+      "id": "Computation",
       "height": 50,
       "fill": {
         "src": "https://awoiaf.westeros.org/images/thumb/1/17/BWB_Sir_Heartsalot.jpg/700px-BWB_Sir_Heartsalot.jpg"
       }
     },
     {
-      "id": "Brave Companions",
+      "id": "TMA",
       "height": 50,
       "fill": {
         "src": "https://awoiaf.westeros.org/images/thumb/2/24/Brave_Companions.svg/400px-Brave_Companions.svg.png"
       }
     },
     {
-      "id": "Frey",
+      "id": "Kadar-Yu",
       "height": 50,
       "fill": {
         "src": "https://awoiaf.westeros.org/images/thumb/d/da/House_Frey.svg/500px-House_Frey.svg.png"
       }
     },
     {
-      "id": "Mallister",
+      "id": "Baby",
       "height": 50,
       "fill": {
         "src": "https://awoiaf.westeros.org/images/thumb/7/75/House_Mallister.svg/500px-House_Mallister.svg.png"
@@ -119,11 +119,11 @@
     { "from": "Combinatorics", "to": "Partition-algebra" },
     { "from": "Partition-algebra", "to": "Potts-model" },
     { "from": "higher-gauge-theory", "to": "Blob-algebra" },
-    { "from": "Stark", "to": "Greyjoy" },
-    { "from": "Bolton", "to": "Stark" },
-    { "from": "Baratheon", "to": "Lannister" },
-    { "from": "Darry", "to": "Lannister" },
-    { "from": "Brotherhood without Banners", "to": "Brave Companions" },
+    { "from": "Blob-algebra", "to": "Combinatorics" },
+    { "from": "Tiger categories", "to": "Blob-algebra" },
+    { "from": "Baby", "to": "Kadar-Yu" },
+    { "from": "TMA", "to": "Baby" },
+    { "from": "Baby", "to": "Combinatorics" },
     { "from": "Lannister", "to": "Stark" },
     { "from": "Lannister", "to": "Brave Companions" },
     { "from": "Frey", "to": "Stark" },
