@@ -141,8 +141,8 @@
     { "from": "TMA", "to": "Blob-algebra" },
     { "from": "Computation", "to": "TMA" },
     { "from": "Computation", "to": "Partition-algebra" },
-    { "from": "Baby", "to": "Partition-algebra" },
-    { "from": "Baratheon", "to": "Bolton" },
+    { "from": "Computation", "to": "Statistical mechanics" },
+    { "from": "Peyen", "to": "Statistical mechanics" },
     { "from": "TMA", "to": "Statistical mechanics" },
     { "from": "Baratheon", "to": "Frey" }
   ]
