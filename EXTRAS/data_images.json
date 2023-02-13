@@ -7,6 +7,13 @@
         "src": "https://awoiaf.westeros.org/images/thumb/d/d5/House_Lannister.svg/500px-House_Lannister.svg.png"
       }
     },
+     {
+      "id": "Statistical mechanics",
+      "height": 50,
+      "fill": {
+        "src": "https://awoiaf.westeros.org/images/thumb/d/d5/House_Lannister.svg/500px-House_Lannister.svg.png"
+      }
+    },
     {
       "id": "Blob-algebra",
       "height": 50,
@@ -136,6 +143,7 @@
     { "from": "Computation", "to": "Partition-algebra" },
     { "from": "Baby", "to": "Partition-algebra" },
     { "from": "Baratheon", "to": "Bolton" },
+    { "from": "TMA", "to": "Statistical mechanics" },
     { "from": "Baratheon", "to": "Frey" }
   ]
 }
