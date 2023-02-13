@@ -145,6 +145,6 @@
     { "from": "Computation", "to": "Statistical mechanics" },
     { "from": "Peyen", "to": "Statistical mechanics" },
     { "from": "TMA", "to": "Statistical mechanics" },
-    { "from": "Statistical mechanics", "to": "Potts model" }
+    { "from": "Statistical mechanics", "to": "Potts-model" }
   ]
 }
