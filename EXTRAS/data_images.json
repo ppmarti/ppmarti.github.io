@@ -8,6 +8,13 @@
       }
     },
      {
+      "id": "Topological quantum tools",
+      "height": 50,
+      "fill": {
+        "src": "https://awoiaf.westeros.org/images/thumb/d/d5/House_Lannister.svg/500px-House_Lannister.svg.png"
+      }
+    },
+     {
       "id": "Statistical mechanics",
       "height": 50,
       "fill": {
@@ -113,6 +120,20 @@
       }
     },
     {
+      "id": "Horton",
+      "height": 50,
+      "fill": {
+        "src": "https://awoiaf.westeros.org/images/thumb/e/e5/House_Bracken.svg/500px-House_Bracken.svg.png"
+      }
+    },
+    {
+      "id": "Extended categories",
+      "height": 50,
+      "fill": {
+        "src": "https://awoiaf.westeros.org/images/thumb/e/e5/House_Bracken.svg/500px-House_Bracken.svg.png"
+      }
+    },
+    {
       "id": "Alotaibi",
       "height": 50,
       "fill": {
@@ -133,6 +154,9 @@
     { "from": "TMA", "to": "Baby" },
     { "from": "Baby", "to": "Combinatorics" },
     { "from": "Qadi", "to": "Match-categories" },
+    { "from": "Qadi", "to": "Topological quantum tools" },
+    { "from": "Horton", "to": "Topological quantum tools" },
+    { "from": "Horton", "to": "Extended categories" },
     { "from": "Almateari", "to": "Match-categories" },
     { "from": "Alsubhi", "to": "Match-categories" },
     { "from": "Alsubhi", "to": "Partition-algebra" },
