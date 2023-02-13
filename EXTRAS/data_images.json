@@ -136,6 +136,7 @@
     { "from": "Almateari", "to": "Match-categories" },
     { "from": "Alsubhi", "to": "Match-categories" },
     { "from": "Alotaibi", "to": "Kadar-Yu" },
+    { "from": "Alotaibi", "to": "Blob-algebra" },
     { "from": "Kadar-Yu", "to": "Partition-algebra" },
     { "from": "Peyen", "to": "Combinatorics" },
     { "from": "TMA", "to": "Blob-algebra" },
@@ -144,6 +145,6 @@
     { "from": "Computation", "to": "Statistical mechanics" },
     { "from": "Peyen", "to": "Statistical mechanics" },
     { "from": "TMA", "to": "Statistical mechanics" },
-    { "from": "Baratheon", "to": "Frey" }
+    { "from": "Statistical mechanics", "to": "Potts model" }
   ]
 }
