@@ -135,6 +135,7 @@
     { "from": "Qadi", "to": "Match-categories" },
     { "from": "Almateari", "to": "Match-categories" },
     { "from": "Alsubhi", "to": "Match-categories" },
+    { "from": "Alsubhi", "to": "Partition-algebra" },
     { "from": "Alotaibi", "to": "Kadar-Yu" },
     { "from": "Alotaibi", "to": "Blob-algebra" },
     { "from": "Kadar-Yu", "to": "Partition-algebra" },
