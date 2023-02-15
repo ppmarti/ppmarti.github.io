@@ -1,5 +1,30 @@
 {
-  "nodes": [
+  "nodes": [  {
+      "id": "Schur-Weyl duality",
+      "height": 50,
+      "fill": {
+        "src": "https://awoiaf.westeros.org/images/thumb/d/d5/House_Lannister.svg/500px-House_Lannister.svg.png"
+      }
+    },
+        {
+      "id": "Quantum groups",
+      "height": 50,
+      "fill": {
+        "src": "https://awoiaf.westeros.org/images/thumb/d/d5/House_Lannister.svg/500px-House_Lannister.svg.png"
+      }
+    },        {
+      "id": "Cluster algebras",
+      "height": 50,
+      "fill": {
+        "src": "https://awoiaf.westeros.org/images/thumb/d/d5/House_Lannister.svg/500px-House_Lannister.svg.png"
+      }
+    },  {
+      "id": "Associahedra",
+      "height": 50,
+      "fill": {
+        "src": "https://awoiaf.westeros.org/images/thumb/d/d5/House_Lannister.svg/500px-House_Lannister.svg.png"
+      }
+    },
     {
       "id": "Partition-algebra",
       "height": 50,
@@ -170,6 +195,9 @@
     { "from": "Computation", "to": "Statistical mechanics" },
     { "from": "Peyen", "to": "Statistical mechanics" },
     { "from": "TMA", "to": "Statistical mechanics" },
+    { "from": "Quantum groups", "to": "Schur-Weyl duality"},{ "from": "Cluster algebras", "to": "Quantum groups"},
+    { "from": "Schur-Weyl duality", "to": "Partition-algebra"},{ "from": "Associahedra", "to": "Cluster algebras"},
+    { "from": "", "to": ""},
     { "from": "Statistical mechanics", "to": "Potts-model" }
   ]
 }
