@@ -195,6 +195,7 @@
     { "from": "Qadi", "to": "Topological quantum tools" },
     { "from": "Horton", "to": "Topological quantum tools" },
     { "from": "Horton", "to": "Extended categories" },
+    { "from": "Horton", "to": "Baby" },
     { "from": "Almateari", "to": "Match-categories" },
     { "from": "Alsubhi", "to": "Match-categories" },
     { "from": "Alsubhi", "to": "Partition-algebra" },
