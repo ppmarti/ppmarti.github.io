@@ -12,6 +12,13 @@
       "fill": {
         "src": "https://awoiaf.westeros.org/images/thumb/d/d5/House_Lannister.svg/500px-House_Lannister.svg.png"
       }
+    },     
+        {
+      "id": "Fedele",
+      "height": 50,
+      "fill": {
+        "src": "https://awoiaf.westeros.org/images/thumb/d/d5/House_Lannister.svg/500px-House_Lannister.svg.png"
+      }
     },         {
       "id": "Morris",
       "height": 50,
@@ -203,7 +210,9 @@
     { "from": "TMA", "to": "Statistical mechanics" },
     { "from": "Quantum groups", "to": "Schur-Weyl duality"},{ "from": "Cluster algebras", "to": "Quantum groups"},
     { "from": "Schur-Weyl duality", "to": "Partition-algebra"},{ "from": "Associahedra", "to": "Cluster algebras"},
-    { "from": "", "to": ""},   { "from": "Morris", "to": "Kadar-Yu"},
+    { "from": "", "to": ""},   
+    { "from": "Fedele", "to": "Cluster algebras"},   
+    { "from": "Morris", "to": "Kadar-Yu"},
     { "from": "Statistical mechanics", "to": "Potts-model" }
   ]
 }
