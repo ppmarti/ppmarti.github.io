@@ -1,0 +1,219 @@
+{
+  "nodes": [  {
+      "id": "Schur-Weyl duality",
+      "height": 50,
+      "fill": {
+        "src": "https://awoiaf.westeros.org/images/thumb/d/d5/House_Lannister.svg/500px-House_Lannister.svg.png"
+      }
+    },
+        {
+      "id": "Quantum groups",
+      "height": 50,
+      "fill": {
+        "src": "https://awoiaf.westeros.org/images/thumb/d/d5/House_Lannister.svg/500px-House_Lannister.svg.png"
+      }
+    },     
+        {
+      "id": "Fedele",
+      "height": 50,
+      "fill": {
+        "src": "https://awoiaf.westeros.org/images/thumb/d/d5/House_Lannister.svg/500px-House_Lannister.svg.png"
+      }
+    },         {
+      "id": "Morris",
+      "height": 50,
+      "fill": {
+        "src": "https://awoiaf.westeros.org/images/thumb/d/d5/House_Lannister.svg/500px-House_Lannister.svg.png"
+      }
+    },        {
+      "id": "Cluster algebras",
+      "height": 50,
+      "fill": {
+        "src": "https://awoiaf.westeros.org/images/thumb/d/d5/House_Lannister.svg/500px-House_Lannister.svg.png"
+      }
+    },  {
+      "id": "Associahedra",
+      "height": 50,
+      "fill": {
+        "src": "https://awoiaf.westeros.org/images/thumb/d/d5/House_Lannister.svg/500px-House_Lannister.svg.png"
+      }
+    },
+    {
+      "id": "Partition-algebra",
+      "height": 50,
+      "fill": {
+        "src": "https://awoiaf.westeros.org/images/thumb/d/d5/House_Lannister.svg/500px-House_Lannister.svg.png"
+      }
+    },
+     {
+      "id": "Topological quantum tools",
+      "height": 50,
+      "fill": {
+        "src": "https://awoiaf.westeros.org/images/thumb/d/d5/House_Lannister.svg/500px-House_Lannister.svg.png"
+      }
+    },
+     {
+      "id": "Statistical mechanics",
+      "height": 50,
+      "fill": {
+        "src": "https://awoiaf.westeros.org/images/thumb/d/d5/House_Lannister.svg/500px-House_Lannister.svg.png"
+      }
+    },
+    {
+      "id": "Blob-algebra",
+      "height": 50,
+      "fill": {
+        "src": "https://awoiaf.westeros.org/images/thumb/6/61/House_Tully.svg/500px-House_Tully.svg.png"
+      }
+    },
+    {
+      "id": "Match-categories",
+      "height": 50,
+      "fill": {
+        "src": "https://awoiaf.westeros.org/images/thumb/2/2d/House_Baratheon.svg/500px-House_Baratheon.svg.png"
+      }
+    },
+    {
+      "id": "Combinatorics",
+      "height": 50,
+      "fill": {
+        "src": "https://awoiaf.westeros.org/images/thumb/7/7e/House_Stark.svg/500px-House_Stark.svg.png"
+      }
+    },
+    {
+      "id": "higher-gauge-theory",
+      "height": 50,
+      "fill": {
+        "src": "https://awoiaf.westeros.org/images/thumb/9/9e/House_Darry.svg/500px-House_Darry.svg.png"
+      }
+    },
+    {
+      "id": "Potts-model",
+      "height": 50,
+      "fill": {
+        "src": "https://awoiaf.westeros.org/images/thumb/5/5b/House_Greyjoy.svg/500px-House_Greyjoy.svg.png"
+      }
+    },
+    {
+      "id": "Tiger categories",
+      "height": 50,
+      "fill": {
+        "src": "https://awoiaf.westeros.org/images/thumb/0/0c/House_Bolton.svg/500px-House_Bolton.svg.png"
+      }
+    },
+    {
+      "id": "Computation",
+      "height": 50,
+      "fill": {
+        "src": "https://awoiaf.westeros.org/images/thumb/1/17/BWB_Sir_Heartsalot.jpg/700px-BWB_Sir_Heartsalot.jpg"
+      }
+    },
+    {
+      "id": "TMA",
+      "height": 50,
+      "fill": {
+        "src": "https://awoiaf.westeros.org/images/thumb/2/24/Brave_Companions.svg/400px-Brave_Companions.svg.png"
+      }
+    },
+    {
+      "id": "Kadar-Yu",
+      "height": 50,
+      "fill": {
+        "src": "https://awoiaf.westeros.org/images/thumb/d/da/House_Frey.svg/500px-House_Frey.svg.png"
+      }
+    },
+    {
+      "id": "Baby",
+      "height": 50,
+      "fill": {
+        "src": "https://awoiaf.westeros.org/images/thumb/7/75/House_Mallister.svg/500px-House_Mallister.svg.png"
+      }
+    },
+    {
+      "id": "Qadi",
+      "height": 50,
+      "fill": {
+        "src": "https://awoiaf.westeros.org/images/9/94/Tomasz_Jedruszek_Wildling_Rabble.jpg"
+      }
+    },
+    {
+      "id": "Peyen",
+      "height": 50,
+      "fill": {
+        "src": "https://awoiaf.westeros.org/images/thumb/f/f3/Night%27s_Watch.svg/500px-Night%27s_Watch.svg.png"
+      }
+    },
+    {
+      "id": "Alsubhi",
+      "height": 50,
+      "fill": {
+        "src": "https://awoiaf.westeros.org/images/thumb/3/31/House_Tyrell.svg/500px-House_Tyrell.svg.png"
+      }
+    },
+    {
+      "id": "Almateari",
+      "height": 50,
+      "fill": {
+        "src": "https://awoiaf.westeros.org/images/thumb/e/e5/House_Bracken.svg/500px-House_Bracken.svg.png"
+      }
+    },
+    {
+      "id": "Horton",
+      "height": 50,
+      "fill": {
+        "src": "https://awoiaf.westeros.org/images/thumb/e/e5/House_Bracken.svg/500px-House_Bracken.svg.png"
+      }
+    },
+    {
+      "id": "Extended categories",
+      "height": 50,
+      "fill": {
+        "src": "https://awoiaf.westeros.org/images/thumb/e/e5/House_Bracken.svg/500px-House_Bracken.svg.png"
+      }
+    },
+    {
+      "id": "Alotaibi",
+      "height": 50,
+      "fill": {
+        "src": "https://awoiaf.westeros.org/images/thumb/e/e1/House_Blackwood.svg/500px-House_Blackwood.svg.png"
+      }
+    }
+  ],
+  "edges": [
+    { "from": "Partition-algebra", "to": "Blob-algebra" },
+    { "from": "Partition-algebra", "to": "Match-categories" },
+    { "from": "Combinatorics", "to": "Partition-algebra" },
+    { "from": "Partition-algebra", "to": "Potts-model" }, 
+    { "from": "Match-categories", "to": "Potts-model" },
+    { "from": "higher-gauge-theory", "to": "Blob-algebra" },
+    { "from": "Blob-algebra", "to": "Combinatorics" },
+    { "from": "Tiger categories", "to": "Blob-algebra" },
+    { "from": "Baby", "to": "Kadar-Yu" },
+    { "from": "TMA", "to": "Baby" },
+    { "from": "Baby", "to": "Combinatorics" },
+    { "from": "Qadi", "to": "Match-categories" },
+    { "from": "Qadi", "to": "Topological quantum tools" },
+    { "from": "Horton", "to": "Topological quantum tools" },
+    { "from": "Horton", "to": "Extended categories" },
+    { "from": "Horton", "to": "Baby" },
+    { "from": "Almateari", "to": "Match-categories" },
+    { "from": "Alsubhi", "to": "Match-categories" },
+    { "from": "Alsubhi", "to": "Partition-algebra" },
+    { "from": "Alotaibi", "to": "Kadar-Yu" },
+    { "from": "Alotaibi", "to": "Blob-algebra" },
+    { "from": "Kadar-Yu", "to": "Partition-algebra" },
+    { "from": "Peyen", "to": "Combinatorics" },
+    { "from": "TMA", "to": "Blob-algebra" },
+    { "from": "Computation", "to": "TMA" },
+    { "from": "Computation", "to": "Partition-algebra" },
+    { "from": "Computation", "to": "Statistical mechanics" },
+    { "from": "Peyen", "to": "Statistical mechanics" },
+    { "from": "TMA", "to": "Statistical mechanics" },
+    { "from": "Quantum groups", "to": "Schur-Weyl duality"},{ "from": "Cluster algebras", "to": "Quantum groups"},
+    { "from": "Schur-Weyl duality", "to": "Partition-algebra"},{ "from": "Associahedra", "to": "Cluster algebras"},
+    { "from": "", "to": ""},   
+    { "from": "Fedele", "to": "Cluster algebras"},   
+    { "from": "Morris", "to": "Kadar-Yu"},
+    { "from": "Statistical mechanics", "to": "Potts-model" }
+  ]
+}
