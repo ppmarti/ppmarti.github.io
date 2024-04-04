@@ -1,0 +1,93 @@
+<head>
+<script type="text/javascript" src="../common/LaTeXMathML.js.orig"></script>
+<link rel="stylesheet" type="text/css" href="../common/LaTeXMathML.standardartic
+le.css" />
+
+
+<script type="text/javascript">
+<!--
+function switchMenu(obj) {
+        var el = document.getElementById(obj);
+        if ( el.style.display != "none" ) {
+                el.style.display = 'none';
+        }
+        else {
+                el.style.display = '';
+        }
+}
+//-->
+</script>
+
+<script type="text/javascript">
+newcommand("\\nle","\u2270")
+newcommand("\\EE","{\\mathbf E}")
+</script>
+
+<title> E.G. Research Background Pages</title>
+</head>
+<HTML>
+
+
+<BODY BGCOLOR=white TEXT=black>
+HAVE A LOOK AT THE SOURCE OF THIS EXAMPLE TO SEE HOW IT DOES IT!
+<br>
+Including MACROS!
+<br>
+See also 
+Jipsen's original work
+<a href="http://www1.chapman.edu/~jipsen/mathml/asciimathextend.html">
+here</a>. 
+<br>
+(More useful links etc 
+at Knisely's possibly more regularly maintained page
+<a href="http://math.etsu.edu/LaTeXMathML/"> here</a>.)
+
+The main thing is the invocation of a script: 
+<a href="../common/LaTeXMathML.js">LaTeXMathML.js</a>
+(older version 
+<a href="../common/LaTeXMathML.js.orig">LaTeXMathML.js</a>
+).
+
+This script is updated from time to time (by Knisely I guess) 
+but one typically holds a local copy, so this is a snapshot from when it
+was downloaded. The upshot is that differences in behaviour of LaTeXMathML
+from page to page (see below for example) may be due to different 
+local versions at the host site.
+
+
+\section{Torture tests}
+We can do
+\[
+\sqrt{\sqrt{\sqrt{2}}} = \int_{b}^{a} f(x) dx
+\]
+But:
+There do appear to be some anomalies in certain font renderings at present.
+For example in mathbb:
+$\mathbb{M,N,L,P,R,Z}$
+
+Interestingly the successes in rendering mathbb on Knisely's page (above)
+seem to be the complement of those on Jipsen's page!
+(As far as my Firefox browser is concerned, of course.)
+
+ 
+\section{Intro notes on partition categories}
+\subsection{Notation}
+
+Here $S$ is a set. 
+$\Gamma(S)$ is the set of loop-free undirected graphs on $S$. 
+
+%\newcommand{\EE}{{\mathbf E}}
+
+$\EE(S)$ is the set of partitions on $S$ (in natural bijection 
+with the set of equivalence relations on $S$). 
+
+\begin{proposition}
+$$
+2 \nle 1
+$$ 
+\end{proposition}
+\begin{lemma} To do. \end{lemma}
+\begin{lemma} To do. \end{lemma}
+
+</BODY>
+</HTML>

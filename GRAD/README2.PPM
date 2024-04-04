@@ -1,0 +1,12 @@
+
+pcat.hmtl (pcatv0.html is experimental version or toggled main version)
+ pcat-refs.html
+ pcat-heuristic.html
+ pcat-notationI.html
+
+NOTES
+there is a script in pcat-notationI.html for incrementing susbection #
+
+in pcatv0.html some figures have width=100 set
+(should probably do this in pcat.html)
+

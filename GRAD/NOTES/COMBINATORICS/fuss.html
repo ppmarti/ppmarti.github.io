@@ -1,0 +1,148 @@
+
+<html>
+<head>
+<style type="text/css">
+h1 {color: blue; }
+h1 {font-family: Verdana,
+Arial, Sans-serif;}
+.my {color: red;}
+</style>
+<title>Combinatorics 2</title>
+</head>
+<body>
+
+<a href=".">(back)</a>
+<b>TO DO  Combinatorics section </b>
+<hr>
+<h2> Symmetric group/geometry/set partition Notes</h2>
+There is no low-dimensional geometry in the symmetric group.
+But there are substructures 
+and enhancements with geometrical features
+(such as Coxeter generators - see e.g. [Humphreys]).
+This leads to various interesting bits of maths - in particular
+some combinatorics.
+<p>
+<h3> The line and the plane </h3>
+We start by explaining the figure 
+
+<br>
+
+<img src="../../../IMAGES/perm2part2.gif" width="280cm">
+<img src="clus6xxx.jpg" width="300" align="right">
+
+<br>
+
+This figure (from [MarshMartin06]) summarizes various maps. 
+<br>
+The first is the chi map 
+from S_n to the set of set partitions of a set of order n.
+<br>
+For a perm p 
+(an element of S_n written as the image of sequence 123...n _after_ the 
+permutation has been applied)
+<br>
+then chi(p) is the relation with pair (i,j) 
+whenever i>j and i immediately precedes j in p.
+<br>
+(Note here that we are using an underlying property of the set 
+being permuted - a property not intrinsic to S_n.)
+<br>
+The partition obtained from this relation is the RST closure.
+<p>
+Note that this map is not injective.
+<p>
+Next we need the notion of c-sort.
+Let c be a word in the Coxeter generators containing one copy of each.
+<br>
+(We can take c=s_1 s_2 ... s_{n-1} here.)
+<br>
+Then every perm may be obtained from some power of c (as a word)
+by deleting some factors.
+<br>
+Consider the set of factors kept from each `block' 
+(copy of c). If the set
+from block i is a subset of the set from block i-1 for all i then
+p is c-sortable.
+<br>
+CLAIM: chi is a bijection from c-sortable elements to non-crossing partitions. 
+<br>
+Next we need a bijection from c-sortable elements to c-clusters.
+<br>
+One fixes a reference triangulation of the n+2-gon 
+- in our case we take a fan triangulation,
+with the diagonals numbered consecutively.
+Each triangulation then gives (relative to the reference)
+a cluster - the list of 
+sets of numbered fan diagonals crossed by each diagonal.
+
+...
+
+<p>
+Homework:
+c-clusters are in bijection with diagonal triangulations of the n-gon.
+How can we lift this 
+whole setup
+to m+2-angulations of the sm+2-gon?
+
+<ul>
+<li>
+
+Some _very_ draft  notes 
+  <ul>
+
+  </ul>
+</ul>
+<p>
+<hr>
+<h4>To do</h4>
+This is a work in progress. Here we note some jobs that need doing
+(entirely for my own organisational benefit).
+<ul>
+             </ul>
+  <ul><li> 
+  </ul>
+<li>
+</ul>
+
+<p>
+<p>
+<hr>
+<h4>Suggested further reading</h4>
+<a href="../symmetric.html">On representation theory of the symmetric group</a>
+<br>
+<a href="http://webprod1.leeds.ac.uk/catalogue/dynmodules.asp?Y=201112&M=MATH-3193">Algebras and Representations</a> Leeds undergraduate module
+<br>
+<a href="../../SEMINARS/LAGC2008-symmetric.html">References on representation theory of the symmetric group</a>
+<br>
+<a href="http://www.math.columbia.edu/~khovanov/resources/">
+Khovanov's rep theory resources </a>
+<br>
+<a href="http://books.google.com/books?id=cezF63340GAC&printsec=frontcover&dq=david+benson&lr=&ei=gSdsS_azNJK-MquXnY4L&cd=2#v=onepage&q=&f=false"> Benson, Representations and Cohomology: Basic representation theory of finite groups and associative algebras </a>
+<br>
+<a href="http://books.google.com/books?id=K_5pywGiHLgC&lpg=PP1&pg=PA57#v=onepage&q=&f=false">J A Green, Polynomial representations of GLn (Springer)
+(version with K Erdmann and M Schocker)</a>
+<br>
+<a href="http://books.google.com/books?id=ayNHpi3tYhQC&printsec=frontcover&dq=assem&source=gbs_similarbooks_s&cad=1#v=onepage&q=&f=false">
+Assem, Simson and Skowronski, Vol.1 (LMS ST65) </a>
+<br>
+<a href="http://books.google.com/books?id=RKwjeZKMr8oC&printsec=frontcover&dq=curtis+reiner&ei=gB9sS8LPGZLqNeHp-Y8P&cd=1#v=onepage&q=&f=false">
+Curtis and Reiner, Representation theory of finite groups and associative algebras, Wiley Interscience </a>
+<br>
+Curtis and Reiner, Methods of representation theory I, Wiley Interscience
+<br>
+<a href="http://books.google.com/books?id=c0o9_wlCzgcC&printsec=frontcover&dq=morton+hamermesh&ei=FCBsS8-9EKLeygSd5p2iDg&cd=1#v=onepage&q=&f=false">Hamermesh, Group Theory </a>
+<br>
+<a href="http://books.google.com/books?id=Gb3ZaoABbZAC&printsec=frontcover&dq=assem&source=gbs_similarbooks_s&cad=1#v=onepage&q=assem&f=false">Gabriel and Roiter, Representations of finite-dimensional algebras </a>
+<br>
+<a href="http://books.google.com/books?id=Y8eGIiiHIj4C&pg=PP1&dq=jain+parvathi&ei=ViVsS_aEI6SyNJKS8f8K&cd=1#v=onepage&q=&f=false">Jain and Parvathi, Noncommutative rings, group rings, diagram algebras, and their applications </a>
+<br>
+...
+
+<p>
+Organiser:
+<a href=..>Paul</a>
+
+<hr>
+
+</body>
+

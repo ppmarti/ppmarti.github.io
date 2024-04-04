@@ -1,0 +1,166 @@
+<head>
+<script type="text/javascript" src="../common/LaTeXMathML.js"></script>
+<link rel="stylesheet" type="text/css" href="../common/LaTeXMathML.standardartic
+le.css" />
+
+
+<script type="text/javascript">
+<!--
+function switchMenu(obj) {
+        var el = document.getElementById(obj);
+        if ( el.style.display != "none" ) {
+                el.style.display = 'none';
+        }
+        else {
+                el.style.display = '';
+        }
+}
+//-->
+</script>
+
+<script type="text/javascript">
+newcommand("\\nle","\u2270")
+newcommand("\\EE","{\\mathbf E}")
+newcommand("\\pp","{\\mathtt p}")
+newcommand("\\Z","{\\mathbb Z}")
+newcommand("\\N","{\\mathbb N}")
+newcommand("\\ppic","(R,V,\\lambda,S)")
+</script>
+
+
+
+<script type="text/javascript">
+<!--
+function switchMenu(obj) {
+        var el = document.getElementById(obj);
+        if ( el.style.display != "none" ) {
+                el.style.display = 'none';
+        }
+        else {
+                el.style.display = '';
+        }
+}
+//-->
+</script>
+
+
+
+
+
+<title> E.G. Research Background Pages</title>
+</head>
+<HTML>
+
+
+<BODY BGCOLOR=white TEXT=black>
+
+<a href="../RESEARCH/grad.html"> grad school home </a> 
+&nbsp; &nbsp;
+<a href="../projects.html"> up </a> 
+&nbsp; &nbsp;
+&nbsp; &nbsp; 
+| &nbsp; &nbsp;  <b>Introductory notes on partition categories </b>
+&nbsp; &nbsp; 
+&nbsp; &nbsp; 
+&nbsp; &nbsp; 
+|  WORK IN PROGRESS!!!
+
+<hr>
+<a onclick="switchMenu('myvar002');" title="REVEAL/CONCEAL">
+<font color="blue">
+Jump (Click me)
+</font>
+</a>
+        <div id="myvar002" style="overflow:hidden;display:none">
+
+<script type="text/javascript" src="contents1.js"></script>
+
+</div>
+
+<script>
+sectionCntr="1";
+LaTeXCounter["subsection"]="0";
+LaTeXCounter["subsection"]++;
+</script>
+
+
+<!-- 
+\section{Introductory notes on partition categories}
+
+<a href="pcat-refs.html">
+\subsection{Some references}
+</a>
+--!>
+
+\subsection{Heuristic definition}
+Before giving a technical definition let us give a quick heuristic 
+definition of a simple case of a partition category.
+<br>
+Firstly,
+purely as a warm-up exercise,
+recall that the category $\underline{Set}$
+\[
+\underline{Set}  = (Sets, hom(-,-), \circ )
+\]
+has object class the class of sets, hom(A,B) is set maps and $\circ$
+is function composition. 
+There is a full isomorphism dense subcategory 
+of the subcategory of finite sets in which sets are replaced
+by their cardinalities. That is, the object set is 
+$\N_0$.
+Function compositions can be computed pictorially using, for example,
+mapping diagrams, as illustrated here:
+<p>
+<img src="venn1.jpg" width="130" align="centre">  <p>
+
+&nbsp
+
+The <b>partition category</b> may be defined as follows.
+Fix a commutative ring $k$ and $\delta\in k$.
+Consider the triple 
+\[
+P  = (\N_0 , kP(n,m) , *)
+\]
+where $P(S)$ denotes the set partitions of set $S$; and 
+$P(n,m) = P(\underline{n} \sqcup \underline{m})$
+where $\underline{n} = \{ 1 ,2, ..., n \}$. 
+The composition $*$ can be described as follows. 
+
+Firstly one draws a picture of a set partition $p$ of 
+`vertex set' $S=\underline{n} \sqcup \underline{m}$ 
+as a graph drawn in a rectangular box, with the elements of $S$ drawn on 
+the frame: $\underline{n}$ on the northern edge; and $\underline{m}$ on
+the southern. 
+Two elements of $S$ are in the same part if they are in the same
+graph component. For example:
+<p>
+<img src="partit1.jpg" width="370" >
+<p>
+Given pictures of a composable pair of partitions $p,p'$ one draws $p*p'$
+as the stack of the two pictures, identifying the `middle' sets
+of vertices (just as for the set map composition above - 
+except that we have rotated the pictures to remind ourselves
+that these are _not_ set maps <em>per se</em>):
+<p> 
+<img src="partit3.jpg" width="410" >
+
+<p>
+We
+recover a partition from the stack as indicated. If $c$ internal
+connected graph components are discarded in this process 
+one scales by a factor $\delta^c$, again as indicated.
+<p>
+
+It is an exercise to check the axioms. 
+Next we will try to be a little more precise about the definition of $P$. 
+
+
+<hr>
+  <a href="pcat.html"> Here </a> next.
+
+...
+
+<hr>
+
+</BODY>
+</HTML>

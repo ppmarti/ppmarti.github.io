@@ -1,0 +1,223 @@
+<head>
+<script type="text/javascript" src="../common/LaTeXMathML.js"></script>
+<link rel="stylesheet" type="text/css" href="../common/LaTeXMathML.standardartic
+le.css" />
+
+
+<script type="text/javascript">
+<!--
+function switchMenu(obj) {
+        var el = document.getElementById(obj);
+        if ( el.style.display != "none" ) {
+                el.style.display = 'none';
+        }
+        else {
+                el.style.display = '';
+        }
+}
+//-->
+</script>
+
+<script type="text/javascript">
+newcommand("\\nle","\u2270")
+newcommand("\\EE","{\\mathbf E}")
+newcommand("\\pp","{\\mathtt p}")
+newcommand("\\Z","{\\mathbb Z}")
+newcommand("\\N","{\\mathbb N}")
+newcommand("\\ppic","(R,V,\\lambda,S)")
+</script>
+
+
+
+<script type="text/javascript">
+<!--
+function switchMenu(obj) {
+        var el = document.getElementById(obj);
+        if ( el.style.display != "none" ) {
+                el.style.display = 'none';
+        }
+        else {
+                el.style.display = '';
+        }
+}
+//-->
+</script>
+
+
+
+
+
+<title> E.G. Research Background Pages</title>
+</head>
+<HTML>
+
+
+<BODY BGCOLOR=white TEXT=black>
+
+<a href="../RESEARCH/grad.html"> grad school home </a> 
+&nbsp; &nbsp;
+<a href="../projects.html"> up </a> 
+&nbsp; &nbsp;
+&nbsp; &nbsp; 
+| &nbsp; &nbsp;  <b>Introductory notes on partition categories </b>
+&nbsp; &nbsp; 
+&nbsp; &nbsp; 
+&nbsp; &nbsp; 
+|  WORK IN PROGRESS!!!
+
+<hr>
+<a onclick="switchMenu('myvar002');" title="REVEAL/CONCEAL">
+<font color="blue">
+Jump (Click me)
+</font>
+</a>
+        <div id="myvar002" style="overflow:hidden;display:none">
+
+<script type="text/javascript" src="contents1.js"></script>
+
+</div>
+
+<script>
+sectionCntr="1";
+LaTeXCounter["subsection"]="1";
+LaTeXCounter["subsection"]++;
+</script>
+
+
+<font size="2">
+ 
+\subsection{Notation for sets and graphs I}
+
+
+<a onclick="switchMenu('myvar102');" title="REVEAL/CONCEAL">
+<font color="blue">
+\subsubsection{Disjoint Set notations (Click Me)}
+</font>
+</a>
+        <div id="myvar102" style="overflow:hidden;display:none">
+
+
+Here $S$ is a set. 
+For $i$ any suitable symbol, $S^i = S \times \{ i \}$.
+<br>
+Thus $S^\alpha \cup S^1 \cup S^0$ contains three distinct copies of $S$.
+<br>
+(The notation $S^2 = S \times S$ is also used, but our intention
+will always be clear by context.)
+<br>
+
+Define $\sigma : \Z \rightarrow \Z$ by $\sigma(i)=i+1$.
+Define $\sigma_- : \Z \rightarrow \Z$ by
+$\sigma_-(2)=1$
+and $\sigma_-(i)=i$ otherwise.
+
+If $\alpha \in \Z$ then 
+$\iota^\sigma: S^\alpha \rightarrow S^{\sigma(\alpha)}$
+is given by $(x,\alpha) \mapsto (x,\sigma(\alpha) )$.
+Extend this naturally so that $\iota^\sigma (S^1 \cup T^0) = S^2 \cup T^1$
+and $\iota^{\sigma_-} (S^2 \cup T^0) = S^1 \cup T^0$
+and so on. 
+
+</div>
+
+$P_{S}(T)$ denotes the set of subsets of set $T$ whose orders lie in 
+list $S \subset \N$. 
+Example: 
+$P_{1,2}(\{a,b,c \}) 
+= \{ \{ a \}, \{ b \} , \{ c \}, \{ a,b \} , \{ a,c \} , \{ b,c \} \}$. 
+
+%$\mathbb{M,N}$
+
+\subsubsection{Graphs }
+
+An <em>(undirected) graph</em> is a triple $g=(V,E,f)$ where $V,E$ are sets 
+(vertex set and edge set respectively) and 
+$f:E \rightarrow P_{1,2}(V)$.
+(A handy reference using a slightly different notation is <a href="http://cr.yp.to/2005-261/bender2/GT.pdf"> here </a>.)
+
+\subsubsection{Graphs and pictures}
+
+It will be useful to
+ represent a graph $g$
+on a countable vertex set by a
+picture. 
+For an exposition, see 
+<a href="pcat-pic.html">here</a>
+or
+<a href="pcat-pic1.html">here</a>
+.
+
+<img src="xfig/grap001.gif" align='left'>
+<a name="pdpic"></a>
+
+%Exercise: 
+%It will be useful to 
+% represent a graph $g$ on a countable vertex set by a picture. 
+A <em>plane drawn picture</em>
+$d = \ppic$
+is a closed rectangular interval of the plane $R$ together with
+a label set $V$, an injective map 
+$\lambda : V \rightarrow R$, and  a subset $S$ of $R$ 
+consisting of smoothly embedded line intervals terminating at
+certain of the marked points $\lambda: V$. 
+<br>
+(Obviously such a thing can only be approximated by a `drawn picture' in the 
+artistic sense, but we will use PDPs in such a way that 
+such approximations are
+generally sufficient. With this caveat we will speak of `drawing' PDPs,
+and indeed speak of pictures such as the one on the left as if they
+are PDPs.)
+<p>
+<a name="alcove"></a>
+An <em> alcove </em> of such a picture $\ppic$ is a connected component of 
+$R \setminus S$. 
+(See also <a href="https://sites.google.com/site/algebraicstatisticalmechanics/Home/tutorial-reviews/kramers-wannier-duality/geometric-preliminaries">here</a>.)
+
+<a name="pdp"></a>
+<a name="pdpgen"></a>
+
+A set of line interval embeddings is
+<em>generic</em>
+if when two lines  meet at an unmarked point the tangents do not coincide;
+(we may also require that no third line  passes through
+such a point;)
+and no line meets a marked point except at an endpoint.
+<p>
+In order to represent a graph $g=(V,E,f)$ by such a picture $\ppic$,
+one proceeds as follows. 
+First one draws  marked points such that each may be identified with a 
+ vertex in $V$. 
+Each edge $\epsilon$ in $E$ is then represented by a line interval
+between the vertices in $f(\epsilon)$, and labelled by $\epsilon$.
+There is much freedom of choice in this, but one wants 
+that a complete single line can be determined unambiguously from the
+drawn set of lines.
+To this end the set of line interval embeddings is
+chosen to be 
+<br>
+&nbsp
+<em>generic</em>.
+<br>
+(This is sophistry, in that it is not really possible to determine
+tangents to lines by looking at drawn pictures, except within some tolerance.
+Thus if we use pictures in practice, tangents must not only be 
+different, but sufficiently different.)
+<p>
+In such a picture we shall call the boundary of the rectangular region
+the <em> frame </em>.
+A vertex may lie on the frame (call such a vertex <em>exterior</em>), 
+but by convention 
+a line interval may touch the frame
+only at its endpoints.
+ 
+
+
+
+<!--
+
+-->
+
+<hr>
+
+</BODY>
+</HTML>

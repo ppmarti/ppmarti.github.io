@@ -1,0 +1,321 @@
+<head>
+<script type="text/javascript" src="../common/LaTeXMathML.js"></script>
+<link rel="stylesheet" type="text/css" href="../common/LaTeXMathML.standardartic
+le.css" />
+
+
+<script type="text/javascript">
+<!--
+function switchMenu(obj) {
+        var el = document.getElementById(obj);
+        if ( el.style.display != "none" ) {
+                el.style.display = 'none';
+        }
+        else {
+                el.style.display = '';
+        }
+}
+//-->
+</script>
+
+<script type="text/javascript">
+newcommand("\\nle","\u2270")
+newcommand("\\EE","{\\mathbf E}")
+newcommand("\\pp","{\\mathtt p}")
+newcommand("\\Z","{\\mathbb Z}")
+newcommand("\\circc","\u2297")
+newcommand("\\pbase","{P^{\\circ}}")
+</script>
+
+
+
+<script type="text/javascript">
+<!--
+function switchMenu(obj) {
+        var el = document.getElementById(obj);
+        if ( el.style.display != "none" ) {
+                el.style.display = 'none';
+        }
+        else {
+                el.style.display = '';
+        }
+}
+//-->
+</script>
+
+
+
+
+
+<title> E.G. Research Background Pages</title>
+</head>
+<HTML>
+
+
+<BODY BGCOLOR=white TEXT=black>
+
+<a href="pcat.html"> back to Partition Categories </a>
+$\qquad$ $\qquad$ 
+WORK IN PROGRESS!!!
+
+<hr>
+ 
+\section{Introductory notes on partition categories}
+
+
+
+
+
+
+<a onclick="switchMenu('myvar003');" title="REVEAL/CONCEAL">
+<font color="blue">
+Preliminary Notes  (Click Me)
+</font>
+</a>
+        <div id="myvar003" style="overflow:hidden;display:none">
+
+
+Note that  ...
+<br>
+
+
+
+
+</div>
+
+
+
+
+
+
+\section{Representation theory}
+
+Fix a field $k$ and an element $\delta \in k$.
+This fixes a partition category $P$ 
+and, for each $n$, 
+the partition algebra $P_n$ as the $n$-th End-set $P(n,n)$ in $P$. 
+<br>
+Write $\circc$ for the monoidal composition in $P$, given by 
+side-by-side (as opposed to vertical) composition of partition diagrams.
+<br>
+Write $1_n$ for the identity element in $P(n,n)$. 
+<br>
+\subsection{Notations for set partitions}
+
+Write $P^{\circ}(n,m)$ for the basis of 
+hom-set $P(n,m)$
+consisting of set partitions (of the set consisting of a row of $n$
+and a row of $m$ `vertices', labelled $1,2,...,n$ and $1',2',...,m'$
+respectively). 
+<br>
+Write ${\pbase}^l (n,m)$ for the subset of ${\pbase} (n,m)$ consisting of
+partitions with $l$ propagating parts. 
+<br>
+Note that in $p \in {\pbase}^l (n,l)$ each primed vertex lies in a distinct 
+propagating part.  
+<br>
+Fix a partition $p$ in ${\pbase} (n,m)$. 
+Each propagating part has a lowest numbered vertext
+from $1,2,...,n$ and a lowest numbered vertex from $1',2',...,m'$. 
+<br>
+One could draw a picture for $p$ in which the only lines drawn between the unprimed
+and the primed side correspond to propagating parts, 
+and are drawn between lowest-numbered
+unprimed vertex and lowest-numbered primed vertex in each case.
+<br> 
+The `low-shell' of $p$ is the partition obtained by replacing each propagating part
+by a part containing just the two lowest numbered elements, with all other elements
+being singletons.
+We say two propagating parts are low-non-crossing
+if their image in the low-shell is non-crossing in the obvious sense. 
+We say $p$ is low-non-crossing if each pair of propagating parts is
+low-non-crossing.
+For example $1_n$ is (equal to its low-shell and) low-non-crossing.
+
+Note that $p$ can be low-non-crossing without being a plane partition.
+
+\begin{proposition}
+Every $p \in {\pbase}^l (n,m)$ 
+can be expressed in the form $p_L * p_R$ where 
+$p_L \in {\pbase}^l (n,l)$ and $p_R \in {\pbase}^l (l,m)$. 
+\end{proposition}
+
+Proof: use the remarks about pictures above. 
+ 
+
+<p>
+Let ${\pbase}^{=l}(n,m)$ denote the subset of ${\pbase}^l (n,m)$
+consisting of low-non-crossing elements.
+
+\begin{proposition}
+Every $p \in {\pbase}^{l} (n,l)$
+can be expressed in the form $p_L * p_R$ where
+$p_L \in {\pbase}^{=l} (n,l)$ and $p_R \in {\pbase}^l (l,l)$.
+\end{proposition}
+
+Proof: Elements $p_R$ of the given form can be used to `uncross any crossing'.
+And they are invertible.
+
+\begin{proposition}
+The category composition defines  bijections
+\begin{eqnarray}
+ * :  {\pbase}^{l} (n,l)   \times     {\pbase}^{=l} (l,m)
+ & \rightarrow  &   {\pbase}^{l} (n,m) 
+\label{eq01}
+\\
+(p_L , p_R ) & \mapsto & p_L * p_R
+\end{eqnarray}
+\begin{eqnarray}
+ ** :  {\pbase}^{=l} (n,l) \times  {\pbase}^l (l,l) \times    {\pbase}^{=l} (l,m)
+ & \rightarrow  &  {\pbase}^{l} (n,m) 
+\\
+(p_L , p_C , p_R)  &  \mapsto &  p_L * p_C * p_R
+\end{eqnarray}
+\end{proposition}
+
+
+
+
+\subsection{Useful elements}
+
+Fix a natural inclusion of algebras 
+\[
+P_{n-1} \subset P_{n}
+\]
+by 
+$
+p \mapsto p \cup \{ \{  n , n' \}\}   \;   =  p \circc 1_1
+$.
+The identity element in $P_0$ is the empty partition. Note that this
+and the (iterated) inclusion map above determines the identity in $P_n$. 
+
+Define an element 
+\[
+%a_1 = \{ \{ 1 \}, \{ 1' \}, ... \}
+a_1 = \{ \{ 1 \}, \{ 1' \}  \}
+\in P_1
+\]
+Define $a_1$ in $P_n$ by inclusion
+(so it is <em> otherwise </em> the same as the identity element). 
+That is $a_1 = \{ \{ 1 \} , \{ 1' \} \} \otimes 1_{n-1}$ in $P_n$.
+Define $a_i$ similarly. 
+Define 
+\[
+e_i = \frac{1}{\delta} a_i
+\]
+Note that this is idempotent. 
+Define
+$E_n = e_1 e_2 ... e_n$ 
+and 
+$E_n^l = e_1 e_2 ... e_{n-l}$. 
+(The point of this notation is that, in $P_n$, 
+$E_n^l$ is a scalar multiple of a partition with $l$ propagating components.)
+
+Note the useful isomorphism
+\begin{equation}
+E_n^l P_n E_n^l \cong P_l  .
+\end{equation}
+In particular
+we have
+\[
+%e_1 e_2 ... e_n
+E_n P_n E_n = k E_n
+\]
+Now for any ring $R$ and idempotent $e \in R$, $eRe$ a local ring
+implies that $e$ is primitive. 
+Thus, $E_n$ is a primitive idempotent. 
+
+\subsection{Ideals}
+Consider the chain of ideals
+\[
+P_n \supset P_n e_1 P_n \supset P_n e_1 e_2 P_n \supset ...
+\supset P_n e_1 e_2 ... e_n P_n
+\]
+Define $P_n^l = P_n e_1 e_2 ... e_{n-l} P_n$.
+<!-- It is easy to check that -->
+<br>
+<b>Proposition.</b>
+The ideal
+$P_n^l$ is  spanned by partitions 
+with at most $l$ propagating components. 
+<br>
+Proof: Exercise.
+<br>
+Define quotient algebra $P_n^{/l} = P_n / P_n^l$. 
+This is like $P_n$, except that any partition basis element with $l$ or fewer
+propagating components is congruent to 0.
+<br>
+In particular $E_n^m = 0$ unless $m > l$ in $P_n^{/l}$. 
+
+Let $S_n$ denote the symmetric group. 
+\begin{proposition}
+We have  isomorphisms of $k$-algebras 
+\[
+E_n^{l+1} P_n^{/l} E_n^{l+1} \cong P_{l+1}^{/l}
+      \cong k S_{l+1}
+\]
+\end{proposition}
+Proof:
+We can choose a subset of the partition basis of $P_n$ to form a basis for the algebra
+on the left.
+ No such element on the left can have more than $l+1$ propagating components
+by virtue of the factor $E_n^{l+1}$;
+nor less than $l+1$ by virtue of the quotient. 
+
+Consider a
+ complete orthogonal idempotent decomposition of 
+$
+1 = \sum_\lambda f_\lambda
+$
+ in $kS_{l+1}$ 
+(recall that such a decomposition exists for any artinian ring;
+and that each $f_\lambda kS_{l+1} f_\lambda$ is a local ring
+- see e.g. [AndersonFuller]).
+<br>
+This will now
+give us a collection of primitive idempotents in $P_n^{/l}$:
+setting 
+$$
+F_\lambda = E_{n-({l+1})} \circc f_{\lambda}
+          = E_n ^{l+1} (1_{n-(l+1)} \circc f_\lambda )
+$$ 
+(in the  side-by-side notation)
+we have
+\[
+F_\lambda P_n^{/l} F_\lambda = 
+( E_{n-({l+1})} \circc f_\lambda ) 
+    P_n^{/l} 
+      ( E_{n-({l+1})} \circc f_\lambda ) 
+= E_{n -( {l+1})} \circc  ( f_\lambda P_{l+1}^{/l} f_\lambda )
+\cong f_\lambda (k S_{l+1} ) f_\lambda 
+%= kf_\lambda
+\]
+a local ring. 
+Thus 
+\[
+\Pi_\lambda = 
+P_n^{/l} F_\lambda
+\]
+is indecomposable projective in the quotient. 
+Hence it is indecomposable with simple head in $P_n$.
+
+
+\subsection{Modules}
+Define $P_n,P_n$-bimodule
+\[
+\bar{P}_n^l = P_n^l / P_n^{l-2}
+\]
+Note that this has a basis of 
+the $(n,n)$-partitions with $l$ propagating `lines'
+(components). 
+
+We have the following useful decomposition...
+
+Cf. Equation(\ref{eq01}). 
+
+...
+
+<hr>
+
+</BODY>
+</HTML>

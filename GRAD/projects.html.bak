@@ -1,0 +1,77 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.51 [en] (X11; I; Linux 2.2.5-15 i686) [Netscape]">
+   <meta name="Author" content="Paul P Martin">
+   <meta name="Description" content="Might be useful one day...">
+   <title>PPM: Reference Section</title>
+</head>
+<body bgcolor="#FFFFFF">
+&nbsp;
+<a href="http://www.maths.leeds.ac.uk/~ppmartin/">BACK</a> or 
+<a href="http://www.maths.leeds.ac.uk/">Mathematics Department Home</a>
+<p>
+<hr WIDTH="100%">
+<p><b>Paul Martin: Reference Section</b>
+<br><a NAME="collabs"></a><b>Projects...</b>
+
+<p>
+<!}}}>
+
+
+At present this page simply indicates some areas of study in which there are
+many interesting open problems, some of which are suitable for PhD projects.
+
+<p>
+
+<table border="0" cellpadding="5" cellspacing="2" width="100%">
+<tbody>
+   <tr>
+     <td valign="top">       
+     <ul type="circle">
+         <li> Partitioned Binary Relations 
+         <ul> Useful references
+            <ul><li><a href="http://www.sciencedirect.com/science/article/pii/S0021869397973956">Mohan Putcha's paper on C-reps of monoids</a>
+                  <li><a href="http://arxiv.org/abs/1102.0862">Martin and Mazorchuk's definition of PBRs</a>
+      </ul>
+      </ul>
+	<li> <a href="./GRAD/pcat.html">The partition category</a> (this section is currently under construction)
+<ul>
+<li> <a href="./GRAD/pcat.html">1. Introduction/notation</a>
+<ul>
+<li> <a href="./GRAD/pcat-refs.html">1.1 References</a>
+<li> <a href="./GRAD/pcat-part.html">1.4 Partitions</a>
+<li> <a href="./GRAD/pcat-part.html#pc">1.5 The partition categories</a>
+</ul>
+<li> <a href="./GRAD/pcat-rep.html">2. Representation theory</a>
+<li> <a href="./GRAD/pcat-ex.html">3. Further exercises</a>
+</ul>
+        <li> <a href="qi.html"> Quantum information </a> (you will need a considerable amount of background in quantum mechanics as well as algebra to take this one on!) (this section is currently under construction - but worth a look)
+      </ul>
+       <br>
+       </td>
+     </tr>
+   
+  </tbody> 
+</table>
+   
+<br>
+<hr WIDTH="100%">
+<p><a href="http://www.maths.leeds.ac.uk/~ppmartin/">BACK</a>
+<br>&nbsp;
+</body>
+</html>
+
+
+
+<!{{{> <! Local Variables >
+
+<!--  Local Variables:  -->
+<!--  mode: html  -->
+<!--  folded-file: t   -->
+<!--  fold-top-mark: "<!{{{>"  -->
+<!--  fold-bottom-mark: "<!}}}>"  -->
+<!--  End:  -->
+<!}}}>
+

@@ -1,0 +1,294 @@
+<head>
+<script type="text/javascript" src="../common/LaTeXMathML.js"></script>
+<link rel="stylesheet" type="text/css" href="../common/LaTeXMathML.standardartic
+le.css" />
+
+
+<script type="text/javascript">
+<!--
+function switchMenu(obj) {
+        var el = document.getElementById(obj);
+        if ( el.style.display != "none" ) {
+                el.style.display = 'none';
+        }
+        else {
+                el.style.display = '';
+        }
+}
+//-->
+</script>
+
+<script type="text/javascript">
+newcommand("\\nle","\u2270")
+newcommand("\\EE","{\\mathbf E}")
+newcommand("\\pp","{\\mathtt p}")
+newcommand("\\Z","{\\mathbb Z}")
+newcommand("\\N","{\\mathbb N}")
+newcommand("\\C","{\\mathbb C}")
+newcommand("\\caP","{\\mathcal P}")
+</script>
+
+
+
+<script type="text/javascript">
+<!--
+function switchMenu(obj) {
+        var el = document.getElementById(obj);
+        if ( el.style.display != "none" ) {
+                el.style.display = 'none';
+        }
+        else {
+                el.style.display = '';
+        }
+}
+//-->
+</script>
+
+
+
+
+
+<title> E.G. Research Background Pages</title>
+</head>
+<HTML>
+
+
+<BODY 
+BGCOLOR=white TEXT=black>
+
+<a href="grad.html"> grad home </a> 
+&nbsp; &nbsp;
+<a href="../projects.html"> projects home </a> 
+&nbsp; &nbsp;
+<a href="pcat.html"> up </a> 
+&nbsp; &nbsp;
+| &nbsp; &nbsp;  <b> Introductory notes on partition categories </b>
+&nbsp; &nbsp; &nbsp; &nbsp;
+|  WORK IN PROGRESS!!!
+
+<hr>
+
+
+
+<script>
+sectionCntr="1";
+LaTeXCounter["subsection"]="3";
+LaTeXCounter["subsection"]++;
+</script>
+
+%\setcounter{section}{1}
+%\setcounter{subsection}{4}
+
+\subsection{Partitions}
+%\newcommand{\EE}{{\mathbf E}}
+
+Here $S$ is a set and $2^S$ the power set of $S$
+(so $2^{S \times S}$ is the set of relations on $S$ to $S$).
+Let
+\[
+TC: 2^{ S\times S }  \rightarrow  2^{ S\times S }
+\]
+be reflexive, symmetric transitive (RST) closure. 
+That is, $TC(\rho )$ is the smallest equivalence relation containing 
+relation $\rho$ on $S$ to $S$.
+<br>
+$\EE(S)$ denotes the set of partitions on set $S$. 
+Note that $\EE(S)$ is in natural bijection 
+with the set of equivalence relations on $S$. It will be convenient to
+treat this bijection as an identification.
+<br>
+Example: The partition $\{\{ 1,2 \} , \{ 3 \}\} $
+is written $ \{ (1,2) , (2,1), (1,1) ,(2,2) , (3,3) \}$ as a relation.  
+<br>
+$\EE(S,T) := \EE(S^1 \cup T^0)$ 
+<br>
+Recall that $\underline{n} := \{ 1,2,..., n \}$ and define
+$\EE(n,m) = \EE(\underline{n} , \underline{m})$.
+<br>
+Example: $\EE(2,0) = \{ \{ \{ 1^1, 2^1 \} \} , \{ \{ 1^1 \} , \{ 2^1 \}\}\}$.
+
+If    $T \subset S$ and $p \in \EE(S)$ then $p|_T$ 
+(or $p$ regarded as a partition of $T$) denotes the restriction of $p$ to $T$.
+
+%$\nle$ 
+
+\subsubsection{On graphs and partitions}
+
+Given a set $S$, let
+\[
+\pp: \Gamma(S) \rightarrow \EE(S)
+\]
+denote the map which takes graph $g$ to the partition into connected
+components. 
+For $T \subset S$ let 
+\[
+\pp: \Gamma(S) \rightarrow \EE(T)
+\]
+be $\pp(g) = \pp(g)|_T$.
+
+\subsubsection{On pictorial realisations of partitions}
+
+A <em> diagram </em> for $q \in \EE(S)$ is any 
+relative graph $g$ such that $\pp(g) =q$,
+or $\pp(g) |_S = q$.
+(Usually we have in mind a plane drawn picture of $g$ as 
+<a href="pcat.html">above</a>.)
+
+Among the graphs $g$ in $\pp^{-1} (q)$ are ones for which the structure map from $S$ is injective. 
+In `drawing' partitions 
+we will usually use pictures of graphs of this type,
+so that each $s \in S$ labels a different vertex.
+(Although of course if $s,t \in S$ did `label' the same vertex this would simply put them in the same component and hence in the same part.)
+Indeed, by a <em> picture </em> of a partition $q$ we will generally mean
+such a picture. 
+
+\begin{figure}
+\caption{Two  pictures encoding the same example partition from $\EE(7,3) = \EE(\{ 1,2,..., 7 \} , \{ 1,2,3 \} )$.}
+\includegraphics{xfig/partit-low2ab.gif}
+\end{figure}
+%\includegraphics{xfig/partit-low2a.gif}
+
+<a name="fdc"></a>
+Let us unpack the drawing conventions 
+a little further in case of a partition from some $\EE(n,m)$.
+In this case each of the subsets of vertices has a natural order on it.
+If we are indeed drawing pictures of (a graph representing) the 
+partition <em> in the plane </em>
+then we will generally draw the labelled vertices in the natural order 
+(left to right) on the frame - as in the Figure. 
+We will call this the <em> frame drawing convention </em> for naturally 
+ordered vertex sets. 
+(It is worth emphasising that this _is_ nothing more than a convention.)
+
+
+\subsection{Composition of partitions}
+Define
+\[
+* : \EE(S) \times \EE(T) \rightarrow \EE(S \cup T)
+\]
+by $\rho * \nu = TC( \rho \cup \nu )$
+(on the right we regard $\rho,\nu$ as equivalence relations,
+by the identification convention, so that
+$\rho \cup \nu$ is a relation). 
+<br>
+Note that $\rho \cup \nu$ is a reflexive relation, but not transitive
+in general.  
+<br>
+Note the repeated use of the identification convention here. 
+$TC(\rho \cup \nu)$ is nominally a relation, but $\rho * \nu$ is a partition,
+so it is the corresponding partition.
+
+Exercise: What does $*$ look like at the level of pictures?
+
+\begin{figure}
+\caption{Two  pictures encoding  example partitions from 
+$\EE(7,3) $
+and $\EE(3,4)$. \label{figpic2}}
+\includegraphics{xfig/partit-low2aa.gif}
+\end{figure}
+
+
+<!--
+Define $\sigma : \Z \rightarrow \Z$ by $\sigma(i)=i+1$.
+Define $\sigma_- : \Z \rightarrow \Z$ by 
+$\sigma_-(2)=1$
+and $\sigma_-(i)=i$ otherwise.
+-->
+
+
+
+\subsection{The partition categories}
+<a name="pc"></a>
+
+We start with the simplest partition category: $\caP^1$.
+Here the object set is $\N_0$ and the hom-sets take the form $\EE(n,m)$.
+
+The binary operation
+$.: \EE(n,m) \times \EE(m,l) \rightarrow \EE(n,l)$
+is given by
+$$
+p.q =  
+ \iota^{\sigma_-} (( \iota^{\sigma} (p) * q )|_{{\underline{n}}^2 \cup {\underline{l}}^0} )
+$$
+where $\iota^{\sigma_-} , \iota^\sigma$ act on label indices as before.
+<br>
+Note that the underlying set of $\iota^\sigma (p)$ is 
+$\underline{n}^2 \cup \underline{m}^1$;
+while the underlying set of $q$ is  
+$\underline{m}^1 \cup \underline{l}^0$, 
+so they meet in $\underline{m}^1$. 
+<br>
+If we apply $\iota^\sigma$ to the upper picture in Fig.\ref{figpic2}
+then this picture meets the lower picture in $\{ 1^1 , 2^1 , 3^1 \}$.
+
+\begin{figure}
+\caption{Composing  example partitions from 
+$\EE(7,3) $
+and $\EE(3,4)$ as in the composition $p.q$. \label{figpic2anim}}
+\includegraphics{xfig/partit-anim2.gif}
+\end{figure}
+
+Consider the triple 
+%$( \N_0 , \caP^1(-,-) , .)$,
+$\caP^1 = ( \N_0 , \EE(-,-) , .)$.
+%where ... 
+%$\caP^{1}(n,m) = \EE(n,m)$ and 
+%$.: \caP^1(n,m) \times \caP^1(m,l) \rightarrow \caP^1(n,l)$
+
+Caveat: WEBPAGE CONSTRUCTION IN PROGRESS - CHECK details!
+
+\begin{proposition}  $\caP^1$ is a category. \end{proposition}
+Exercise: Check that $\caP^1$ is a category. 
+<br>
+Hints: We need to check that the composition is associative,
+and that there are appropriate identity elements.
+<br>
+There are various ways 
+to show associativity. For example, note that the concatenation of two pictures
+(so that they meet at the matching labels) makes a usable picture 
+for the composite. It is a realisation containing more than the
+minimum number of vertices needed, but this is not an issue.
+The other caveat is that the nominal labels on the top row are wrong,
+but again this is clearly not an issue. 
+With this in mind one can then make a picture of a double composite,
+$p*(q*r)$ say, in the same way; and also a picture for $(p*q)*r$.
+However these are the <em> same </em> picture, and we are done.
+
+The identity elements will be clear
+...
+
+%Next we construct 
+
+\subsubsection{The partition base category $\caP^\circ$}
+
+Here the hom-sets take the form 
+$\EE(n,m) \times \N_0$
+(or we may take $\EE(S,T) \times \N_0$, but it is sufficient 
+representation theoretically to work with a skeleton).
+
+...
+
+\subsubsection{The partition  category $\caP$}
+
+Next we construct the `ordinary' partition  category $\caP$.
+This is a linear category over a commutative ring $K$ containing an element
+$\delta$. 
+(Typically $K = \C$.)
+The hom-sets take the form $K \EE(n,m)$. The object set is $\N_0$.
+The composition is as for $\caP^1$, extended linearly,
+except that if the concatenation of diagrams includes 
+
+...
+
+&nbsp;
+
+Next:
+<a href="pcat-rep.html">
+\section{Representation theory}
+</a>
+
+
+<hr>
+
+</BODY>
+</HTML>

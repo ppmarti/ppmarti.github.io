@@ -1,0 +1,174 @@
+<head>
+<script type="text/javascript" src="../common/LaTeXMathML.js"></script>
+<link rel="stylesheet" type="text/css" href="../common/LaTeXMathML.standardartic
+le.css" />
+
+<script type="text/javascript" src="../common/fold.js"></script>
+<script type="text/javascript" src="../common/PPMmacros1.js"></script>
+
+
+<title> E.G. Research Background Pages</title>
+</head>
+<HTML>
+
+
+<BODY BGCOLOR=white TEXT=black>
+
+<a href="../RESEARCH/grad.html"> grad school home </a> 
+&nbsp; &nbsp;
+<a href="../projects.html"> up </a> 
+&nbsp; &nbsp;
+&nbsp; &nbsp; 
+| &nbsp; &nbsp;  <b>Introductory notes on partition categories </b>
+&nbsp; &nbsp; 
+&nbsp; &nbsp; 
+&nbsp; &nbsp; 
+|  WORK IN PROGRESS!!!
+
+<hr>
+<a onclick="switchMenu('myvar002');" title="REVEAL/CONCEAL">
+<font color="blue">
+Jump (Click me)
+</font>
+</a>
+        <div id="myvar002" style="overflow:hidden;display:none">
+
+<script type="text/javascript" src="contents1.js"></script>
+
+</div>
+<h3>Appendix</h3>
+%\subsubsection{Graphs and pictures}
+\section{On `Pictures' (of graphs, say) }
+A `picture' is a device for using the human GPU
+(cf. references in, say, <a href="http://www.perceptionweb.com/perception/editorials/p6057.pdf">[Changizi]</a>). 
+In as far as this can
+be formalised, it incorporates aspects of low-dimensional geometric topology,
+and some more sophisticated statistical analysis
+(we will suppress the latter).
+
+\subsection{One or two bits of geometric topology}
+
+
+<object data=./geometric-topology/pcat-pic11.html width="900" height="300"> 
+<embed src=./geometric-topology/pcat-pic11.html width="900" height="300"> 
+</embed> Error: Embedded data could not be displayed. 
+</object>
+
+
+\subsection{Graphs and pictures and sketches}
+
+It will be useful to
+ represent a <a href="pcat.html">graph $g=(V,E,f)$</a>
+on a countable vertex set by a
+`picture' (roughly as in the picture below). 
+This is useful for a number of reasons. Firstly it gives a handy way of
+representing specific graphs. Secondly it works well with certain ideas of
+graph composition. Thirdly, it gives a natural way of describing some
+important special cases, such as planar graphs. 
+
+However, the use of pictures raises several points of technical difficulty
+- from the formal to the philosophical. We address some of these here.
+Our starting point is that people want to (and do) represent graphs
+using pictures like the one below. 
+How are such pictures to be understood?
+We address this in two main steps. Firstly, by considering sets
+constructed in Euclidean geometry that determine graphs;
+and secondly by considering `models' of such Euclidean geometric
+constructions that can be realised in the real world.
+(Just for a moment, we might call the former `pictures' and the latter
+`sketches' of pictures - but we will soon pragmatically blur the distinction.)
+
+<img width="250"  
+vspace="5" hspace="15"
+src="xfig/grap001.gif" align='left'>
+<a name="pdpic"></a>
+
+%Exercise: 
+%It will be useful to 
+% represent a graph $g$ on a countable vertex set by a picture. 
+A <em>plane drawn picture</em>
+$(R,S)$ 
+is a closed rectangular interval of the plane $R$ together with a subset $S$
+consisting of smoothly embedded line intervals terminating at
+certain marked points. 
+<p>
+<p>
+The first thing to note is that 
+ such a thing can only be approximated by a `drawn picture' 
+(or `sketch') in the 
+artistic sense. 
+Indeed there is nothing in the `physical laboratory' corresponding to
+a homeomorphic image of a real interval;
+just as a physical knot or braid is not much like a mathematical knot or 
+braid. 
+However, we will use PDPs in such a way that 
+such approximations are
+generally sufficient. With this caveat we will speak of `drawing' PDPs,
+and indeed speak of pictures such as the one on the right as if they
+are PDPs.
+<p>
+
+In order to represent a graph $g=(V,E,f)$ by such a picture $(R,S)$,
+one proceeds as follows. 
+First one draws  marked points such that each may be identified with a 
+ vertex in $V$. 
+Each edge $\epsilon$ in $E$ is then represented by a line interval
+between the vertices in $f(\epsilon)$, and labelled by $\epsilon$.
+There is much freedom of choice in this, but one wants 
+that a complete single line can be determined unambiguously from the
+drawn set of lines.
+To this end the set of line interval embeddings is
+chosen to be 
+<br>
+&nbsp
+<em>generic</em>, in the sense that 
+if two lines  meet at a point the tangents do not coincide,
+and no line meets a marked point except at an endpoint.
+<br>
+(This is sophistry, in that it is not really possible to determine
+tangents to lines by looking at pictures, except within some tolerance.
+Thus if we use pictures in practice, tangents must not only be 
+different, but sufficiently different.)
+<p>
+In such a picture we shall call the boundary of the rectangular region
+the <em> frame </em>.
+A vertex may lie on the frame (call such a vertex <em>exterior</em>), 
+but by convention 
+a line interval may touch the frame
+only at its endpoints.
+ 
+<p>
+<a name="alcove"></a>
+An <em> alcove </em> of such a picture $(R,S)$ is a connected component of 
+$R \setminus S$. 
+(See also <a href="https://sites.google.com/site/algebraicstatisticalmechanics/Home/tutorial-reviews/kramers-wannier-duality/geometric-preliminaries">here</a>.)
+
+
+\subsection{Some `Night thoughts of a ... physicist' on this topic}
+
+<object data=./pcat-pic12.html width="900" height="300"> 
+<embed src=./pcat-pic12.html width="900" height="300"> 
+</embed> Error: Embedded data could not be displayed. 
+</object>
+
+
+
+\subsection{References}
+
+[CF] R H Crowell and R H Fox, Introduction to knot theory, Ginn 1963.
+
+[Moise]
+E E Moise, Geometric topology in dimensions 2 and 3, Springer-Verlag 1977.
+
+...
+
+<hr>
+  <a href="pcat.html"> BACK </a> &nbsp
+  <a href="pcat-part.html"> NEXT </a> .
+
+...
+
+<hr>
+
+</BODY>
+</HTML>

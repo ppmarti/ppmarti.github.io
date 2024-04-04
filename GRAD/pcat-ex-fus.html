@@ -1,0 +1,205 @@
+<head>
+<script type="text/javascript" src="../common/LaTeXMathML.js"></script>
+<link rel="stylesheet" type="text/css" href="../common/LaTeXMathML.standardartic
+le.css" />
+
+<script type="text/javascript" src="../common/fold.js"></script>
+<script type="text/javascript" src="../common/PPMmacros1.js"></script>
+
+
+<title> E.G. Research Background Pages</title>
+</head>
+<HTML>
+
+<BODY BGCOLOR=white TEXT=black>
+
+<a href="../RESEARCH/grad.html"> grad school home </a> 
+&nbsp; &nbsp;
+<a href="../projects.html"> up </a> 
+&nbsp; &nbsp;
+&nbsp; &nbsp; 
+| &nbsp; &nbsp;  <b>Introductory notes on partition categories </b>
+&nbsp; &nbsp; 
+&nbsp; &nbsp; 
+&nbsp; &nbsp; 
+|  WORK IN PROGRESS!!!
+
+<hr>
+
+
+<a onclick="switchMenu('myvar002');" title="REVEAL/CONCEAL">
+<font color="blue">
+Jump (Click me)
+</font>
+</a>
+        <div id="myvar002" style="overflow:hidden;display:none">
+
+<script type="text/javascript" src="contents1.js"></script>
+
+
+
+\section{Introductory notes on partition categories}
+
+<a href="pcat-rep.html">
+\section{Representation theory}
+</a>
+
+<h3>Further exercises<h3>
+\section{Related categories}
+\subsection{On graded categories}
+
+</div>
+
+
+
+<a name="sub"></a>
+\subsection{On  fusion categories and beyond}
+<small>
+<small>
+WORK IN PROGRESS!
+
+Additional Refs. <br>
+[Mac] MacLane, Natural associativity and commutativity. 1963 <br>
+[Mac71] MacLane, Categories for the working mathematician... 1971 <br>
+[FY] Freyd, Yetter, Braided compact closed categories... 1989 <br>
+[RT] Reshetikhin, Turaev, Ribbon graphs... 1990 <br>
+[JS] Joyal, Street, Braided tensor categories, Adv. Math. 1993 <br>
+[K] Kassel, Quantum groups. 1995 <br>
+[CP] Chari, Pressley, Quantum groups, 1994 <br>
+[ENO] Etinghof, Nikshych, Ostrik, On fusion categories, arXiv/0203060v10
+<br>
+[EGNO] Etinghof, Gelaki, Nikshych, Ostrik, Tensor categories, MIT notes 2009
+
+</small>
+
+We aim to summarize the definition of a 
+<em>ribbon fusion category</em> (RFC), also known as
+premodular category.
+<br>
+(Then we can talk about modular tensor categories (MTC), and 
+unitary MTCs (UMTC). 
+<br>
+"Physically: UMTCs are algebraic formulations of anyon models.
+And of unitary TQFTs. In some dimension!")
+<br>
+<small>
+The definition runs over many pages, so the idea of a summary is to
+capture the flavour of the definition in some kind of useful way!
+<br>
+RFC has a diagram calculus analogous to, but much more sophisticated than,
+that of a partition category. One aim is to put these in a common context.
+</small>
+
+<p>
+RFC = `pivotal fusion category' + compatible `braiding'.
+So we need to know that these are!
+
+<p>
+
+\subsubsection{ FC}
+
+A fusion category C over 
+algebraically closed field k 
+(of char. 0)
+is a 
+<br>
+k-linear semisimple rigid
+tensor (=monoidal) category <br>
+with finitely many simple objects
+(`rank of C' = # simple objects)
+<br>
+and f.d. spaces of morphisms, such that the end-algebra of neutral object 0
+is k.
+
+<p>
+Most of the terms above we have defined already. 
+<br>
+(Recall a k-linear category is an abelian category
+where arrow sets are k-modules and compositions k-bilinear.
+<br>
+An abelian category is an additive category with kernels, cokernels;
+(mono/epi)morphisms are the (/co)kernels of their (co/)kernels;
+every morphism f=g.h =mono.epi.)
+<br>
+Here come the rest...
+<p>
+A tensor category is <em>rigid</em> if it has dual objects and the contravariant
+dual object functor is an anti-selfequivalence.
+
+An object x in an abelian category is simple if 
+every x ->> y and every z (-> x is isomorphism.
+
+An object is semisimple if it is a direct sum of simples.
+An abelian category is semisimple if every object is.
+
+In a semisimple tensor category we can express a (x) b 
+as a direct sum. Hence we have multiplicities of simple summands
+up to isomorphism. These are written
+<br>
+a (x) b  &nbsp = (+)_c N^c_ab c
+<br>
+I.e. as analogues of Clebsch-Gordan series.
+ 
+
+<p>
+\subsubsection{Pivotal}
+FC is <em>pivotal </em> if for every  object x there is in 
+hom(x,x**) an isomorphism phi such that
+<br>
+phi_{x (x) y}  = phi_x (x) phi_y
+<br>
+and ...  
+<br>
+f** = f
+<br>
+for all morphisms f (where f in hom(x,y) gives a dual
+f* in hom(y*,x*) by ...).
+
+<p>
+\subsubsection{Braiding and compatibility}
+A braiding is for each  (x,y) an element c in hom(x (x) y,y (x) x)
+satisfying certain properties.
+To describe compatibility we need to combine the braiding with 
+birth and death (from rigidity) to make `twist'.
+
+<small> Remark:
+There is quite a gulf between the formal and diagram calculus versions of
+these ideas (involving strictness...). 
+The general idea is possibly simplest conveyed in the calculus. But the power
+of the calculus is very hard to control.
+</small>
+
+... TBC ...  
+
+</small>
+<hr>
+...
+<hr>
+<p>
+
+<!--
+\begin{proposition}
+The restriction of $\caP^1$ to dilute pair partitions defines a subcategory. 
+\end{proposition}
+Proof: exercise.
+
+
+\begin{figure}
+\caption{(i) Lines realising a part in a partition in $\EE(6,6)$, 
+and an open interval
+(shaded) defined by one such line $l$.
+(ii) Alternative realisation of the same partition.}
+\includegraphics{xfig/grap011as3.gif}
+\end{figure}
+
+-->
+
+
+<br>
+
+
+
+<hr>
+
+</BODY>
+</HTML>

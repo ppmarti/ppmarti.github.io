@@ -1,0 +1,616 @@
+<head>
+<script type="text/javascript" src="../common/LaTeXMathML.js"></script>
+<link rel="stylesheet" type="text/css" href="../common/LaTeXMathML.standardartic
+le.css" />
+
+
+<script type="text/javascript">
+<!--
+function switchMenu(obj) {
+        var el = document.getElementById(obj);
+        if ( el.style.display != "none" ) {
+                el.style.display = 'none';
+        }
+        else {
+                el.style.display = '';
+        }
+}
+//-->
+</script>
+
+<script type="text/javascript">
+newcommand("\\nle","\u2270")
+newcommand("\\EE","{\\mathbf E}")
+newcommand("\\pp","{\\mathtt p}")
+newcommand("\\Z","{\\mathbb Z}")
+newcommand("\\N","{\\mathbb N}")
+</script>
+
+
+
+<script type="text/javascript">
+<!--
+function switchMenu(obj) {
+        var el = document.getElementById(obj);
+        if ( el.style.display != "none" ) {
+                el.style.display = 'none';
+        }
+        else {
+                el.style.display = '';
+        }
+}
+//-->
+</script>
+
+
+
+
+
+<title> E.G. Research Background Pages</title>
+</head>
+<HTML>
+
+
+<BODY BGCOLOR=white TEXT=black>
+
+<a href="grad.html"> grad school home </a> 
+&nbsp; &nbsp;
+<a href="projects.html"> up </a> 
+&nbsp; &nbsp;
+&nbsp; &nbsp; 
+| &nbsp; &nbsp;  <b>Introductory notes on partition categories </b>
+&nbsp; &nbsp; 
+&nbsp; &nbsp; 
+&nbsp; &nbsp; 
+|  WORK IN PROGRESS!!!
+
+<hr>
+
+Click to jump ahead:
+<ul>
+<ul>
+<li>
+<a href="pcat-part.html"> 1.4 Partitions </a> 
+<li>
+<a href="pcat-part.html#pc"> 1.5 The partition categories </a> 
+</ul>
+<li>
+<a href="pcat-rep.html"> 2. Representation theory </a> 
+</ul>
+
+ 
+\section{Introductory notes on partition categories}
+There are several different ways to define partition categories.
+We look at a couple here. One approach (coming from 
+the partition function/transfer matrix/partition vector
+formalism in Statistical Mechanics - see e.g. [M91])
+is to think in terms of `gluing graphs together'.
+
+
+<a href="pcat-refs.html">
+\subsection{Some references}
+</a>
+<!--
+The partition category  appears implicitly in 
+<br>
+P. Martin, Potts models and related problems in statistical mechanics, 
+World Scientific 1991
+<br>
+and more explicitly in 
+<br>
+P.  Martin. Temperley-Lieb algebras for non-planar statistical mechanics - the partition algebra construction
+    JKTR 3 (1994), 51-82. (Yale CTP 1992 preprint: YCTP-P34-92.) 
+<br>
+A more recent reference is:
+<br>
+P. P. Martin. On diagram categories, representation theory and Statistical Mechanics
+    AMS Contemporary Math 456 (2008) 99-136.
+<p>
+Other papers on the partition algebras include:
+<br>
+P. P. Martin and H. Saleur. Algebras in higher dimensional statistical mechanics - the exceptional partition algebras
+    Lett Math Phys 30 (1994), 179-185. (arXiv:hep-th/9302095v1)
+<br>
+V.F.R. Jones, Subfactors ed. H. Araki, World Scientific 1994.
+<br>
+T. Halverson and A. Ram, Partition algebras, Euro J Combin 26 (2005) 869-921.
+<br>
+J. Enyang, Jucys-Murphy elements and a presentation for partition algebras,
+http://arxiv.org/abs/1009.1939.
+<br>
+... more to follow.
+-->
+
+
+\subsection{Notation for sets and graphs}
+
+
+<a onclick="switchMenu('myvar002');" title="REVEAL/CONCEAL">
+<font color="blue">
+\subsubsection{Sets (Click Me)}
+</font>
+</a>
+        <div id="myvar002" style="overflow:hidden;display:none">
+
+
+Here $S$ is a set. 
+For $i$ any suitable symbol, $S^i = S \times \{ i \}$.
+<br>
+Thus $S^\alpha \cup S^1 \cup S^0$ contains three distinct copies of $S$.
+<br>
+(The notation $S^2 = S \times S$ is also used, but our intention
+will always be clear by context.)
+<br>
+
+Define $\sigma : \Z \rightarrow \Z$ by $\sigma(i)=i+1$.
+Define $\sigma_- : \Z \rightarrow \Z$ by
+$\sigma_-(2)=1$
+and $\sigma_-(i)=i$ otherwise.
+
+If $\alpha \in \Z$ then 
+$\iota^\sigma: S^\alpha \rightarrow S^{\sigma(\alpha)}$
+is given by $(x,\alpha) \mapsto (x,\sigma(\alpha) )$.
+Extend this naturally so that $\iota^\sigma (S^1 \cup T^0) = S^2 \cup T^1$
+and $\iota^{\sigma_-} (S^2 \cup T^0) = S^1 \cup T^0$
+and so on. 
+
+</div>
+
+$P_{S}(T)$ denotes the set of subsets of set $T$ whose orders lie in 
+list $S \subset \N$. 
+Example: 
+$P_{1,2}(\{a,b,c \}) 
+= \{ \{ a \}, \{ b \} , \{ c \}, \{ a,b \} , \{ a,c \} , \{ b,c \} \}$. 
+
+%$\mathbb{M,N}$
+
+\subsubsection{Graphs and pictures}
+
+An <em>(undirected) graph</em> is a triple $g=(V,E,f)$ where $V,E$ are sets 
+(vertex set and edge set respectively) and 
+$f:E \rightarrow P_{1,2}(V)$.
+(A handy reference using a slightly different notation is <a href="http://cr.yp.to/2005-261/bender2/GT.pdf"> here </a>.)
+
+Exercise: 
+Consider how one might represent a graph 
+on a countable vertex set by a <em>picture</em>.
+<br>
+ 
+A graph is <em> loop-free </em> if $f(E) $ contains no singletons.
+<br>
+If $g$ is a specific graph then $V_g$ is the vertex set $V$ of $g$
+and $E=E_g$.
+(We sometimes write just $g$ for the vertex set.)
+<br>
+$\Gamma_1(S)$ denotes the class of loop-free undirected graphs on vertex set $S$.
+<br>
+$\Gamma_1$ denotes the class of loop-free undirected graphs.
+
+ For $g,g'$ graphs, define $g \cup_\gamma g'$ as the graph
+with vertex set the union of vertex sets and edge set the
+disjoint union of edge sets.
+<br>
+
+If the vertex set of a graph is not specified 
+(in a picture of a graph, say) then we take it to be `generic'.
+That is, the union of two graphs with unspecified vertex sets would be disjoint.
+
+
+Exercise:
+Consider how one might realise the composition $\cup_\gamma$ on <em>
+pictures</em> of graphs.
+
+<p> 
+\subsubsection{Relative graphs}
+
+An $S$-graph 
+(or a <em> relative graph on set </em> $S$)
+is a graph $g$ together with a map 
+$\lambda_g : S \rightarrow V_g$
+(called the structure map of $g$). 
+<br>
+
+$\Gamma(S)$ denotes the class of  undirected $S$-graphs. 
+<br>
+
+<a onclick="switchMenu('myvar003');" title="REVEAL/CONCEAL">
+<font color="blue">
+Notes on relative graphs (Click Me)
+</font>
+</a>
+        <div id="myvar003" style="overflow:hidden;display:none">
+
+
+Note that the structure map $\lambda_g$ is a kind of (possibly partial) 
+ labelling of vertices of $g$ by labels
+from $S$. A vertex may have no label, or multiple labels.
+<!-- 
+(in which case we shall say that it is improperly labeled). 
+-->
+But each label only appears on one vertex.
+If a vertex has precisely one label in this way then we shall say
+that it is properly labeled. 
+<br>
+Sometimes we may just write $g$ for the $S$-graph $(g,\lambda_g)$.
+<br>
+
+Note that any non-trivial graph can be made into an $S$-graph
+(for example by mapping all of $S$ to one vertex).
+<br>
+Note that if $(g,\lambda_g)$ is an $S$-graph then so is 
+$(g \cup_\gamma g'  , \lambda_g)$ for any graph $g'$,
+since $\lambda_g : S \rightarrow g$ is also a map
+$\lambda_g : S \rightarrow g\cup g'$  in an obvious way.
+<br>
+
+However the union of an $S$-graph and a $T$-graph does not necessarily 
+define an $S\cup T$-graph, since, if $S,T$ intersect, there may be an
+element of the intersection to which the structure maps asign a different
+vertex (as if $g,g'$ do not intersect as graphs, for example).
+<br>
+If $g,g'$ make the same asignment to every element in $S \cap T$ we say 
+they are <em>compatible</em>.
+<br>
+
+Whenever $g,g'$ are compatible then the graph union extends to define
+an $S \cup T$-graph via:
+$$
+\lambda_{g \cup_\gamma g'} (s) = \left\{ 
+\begin{array}{ccc} 
+\lambda_g (s) & if  \;\; s \in S
+\\
+\lambda_{g'} (s) & if \;\; s \in T 
+\end{array}
+\right.
+$$ 
+
+Note that our construction makes a distinction between vertices of $g$ and 
+their structure map labels. However the compatibility condition
+on a pair $g,g'$
+requires that a  vertex with a label from $S \cap T$
+is not generic -- the vertex is
+effectively identified with one of its labels. The compatibility 
+condition ensures that $g \cup_\gamma g'$ does not depend on which one.
+
+Exercise: check this.
+
+\begin{proposition}\label{prcompat1}
+Let $g \in \Gamma(S)$ and $g' \in \Gamma(T)$. 
+If both structure maps are injective on $S \cap T$ then we can take $S \cap T$ 
+to be the set of labels for the corresponding set of vertices.
+In this way we can consider $g,g'$ to be compatible. 
+\end{proposition}
+
+---
+
+</div>
+<!--
+\begin{proposition}\label{Prc} x \end{proposition}
+\begin{lemma}\label{Prcc} x \end{lemma}
+-->
+
+<!-- Suppose $\gamma_g$ is injective.
+-->
+If $\phi :S \rightarrow T$ is invertible, 
+and $g \in \Gamma(S)$,
+then $\phi (g)$ is the $T$-graph $(g,\kappa_g)$
+given by $\kappa_g = \lambda_g \circ \phi^{-1}$. 
+<br>
+Example: Suppose that $S= \{ s_1 , s_2 , s_3 \}$ and $T = \{ t_1 , t_2 , t_3 \}$
+and $U = \{ u_1 , u_2 \}$. Then an example of a 
+picture of a 
+relative graph
+$f \in \Gamma(S^1 \cup T^0)$ is:
+<p align='left'>
+<table> <tr> <td> $f \; = \;\; $ </td><td>
+<img 
+src="xfig/graph-g1.gif"
+border=1
+style="border-color:e1eeee;background-color:blue"  
+>
+</td>
+<!--
+</tr>
+</table>
+</p>
+In this case the image $\iota^{\sigma} ( g )$ is this:
+<p align='center'>
+-->
+<td>
+$ \in \Gamma(S^1 \cup T^0)$.
+ $\qquad\qquad$
+$\qquad\qquad$
+$\qquad\qquad$
+In this case</td><td>  $\;\;\;\; \iota^{\sigma} ( f ) \; = \;\; $
+</td><td>
+<img 
+src="xfig/graph-g2.gif"
+border=1
+style="border-color:#e1eeee;background-color:#e1eeee"   
+>
+</td>
+<td>
+$ \in \Gamma(S^2 \cup T^1)$.
+</td>
+</tr>
+</table>
+<p>
+</p>
+<p>
+<br>
+$\Gamma(S,T) $ denotes the subset of $ \Gamma(S^1 \cup T^0)$
+of elements whose structure maps are injective on $S^1$ and $T^0$
+separately (but not necessarily on the union). 
+<br>
+An example of a $g \in \Gamma(S,T)$, and an $h \in \Gamma(T,U)$ is:
+<!--
+\begin{figure}
+\includegraphics{xfig/graph-h1.gif}
+\end{figure}
+-->
+
+<p align='left'>
+<table><tr> 
+<td> $g \; = \;\; $  </td><td>
+<img 
+src="xfig/graph-g12.gif"
+border=1
+style="border-color:#e1eeee;background-color:#e1eeee"   
+>
+</td>
+<td> 
+$\in \Gamma(S,T)$; $\qquad$ 
+</td><td>
+&nbsp;
+&nbsp;
+&nbsp;
+</td><td>
+$\;\;\;\;$ 
+$h \; = \;\; $  </td><td>
+<img 
+src="xfig/graph-h1.gif"
+border=1
+style="border-color:#e1eeee;background-color:#e1eeee"   
+>
+</td>
+</tr>
+</table>
+</p>
+
+In such cases we will generally (unlike here) draw the vertices labeled from the 
+first subset in a row; and similarly for the second subset. 
+Note that the two rows may (and may necessarily) lie on the same line. 
+
+Exercise: compute $ \iota^{\sigma} (g) \cup_\gamma h  $ here.  
+
+Answer: Firstly $ \iota^{\sigma} (g)$ is :
+
+<p align='left'>
+<table><tr> 
+<td> $\iota^{\sigma} (g ) \; = \;\; $  </td><td>
+<img 
+src="xfig/graph-g22.gif"
+border=1
+style="border-color:#e1eeee;background-color:#e1eeee"   
+>
+</td>
+<td> 
+$\in \Gamma(S^2 \cup T^1)$; $\qquad$ 
+</td><td>
+</td><td>
+$\;\;$ 
+which can also be drawn, for example, as 
+$ \;  \;\; $  </td><td>
+<img 
+src="xfig/graph-g23.gif"
+border=1
+style="border-color:#e1eeee;background-color:#e1eeee"   
+>
+</td>
+</tr>
+</table>
+</p>
+
+We see from this 
+and Prop.\ref{prcompat1}
+that $ \iota^{\sigma} (g) $ and $ h  $ are compatible.
+We have:
+<p align='left'>
+<table><tr> 
+<td> $\iota^{\sigma} (g ) \cup_\gamma h \; = \;\; $  </td><td>
+<img 
+src="xfig/graph-g23h1.gif"
+border=1
+style="border-color:#e1eeee;background-color:#e1eeee"   
+>
+</td></tr></table></p>
+
+Another useful convention for drawing relative graphs in case a vertex
+has multiple labels is to draw a separate copy of this vertex for each
+label, with a `hard link' between.
+For example, our $\iota^\sigma( g)$ may be drawn:
+<p align='left'>
+<table><tr>
+<td> $\iota^\sigma (g )  \; = \;\; $  </td><td>
+<img 
+src="xfig/graph-g23k1.gif"
+border=1
+style="border-color:#e1eeee;background-color:#e1eeee"   
+>
+</td>
+<td> ; &nbsp; &nbsp; and &nbsp;  </td>
+<td> $ h \; = \;\; $  </td><td>
+<img 
+src="xfig/graph-h1k1.gif"
+border=1
+style="border-color:#e1eeee;background-color:#e1eeee"   
+>
+</td>
+</tr></table></p>
+
+This allows us to give each label subset its own distinct row.
+The $\cup_\gamma$ composition is then simply a concatenation:
+<p align='left'>
+<table><tr> 
+<td> $\iota^{\sigma} (g ) \cup_\gamma h \; = \;\; $  </td><td>
+<img 
+src="xfig/graph-gh1k1.gif"
+border=1
+style="border-color:#e1eeee;background-color:#e1eeee"   
+>
+</td></tr></table></p>
+
+The reader will readily verify that this is the same as the original answer,
+redrawn using the hard-link convention.
+(Of course there are many equivalent such drawings.)
+
+<br>
+If $(g , \lambda_g )$ an $S$-graph and 
+$T \subset S$ then $g|_{T}$ denotes the $T$-graph obtained from 
+$(g,\lambda_g )$ by restricting the map to $T$. 
+<br>
+
+\subsection{Composition}
+
+Define $\circ : \Gamma(S,T) \times \Gamma(T,U) \rightarrow \Gamma(S,U)$
+by
+\[
+  g \circ h 
+= \iota^{\sigma_-} (( \iota^{\sigma} (g) \cup_\gamma h )|_{S^2 \cup U^0} )
+\]
+Exercise: explain the notation here and check well-definedness!!
+
+<br> 
+<b> Proposition. </b> Let $S_{fin}$ denote the class of finite sets.
+Then the  triple 
+$\Gamma 
+    =  ( S_{fin} , \Gamma( - , -) , \circ )$ is a category. 
+<br>
+Exercise: Explain notation. Prove. 
+<br>
+Exercise: Determine a skeleton in $\Gamma$. 
+
+<br>
+<hr>
+Below here is an old version. Instead go <a href="pcat-part.html"> here <a>.
+
+<a href="pcat-part.html">
+\subsection{Partitions} </a>
+
+%\newcommand{\EE}{{\mathbf E}}
+
+Here $S$ is a set and $2^S$ the power set of $S$
+(so $2^{S \times S}$ is the set of relations on $S$ to $S$).
+<br>
+$\EE(S)$ is the set of partitions on set $S$ (in natural bijection 
+with the set of equivalence relations on $S$). 
+<br>
+$\EE(S,T) := \EE(S^1 \cup T^0)$ 
+<br>
+Recall that $\underline{n} := \{ 1,2,..., n \}$ and define
+$\EE(n,m) = \EE(\underline{n} , \underline{m})$.
+
+If    $T \subset S$ and $p \in \EE(S)$ then $p|_T$ 
+(or $p$ regarded as a partition of $T$) denotes the restriction of $p$ to $T$.
+
+%$\nle$ 
+
+Let
+\[
+\pp: \Gamma(S) \rightarrow \EE(S)
+\]
+denote the map which takes graph $g$ to the partition into connected
+components. 
+For $T \subset S$ let 
+\[
+\pp: \Gamma(S) \rightarrow \EE(T)
+\]
+be $\pp(g) = \pp(g)|_T$.
+
+A <em> diagram </em> for $q \in \EE(S)$ is any 
+relative graph $g$ such that $\pp(g) =q$,
+or $\pp(g) |_S = q$.
+(Usually we have in mind a drawn picture of $g$ as above.)
+
+Among the graphs $g$ in $\pp^{-1} (q)$ are ones for which the structure map from $S$ is injective. 
+In `drawing' partitions 
+we will usually use pictures of graphs of this type,
+so that each $s \in S$ labels a different vertex.
+(Although of course if $s,t \in S$ did `label' the same vertex this would simply put them in the same component and hence in the same part.)
+Indeed, by a <em> picture </em> of a partition $q$ we will generally mean
+such a picture. 
+
+\begin{figure}
+\caption{Two  pictures encoding the same example partition from $\EE(7,3) = \EE(\{ 1,2,..., 7 \} , \{ 1,2,3 \} )$.}
+\includegraphics{xfig/partit-low2ab.gif}
+\end{figure}
+%\includegraphics{xfig/partit-low2a.gif}
+
+
+\subsubsection{Composition}
+Let
+\[
+TC: 2^{ S\times S }  \rightarrow  2^{ S\times S }
+\]
+be reflexive, symmetric transitive (RST) closure. 
+Define
+\[
+* : \EE(S) \times \EE(T) \rightarrow \EE(S \cup T)
+\]
+by $\rho * \nu = TC( \rho \cup \nu )$. 
+
+Exercise: What does $*$ look like at the level of pictures?
+
+\begin{figure}
+\caption{Two  pictures encoding  example partitions from 
+$\EE(7,3) $
+and $\EE(3,4)$.}
+\includegraphics{xfig/partit-low2aa.gif}
+\end{figure}
+
+<!--
+Define $\sigma : \Z \rightarrow \Z$ by $\sigma(i)=i+1$.
+Define $\sigma_- : \Z \rightarrow \Z$ by 
+$\sigma_-(2)=1$
+and $\sigma_-(i)=i$ otherwise.
+-->
+
+
+
+\subsection{The partition categories}
+<a name="pc"></a>
+
+We start with the simplest partition category: $P^1$.
+
+The binary operation
+$.: \EE(n,m) \times \EE(m,l) \rightarrow \EE(n,l)$
+is given by
+$$
+p.q =  
+ \iota^{\sigma_-} (( \iota^{\sigma} (p) * q )|_{{\underline{n}}^2 \cup {\underline{l}}^0} )
+$$
+
+Consider the triple 
+%$( \N_0 , P^1(-,-) , .)$,
+$P^1 = ( \N_0 , \EE(-,-) , .)$.
+%where ... 
+%$P^{1}(n,m) = \EE(n,m)$ and 
+%$.: P^1(n,m) \times P^1(m,l) \rightarrow P^1(n,l)$
+
+Caveat: WORK IN PROGRESS - CHECK ME!
+
+Exercise: Check that $P^1$ is a category. 
+
+
+...
+
+<a href="pcat-rep.html">
+\section{Representation theory}
+</a>
+
+...
+
+<hr>
+
+</BODY>
+</HTML>
