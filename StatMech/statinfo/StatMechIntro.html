@@ -1,0 +1,457 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<!{{{> <!head>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.75 [en] (X11; U; Linux
+   2.4.0 i686) [Netscape]">
+<!   <base href="/home/ppm/common/">
+</head>
+<!}}}>
+<body text="#000000" bgcolor="#FFFFFF" link="#0000EE" vlink="#551A8B"
+alink="#FF0000">
+<!{{{> <! back/up table>
+
+<table summary="header" width="100%" height="30" border="0" cellpadding="3" cellspacing="0" class="headergrey">
+  <tr> <td align="left">
+UP:	<a href="http://www.staff.city.ac.uk/~sg387/Paul.html">
+Paul Martin
+</a> or <a
+href="http://www.city.ac.uk/sems/mathematics/research/">City Mathematics Research Home</a>
+</td>
+    <td align="right">
+<a href="http://www.city.ac.uk/search/" class="citynav">City Search</a> | 
+<a
+href="http://www.google.co.uk/search?hl=en&q=statistical+mechanics+transfer+matrix+potts&btnG=Search&meta=">
+Google it</a> &nbsp;&nbsp;
+      </td></tr></table>
+<hr WIDTH="100%">
+
+<!}}}>
+
+<h2><font face="Arial,Helvetica">Statistical Mechanics Overview</font></h2>
+<font face="Arial,Helvetica"><font size=+1>
+Models of many-body physical systems with simple short range
+interactions.
+<!{{{> <!contents>
+<ul>
+<li><a href="#pf">Partition functions</a>
+<li><a href="#ob">Observables</a>
+<li><a href="#pv">Computation and partition vectors</a>
+<li><a href="#tm">Transfer matrices</a>
+<li><a href="#tma">Transfer matrix algebras</a>
+<li><a href="#bib">Bibliography</a>
+</ul>
+<!}}}>
+<h3>1. Partition functions</h3></font></font>
+<!{{{> <!para>
+<font face="Arial,Helvetica"><font size=+1>
+In classical (or quantum) equilibrium Statistical Mechanics the key 
+computational object is the <em>partition function</em> Z, defined as follows. 
+<!<img SRC="figs/lattice1r1.gif" height=210 width=215 align=RIGHT>
+<!<img SRC="figs/arrows1.gif" height=250 width=275 align=RIGHT>
+<img SRC="figs/arrows1ppm.gif" height=250 width=275 align=RIGHT>
+Consider an array G of simple microscopic components, such as atoms or
+magnetic dipoles (but generically called <em>spins</em>), in a crystal lattice. 
+Let S denote the set of all possible states of this array; 
+and let H denote a map from S to the real numbers, called the 
+HAMILTONIAN of the array. This map must have a number of other properties 
+before it is likely to make sense physically, but for the moment reality is 
+enough. In a given system (in particular for given S and H) the partition function
+depends only on the temperature. Let b be a variable proportional to the 
+inverse temperature, then 
+</font></font>
+<!}}}>
+<!{{{> <!table - eqn for Z>
+
+<center>
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=3 WIDTH="20%" NOSAVE>
+<tr><td></td>
+<td>_
+<br>\ </td>
+</tr><tr><td> <font face="Arial,Helvetica"><font size=+1>Z=  </font></font></td>
+<td>/_ </td>
+<td>
+<font face="Arial,Helvetica"><font size=+1>e<sup>-bH(s)</sup></font></font></td>
+</tr><tr><td></td>
+<td><font face="Arial,Helvetica"><font size=+1>
+s in S </font></font>
+</td>
+</tr>
+<tr></tr>
+</table>
+</center>
+
+<!}}}>
+<!{{{> <!para>
+<br>
+<font face="Arial,Helvetica"><font size=+1>For example, there are
+physically useful models (called Potts models) 
+in which each spin s<sub>i</sub> takes values 
+<! s(i) ???> 
+from the	set Q_={1,2,...,Q} (some Q); 
+so S=hom(G,Q_); 
+and the Hamiltonian takes the form</font></font>
+<!}}}>
+<!{{{> <!table - eqn for H>
+
+<center>
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=4 WIDTH="20%" NOSAVE>
+<tr><td></td><td></td>
+<td>_
+<br>\ </td>
+</tr><tr><td> <font face="Arial,Helvetica"><font size=+1>
+H(s)=</font></font></td>
+<td>-</td>
+<td>/_ </td>
+<td>
+<font face="Arial,Helvetica"><font size=+1>
+<em>d</em><sub>s<sub>i</sub>,s<sub>j</sub></sub>
+</font></font></td>
+</tr><tr><td></td><td></td>
+<td><font face="Arial,Helvetica"><font size=+1>
+ (i,j) </font></font>
+</td>
+</tr>
+</table>
+</center>
+
+<!}}}>
+<!{{{> <! para>
+<br><font face="Arial,Helvetica"><font size=+1>where <em>d</em><sub>x,y</sub> is
+the Kronecker delta function and the sum is over nearest neighbour
+pairs of spins on the lattice (a typical spin in our pictured lattice
+has 4 nearest neighbours). In this example, if the lattice is finite
+then the partition function is a polynomial in e<sup>b</sup>. A more
+detailed discussion of partition functions can be found <a
+href="StatMechIntro2.html"> here</a>.
+<!}}}>
+<a name="ob"><h3>2. Observables</h3></a>
+<!{{{> <!para>
+An <em>observable</em> of the system is another map from S to scalars
+(again there are further restrictions in practice). 
+The <em>expectation value</em> of an observable O is 
+<!}}}>
+<!{{{> <!table - eqn for O>
+
+<center>
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=5 WIDTH="60%" NOSAVE>
+<tr><td></td><td></td>
+<td>_
+<br>\ </td>
+</tr><tr><td> <font face="Arial,Helvetica"><font size=+1>
+&lt O &gt </font></font></td>
+<td>=</td>
+<td>/_ </td>
+<td>
+<font face="Arial,Helvetica"><font size=+1>
+O(x) e<sup>-bH(x)</sup>
+</font></font></td>
+</tr><tr><td></td><td></td>
+<td><font face="Arial,Helvetica"><font size=+1>
+x in S </font></font>
+</td>
+</tr><tr>
+<td></td><td></td><td>_________</td><td>____________</td>
+</tr><tr>
+<td></td><td></td><td align=right>
+<font face="Arial,Helvetica"><font size=+1>Z</font></font></td>
+</tr>
+</table>
+</center>
+
+<!}}}>
+<!{{{> <! para>
+<br>In other words the expectation value is a weighted sum 
+over S of the value of the
+observable in each state. The denominator allows the weight, called the
+<em>Boltzman weight</em> to be 
+interpreted as a probability. 
+
+The Hamiltonian must be such as to 
+determine the likelyhood of the system being in state x (it being, let
+us say, axiomatic that a single function inserted into the exponential may do
+this). In our example the weight is largest when all the spins take
+the same value (the values typically represent orientations of a
+dipole moment, so `taking the same value' corresponds to allignment, a
+commonly energetically favourable arrangement). On the other hand,
+there will be many more random configurations in S than alligned ones,
+thus we have a battle between ENERGY and ENTROPY. 
+<ul><li>When b is small
+(high temperature) this plays down the role of the Hamiltonian and
+thus measurements of the observable with high entropy will tend to dominate
+the average, 
+<li>when b is large (low temperature) the <em>ordered</em>
+low energy configurations will be
+more important. 
+</ul>
+If the lattice is large there may be a very dramatic switch between
+the dominance of entropy and energy as b changes - a PHASE
+TRANSITION. Many of the physical systems we are trying to model exhibit one or
+more phase transitions. 
+
+<!}}}>
+<a name="pv"><h3>3. Computation and partition vectors</h3></a>
+<!{{{> <!para>
+
+Physically the lattice of spins is usually embeded in some Euclidean space in
+such a way as to inherit a corresponding topology, in terms of which
+the interactions in the Hamiltonian are local.  
+<img SRC="figs/lattice3p1.gif" height=190 width=215 align=LEFT>
+Suppose that the interations are
+in fact short ranged, as in our example (and not, typically, as in
+physical systems, but the approximation is not too crude to capture
+the important features), and between
+pairs of spins. Then the
+set of pairs of spins with a finite interaction between them defines a
+graph G of H. 
+(Henceforth i in G will mean the site of a spin, a <em>vertex</em>
+in G; while (i,j) in G will mean the edge associated to the interaction
+between the spins at sites i and j.)  
+<p>
+<!}}}>
+<!{{{> <!para>
+Now consider any subset L' of the set L<sub>s</sub> of
+spins in the lattice with the property that 
+the maximal subgraph of G not 
+intersecting L' breaks into (at least) two parts (with spin sets
+L<sub>l</sub> and L<sub>r</sub>, say). 
+<!{{{> <! junk>
+<! ; and that the 
+full subgraph of G on the union of the spins in any one of these parts
+with L'. --no need to worry about this!>
+<!}}}>
+<br>
+<img SRC="figs/donuts18s2.gif" height=170 width=215 align=RIGHT>
+Formally L' might be any subset, but it is usually helpful to think of
+a set of spins lying on the boundary of the lattice exposed when the
+embedding space is cut in half somehow. 
+Write L for the pair (L<sub>l</sub>,L') and define a vector Z<sup>L</sup> in
+the space S<sub>L'</sub> of states of L', such that
+Z<sup>L</sup><sub>i</sub> is the partition function of the 
+system on L<sub>l</sub>UL' when the spins in L' are fixed in state i. This is the
+<em>partition vector</em> of the pair (L<sub>l</sub>,L').
+For example, suppose our lattice is embedded in a double torus (as
+shown on the right), and
+L' is the set of spins on a cut which separates this into
+two punctured toruses, one of which is illustrated in
+the figure on the left  
+<br>
+<img SRC="figs/donuth1e1.gif" height=190 width=215 align=LEFT>
+(what constitutes being `on' a cut for these purposes depends on
+H through the range of the interactions, but let us stick with our
+example). 
+Let M=(L<sub>r</sub>,L'), 
+whose spins intersect with L in L'. Then the partition function for
+the entire lattice is 
+<p>
+Z = Z<sup>L</sup> . Z<sup>M</sup>
+<p>
+(provided only that we take care with the accounting for the
+interactions <em>within</em> L'). 
+<p>
+
+<!}}}>
+<!{{{> <! para>
+<br>
+<img SRC="figs/plumb4s.gif" height=190 width=215 align=LEFT>
+Note that we could equally well define a partition vector 
+for a still smaller lattice portion by making two parallel 
+(or at least non-intersecting) cuts, and 
+discarding both of the pieces which intersect only one of the cuts, to
+leave a system having two exterior spin sets. (In our pictorial example we 
+would discard both singly punctured tori to leave a `connecting' tube.) 
+Indeed we could 
+arrange such a vector as a matrix, with row and column positions
+indexed by the states of the two sets of exterior spins. 
+Note that if one exterior set L' is in some sense a translate of the
+other then this matrix lies in End(k S<sub>L'</sub>) (some suitable k), 
+and raising this 
+<em>transfer matrix</em> T to a power would correspond to obtaining 
+the partition vector for a longer tube. 
+<p>
+<!}}}>
+<a name="tm"><h3>4. Transfer matrices</h3></a>
+<!{{{> <!para>
+Consider the basic example of the square lattice we started with. 
+In this case the partition function may be built up using the 
+transfer matrix for a single layer as shown on the right (here we have
+indicated how we might share the interactions within layers so as to
+avoid double counting). 
+<br>
+<img SRC="figs/lattice4.gif" height=190 width=215
+align=RIGHT>
+Fixing the spins on the exterior of the whole lattice to states i and
+j, say, we have 
+<p>
+Z<sub>ij</sub> = (T<sup>n</sup>)<sub>ij</sub>
+<p>
+where n is the linear dimension. 
+(Indeed note that exactly the same formal construction works for building a
+cubic lattice out of square lattice layers, as illustrated below.) 
+Since the matrix is positive, so long as it is finite  
+there is a unique largest magnitude eigenvalue which is positive and
+has an eigenvector which is also positive (Peron Frobenius theorem). 
+Thus (summing over all exterior boundary conditions i,j) 
+the partition function Z will be dominated, for large n, by this
+eigenvalue. 
+<br>
+<img SRC="figs/latticed3-3x5.gif" height=190 width=215
+align=LEFT>
+In our example the only analytic structure Z can have as a 
+function of b is zeros, and we now
+see that none of these lie on the real b axis. This implies a
+similarly bland behaviour for observables, with the only escape being
+to take the lattice size to a large limit. 
+On the other hand many (perhaps all) physical systems exhibiting phase
+transitions are finite (albeit very large), so our model should
+provide <em>some</em> way of detecting phase transitions even on the finite
+lattice. It does, as we shall see, but for now we note that
+essentially everything is determined by the spectrum of T, and so turn
+our attention to the computation of this spectrum. 
+
+<!}}}>
+<!{{{> <!para>
+<p>
+<ul><li>
+If the model is <em>integrable</em> (a consumation widely sought) then
+the eigenvalue problem may be amenable to solution based on a series
+of sophisticated guesses for the form of the eigenvectors. 
+<li>
+Before
+this, if there is translation or other symmetry in the system then fourier
+transformation may help with diagonalisation. 
+<li>
+And before even this,
+there is help to be had if it happens that the transfer matrix at
+fixed b is the
+representation of an element of a familiar algebra (the algebra
+and representation obtained being independent of b, so that the
+general T may be thought of as a representation of an algebra valued
+function of b). 
+This helps if the representation is reducible (as in practice it
+usually is), since the formal descent to the irreducible components is
+effectively a block diagonalisation of T. 
+We will begin by looking at this possibility. 
+</ul>
+<!}}}>
+<a name="tma"><h3>5. Transfer matrix algebras</h3></a>
+<!{{{> <!para>
+In order to extract a transfer matrix algebra from T it is necesary
+that, in a certain sense, the algebraic and analytic sides of T decouple. That
+is to say, functional aspects reside in the scalar coefficient ring,
+while non-commutative aspects reside in constant matrices. To
+illustrate this we will use our Potts model example.
+<p> 
+<!}}}>
+<!{{{> <!para>
+Consider the matrix acting on
+kS<sub>L'</sub> which has the effect of modifying Z<sup>L</sup> by
+the inclusion of just one more interaction. A complete set of such
+matrices would add an entire `layer' of interactions, internalising
+the L' layer, thus their product is the layer transfer
+matrix T. If the layer contains n spins, and V is the space with
+basis Q_, then T acts on the tensor product V<sup>n</sup>. 
+Each single interaction matrix
+will act trivially on all but one or two of these factor spaces
+<ul>
+<li>if the interaction is from this layer to the next, then the new
+partition vector Z' with new external spin s<sub>i</sub>' (and
+s<sub>i</sub> internalised) is given by 
+<p>
+Z'|<sub>{s<sub>i</sub>'=k}</sub> = 
+Z|<sub>{s<sub>i</sub>=1}</sub> + Z|<sub>{s<sub>i</sub>=2}</sub> + 
+...+ Z|<sub>{s<sub>i</sub>=k-1}</sub> + 
+e<sup>b</sup> Z|<sub>{s<sub>i</sub>=k}</sub> +
+Z|<sub>{s<sub>i</sub>=k+1}</sub> +...
+<p>
+so the local transfer matrix T<sub>i</sub> acts non-trivially on one
+copy of V only, where it has all off-diagonal
+entries 1, and all diagonal entries e<sup>b</sup>;
+<li>if between two spins i,j within the layer then T<sub>ij</sub> is
+diagonal on VxV with entry e<sup>b</sup> when the two spins are the
+same, and entry 1 otherwise. 
+</ul>
+(NB different models will
+involve tensor factors in different ways.) 
+Putting v=e<sup>b</sup>-1 we find 
+<p>
+<!}}}>
+<!{{{> <!table - eqn for T>
+
+<center>
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=5 WIDTH="50%" NOSAVE>
+<tr><td> <font face="Arial,Helvetica"><font size=+1>
+T</font></font></td>
+<td>=</td><td> <font size=+2>II </font></td>
+<td><font face="Arial,Helvetica"><font size=+1>
+(v1+A<sub>i</sub>) </font></font></td>
+<td> <font size=+2>II </font></td>
+<td> <font face="Arial,Helvetica"><font size=+1>
+(1+vA<sub>ij</sub>) </font></font></td>
+</tr><tr><td></td><td></td>
+<td><font face="Arial,Helvetica"><font size=+0>
+ i in G</font></font></td><td></td>
+<td><font face="Arial,Helvetica"><font size=-1>
+ (i,j) in G</font></font>
+</td>
+</tr>
+</table>
+</center>
+
+<!}}}>
+<!{{{> <! relations>
+<p>
+where 1 is the appropriate unit matrix and the matrices A_ determined
+by the above are independent of b. 
+These matrices obey
+<ul>
+<li>A<sub>i</sub> A<sub>i</sub> = Q A<sub>i</sub>
+<li>A<sub>ij</sub> A<sub>ij</sub> = A<sub>ij</sub>
+<li>A<sub>i</sub> A<sub>ij</sub> A<sub>i</sub> = A<sub>i</sub>
+<li>A<sub>ij</sub> A<sub>i</sub> A<sub>ij</sub> = A<sub>ij</sub>
+<li>A<sub>i</sub> A<sub>jk</sub> = A<sub>jk</sub> A<sub>i</sub> (i,j,k distinct)
+<li>A<sub>i</sub> A<sub>j</sub> = A<sub>j</sub> A<sub>i</sub> 
+<li>A<sub>il</sub> A<sub>jk</sub> = A<sub>jk</sub> A<sub>il</sub> 
+</ul>
+and hence form a (highly reducible) representation of the
+Temperley-Lieb algebra in a certain specialisation. 
+
+<br><font face="Arial,Helvetica"><font size=+1></font></font>&nbsp;
+<!}}}>
+<a name="bib"><h3>Bibliography</h3></a>
+R Baxter, Exactly Solved Models in Statistical Mechanics, Academic
+Press.
+<br>
+P Martin, Potts Models and Related Problems in Statistical Mechanics,
+World Scientific.
+
+<p>
+<!{{{> <! back table>
+
+<hr WIDTH="100%">
+
+<table summary="header" width="100%" height="30" border="0" cellpadding="3" cellspacing="0" class="headergrey">
+  <tr> <td align="left">
+Maintainer: <a href="http://www.staff.city.ac.uk/~sg387/Paul.html">
+Paul Martin
+</a> | <a href="http://www.city.ac.uk/sems/mathematics/research/">Mathematics Research Home</a>
+</td>
+</tr></table>
+
+
+<!}}}>
+
+
+</body>
+</html>
+
+<!{{{> <! Local Variables >
+
+<!--  Local Variables:  -->
+<!--  mode: html  -->
+<!--  folded-file: t   -->
+<!--  fold-top-mark: "<!{{{>"  -->
+<!--  fold-bottom-mark: "<!}}}>"  -->
+<!--  End:  -->
+<!}}}>

@@ -1,0 +1,241 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<!{{{> <!head>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.75 [en] (X11; U; Linux
+   2.4.0 i686) [Netscape]">
+<!   <base href="/home/ppm/common/">
+</head>
+<!}}}>
+<body text="#000000" bgcolor="#FFFFFF" link="#0000EE" vlink="#551A8B" alink="#FF0000">
+
+<h2><font face="Arial,Helvetica">
+More on Partition Functions</font></h2>
+<font face="Arial,Helvetica"><font size=+1>
+Models of many-body physical systems with simple short range
+interactions.
+<!{{{> <!contents>
+<ul>
+<li><a href="#ps">Physical systems/Model Hamiltonians</a>
+<li><a href="#pe">Polynomial examples</a>
+<li><a href="#mo">Interpretation of results</a>
+<li><a href="#bib">Bibliography</a>
+</ul>
+<!}}}>
+<a name="ps"><h3>1. Physical systems/Model Hamiltonians</h3></a>
+</font></font>
+<!{{{> <!para>
+<font face="Arial,Helvetica"><font size=+1>
+<img SRC="figs/arrersxvXX2Oc.gif" height=250 width=275 align=RIGHT>
+Consider a physical array G of simple microscopic components, such as atoms or
+magnetic dipoles (but generically called <em>spins</em>), in a crystal lattice. 
+Let S denote the set of all possible states of this array. 
+<p>
+Our picture illustrates a (quite realistic) model of a physical system
+G in which 
+each spin is a dipole, and it's state is given by its orientation relative
+to the lattice. 
+Our picture is almost entirely <em>quenched</em>. 
+That is to say, most spins
+are shown frozen in a particular orientation. But 
+one spin in particular is illustrated visiting each of
+four different orientations. 
+<p>
+
+When G holds heat energy 
+(i.e. at finite temperatures) it may be thought of as wandering
+through S. The amount of time it spends, typically, in each state,
+depends on the microscopic details of that state, and on the amount of
+heat energy available. 
+Determined by the microscopic interactions of the spins, 
+there will be a certain energy <em>requirement</em> associate to each state. 
+The higher
+this requirement, the less time the system is likely to spend in that state. 
+To <em> model </em> the system mathematically we must capture this behavior. 
+<p>
+Let H denote a map from S to the real numbers, called the 
+HAMILTONIAN of the array. 
+Let b be a variable proportional to the 
+inverse temperature, then 
+for each such H the <em>partition function</em> Z is defined as follows. 
+
+</font></font>
+<!{{{> <!table - eqn for Z>
+
+<center>
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=3 WIDTH="20%" NOSAVE>
+<tr><td></td>
+<td>_
+<br>\ </td>
+</tr><tr><td> <font face="Arial,Helvetica"><font size=+1>Z=  </font></font></td>
+<td>/_ </td>
+<td>
+<font face="Arial,Helvetica"><font size=+1>e<sup>-bH(s)</sup></font></font></td>
+</tr><tr><td></td>
+<td><font face="Arial,Helvetica"><font size=+1>
+s in S </font></font>
+</td>
+</tr>
+<tr></tr>
+</table>
+</center>
+
+<!}}}>
+
+<br>
+<font face="Arial,Helvetica"><font size=+1>
+For an interesting model (i.e., one capable of representing a rich variety of
+important physical phenomena) 
+we may suppose that the Hamiltonian takes the form</font></font>
+<!}}}>
+<!{{{> <!table - eqn for H>
+
+<center>
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=4 WIDTH="20%" NOSAVE>
+<tr><td></td><td></td>
+<td>_
+<br>\ </td>
+</tr><tr><td> <font face="Arial,Helvetica"><font size=+1>
+H(s)=</font></font></td>
+<td>-</td>
+<td>/_ </td>
+<td>
+<font face="Arial,Helvetica"><font size=+1>
+<em>f</em>(s<sub>i</sub>,s<sub>j</sub>)
+</font></font></td>
+</tr><tr><td></td><td></td>
+<td><font face="Arial,Helvetica"><font size=+1>
+ (i,j) </font></font>
+</td>
+</tr>
+</table>
+</center>
+
+<!}}}>
+<!{{{> <!para>
+<br><font face="Arial,Helvetica"><font size=+1>
+where <em>f</em>(x,y) 
+depends on the <em>relative</em> orientation, 
+and the sum is over nearest neighbour
+pairs of spins on the lattice (a typical spin in our pictured lattice
+has 4 nearest neighbours). 
+<p>
+Amongst physical systems like the one represented in our picture, 
+it is realistic in many cases to suppose 
+that the set of allowed orientations of a single spin is discrete (and hence
+finite). Even if this is not the case, we may often 
+<em>model</em> the set of orientations with a discrete set, without
+losing realistic features from the model. In either case 
+we may represent it by the set Q_={1,2,...,Q} (some Q); 
+whereupon S=hom(G,Q_). 
+
+In this case, if the lattice is finite, 
+and H maps to the rationals, 
+then the partition function is a polynomial in e<sup>b</sup>. 
+
+<!}}}>
+<a name="pe"><h3>2. Polynomial Examples</h3></a>
+<!{{{> <! para>
+<img
+SRC="figs/q4sq310.gif"
+align=RIGHT>
+<! height=350 width=350 align=RIGHT>
+For a concrete example of a model, let us take Q=4 and 
+<em>f</em>(x,y)=<em>f</em>(x-y)=<em>f</em>(-x+y) and 
+(<em>f</em>(0),<em>f</em>(1),<em>f</em>(2))=(3,1,0).
+This picture then shows the zeros of Z, plotted in the complex
+e<sup>b</sup> plane, for three different lattice
+sizes - 6x13, 8x13, 10x13 (each periodic in the shorter direction and
+open in the longer direction). 
+<p>
+Press STOP on your browser to stop the animation at a particular
+lattice size. 
+<p>
+It is worth noting that these are very small systems in physical terms 
+(Avogadro's number is of order 10<sup>26</sup>). However the sum in Z
+is over 4<sup>130</sup> terms, and the degree of the resultant polynomial, which
+must be factorized to obtain these pictures, is of order
+10<sup>3</sup>. Thus the computations involved are still staggeringly
+large! 
+Also, as the animation shows, the large scale features of the
+distribution of zeros are already quite stable over this range of lattice
+sizes. The main change as the system gets bigger is that the `lines'
+of zeros appoaching the positive real axis end up <em>closer</em> to
+the axis. 
+We will examine the consequences for physics of this feature of the
+model shortly. 
+<p>
+In these pictures only the positive real axis has any direct relevance to
+physics. The interval [0,1] is the `antiferromagnetic' region, in the
+sense that the Hamiltonian encourages spins to be anti-aligned; and
+the remainder of the axis is the ferromagnetic region. 
+By symmetry the picture for the <em>f</em>=(3,2,0) model is the
+<em>same</em> 
+if plotted in  e<sup>-b</sup>. 
+
+<a name="mo"><h3>3. Interpretation of results</h3></a>
+Let us know try to get a <em>flavour</em> of what these results may
+tell us. 
+As our discussion of
+<a href="StatMechIntro.html#ob">observables</a> 
+shows, Z appears in the denominator in the
+modelling of physical quantities. As such, zeros of Z approaching the
+physical  axis signal dramatic variations in these quantities. These
+dramatic variations are the closest a finite system can come to
+representing <em>phase transitions</em>. Thus, roughly speaking,
+the lines of zeros pinching the physical axis signal that the points
+being pinched are candidates for phase transition points. 
+<p>
+In our example we thus have clear evidence for a (single) phase
+transition in the ferromagnetic (3,1,0) model. 
+This is in agreement with the standard heuristic picture for these models. 
+Perhaps more
+interesting is the two-pronged structure in the neighbourhood of the 
+ferromagnetic (3,2,0) model. 
+Might this suggest three phases?
+<p>
+These Q=4 clock models (or Ashkin-Teller models) have been the subject
+of considerable study. 
+The (2,1,0) model is well known to factorise as two copies of the
+Ising model (the unique Q=2 model), and as such it is known to have
+only two phases in the ferromagnetic region. This structure breaks,
+but only degenerately, when the coupling strengths are anisotropic 
+(i.e., allowed to vary between
+the two natural lattice directions, so that the two Ising models
+disorder at two different temperatures). 
+While it has been argued that <em>isotropic</em> 
+Q>4 models exhibit three `topologically' distinct phases with a suitable choice of
+<em>f</em>, 
+it has been thought, in some quarters, 
+that all isotropic Q=4 models have only two
+phases - so our picture presents rather an intriguing new datum! 
+It does not contradict this view, since the tips in the two-pronged structure
+get closer together as the lattice size increases (so they
+may yet converge in the limit).
+However it does suggest that the realisation of phase structure is
+more subtle in this region.
+<! and hence that these systems may merit further investigation... >
+<p>
+Exercise: Compute the partition function and zeros for the 12x13
+lattice (and so on as necessary), 
+and hence determine the phase structure of the (3,2,0) model. 
+
+<!}}}>
+
+<p>
+<a href="StatMechIntro.html">Back to Overview</a>
+
+<br><font face="Arial,Helvetica"><font size=+1></font></font>&nbsp;
+</body>
+</html>
+
+<!{{{> <! Local Variables >
+
+<!--  Local Variables:  -->
+<!--  mode: html  -->
+<!--  folded-file: t   -->
+<!--  fold-top-mark: "<!{{{>"  -->
+<!--  fold-bottom-mark: "<!}}}>"  -->
+<!--  End:  -->
+<!}}}>

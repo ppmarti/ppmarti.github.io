@@ -1,0 +1,81 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css"
+href="../CSS/default.css" />
+
+
+
+</head>
+<body>
+<span class="head1">
+<a href="../research.html">BACK</a>
+</span>
+<hr>
+<h1> Zeros </h1>
+
+<img alt='tilting module' align="right" style='border:1px solid gray' 
+height='230' src='../SEMINARS/freed-B3.gif'>
+
+This page is under construction. 
+The idea is to provide some notes that will be of interest to my graduate student <a href=""> Yogi Valani </a>, who is studying Potts model partition
+functions using transfer matrix algebra techniques (mainly computer based).
+<br>
+They may eventually be of interest to others too.
+<br>
+The idea is to study 
+the way in which equilibrium statistical mechanics models
+phase transitions (possibly multiple), by studying the 
+distribution of zeros of the partition function Z 
+in the complex T plain close to phase transition point. 
+<br>
+This is typically done by studying the exactly computed partition function
+on finite lattices (arranging for the Hamiltonian to be integral, so that
+Z is polynomial in exp(beta), where beta=1/kT).
+<br>
+This programme is comprehensively explained in the literature. 
+But this literature is 
+spread far and wide, and some of it is hard work. 
+Accordingly, this
+page will take the form, in part, of 
+<br>
+(1) a kind of FAQ.
+The assumption is that the reader has _seen_ the literature,
+but that some further explanation is useful.
+<br>
+(2) a collection of results and pointers to results.
+(So email me if you want me to add something relevant.)
+
+<p></p>
+References <br>
+My main reference (just because it is something that does the job,
+and that I am familiar with) is:
+<br>
+[M91] P Martin, Potts models and related problems in statistical mechanics,
+World Scientific 1991.
+<br>
+General (exact) stat mech references:
+<br>
+[B82] R J Baxter, Exactly solved models in statistical mechanics, Academic 1982.
+
+<br>
+Some (for me) key Papers on zeros:
+<br>
+[F64] M E Fisher, in Lectures in theoretical physics Vol.7c,
+U. Colorado Press 1964, p.1.
+<br>
+[A70] Y Abe and A Katsura, Prog Theor Phys 43 (1970) 1402.
+<br>
+[P82] R B Pearson, Phys Rev B26 (1982) 6285.
+<br>
+[M83] P P Martin, Nucl Phys B225[FS9] (1983) 497.
+
+<p></p>
+ 
+
+
+<p> zeros (c) Paul Martin  </p>
+
+
+
+</body>
+</html>

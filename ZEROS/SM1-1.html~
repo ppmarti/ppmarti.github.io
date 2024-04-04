@@ -1,0 +1,342 @@
+<head>
+<script type="text/javascript" src="../common/LaTeXMathML.js"></script>
+<link rel="stylesheet" type="text/css" href="../common/LaTeXMathML.standardarticle.css" />
+
+
+<script type="text/javascript">
+<!--
+function switchMenu(obj) {
+	var el = document.getElementById(obj);
+	if ( el.style.display != "none" ) {
+		el.style.display = 'none';
+	}
+	else {
+		el.style.display = '';
+	}
+}
+//-->
+</script>
+
+<title>Research Background Pages</title>
+</head>
+<HTML>
+
+
+<BODY BGCOLOR=white TEXT=black>
+ 
+<a href="../index.html">Home</a>
+$\qquad - \qquad$
+<strong style="font-size:larger">Statistical Mechanics background</strong>
+(work in progress!)
+$\qquad\qquad - \qquad$
+<a href="SM1.html">Up</a>
+<hr>
+
+\section{ Introduction}
+<p style="font-size:small">
+These notes are written for my PhD student, who is a Mathematician
+who needs to know a little Statistical Mechanics for his thesis introduction. YMMV.
+He has asked:
+
+What is Statistical Mechanics?
+
+Who is interested in it?
+
+What is the relationship between the partition function and Observables?
+
+...let's start with those.
+
+<a onclick="switchMenu('myvar001');" title="REVEAL/CONCEAL">
+<font color="blue">
+\subsection{What? Why? (Click Me)}
+</font>
+</a>
+	<div id="myvar001" style="overflow:hidden;display:none">
+<p style="font-size:small">
+Statistical Mechanics is part of Physics. 
+Physics might be characterised, in the large, as the 
+scientific exercise 
+(as opposed to involuntary reflex) of modeling of the 
+observable physical world.
+That is,
+ the representation of the physical world by something `simpler',
+which nonetheless captures some of 
+the physical world's humanistically essential features.
+<br>
+There are various phases to this exercise, such as: 
+<br>
+(i) deciding which toy is the model;
+<br>
+(ii) working out what the model itself does; 
+and 
+<br>
+(iii) interpreting this behaviour
+as a prediction for the physical world.
+<br>
+The simple toys at our disposal (such as real toys, and 
+systems of equations in mathematics) 
+either exist themselves in the physical world, or are abstractions 
+formulated by creatures living in the physical world.
+In particular
+Scientists have had notable success summarizing large amounts of 
+observational data from the physical world with certain relatively simple 
+mathematical models. 
+A very successful such model is, reasonably, regarded as close to nature 
+itself; and hence fundamental. 
+Key to this is the expectation that such a model, pushed into an as yet
+unobserved 
+(but suitably nearby) regime, will correctly predict the result of observations
+subsequently made there.
+There has been notable success too in this predictive aspect of Physics,
+and great technological benefits have accrued. 
+<br>
+...So where does Statistical Mechanics fit in?
+<!-- <p style="font-size:small">
+The problem: -->
+
+<p style="font-size:small">
+"The fundamental laws necessary for the mathematical treatment of a large part of physics and the whole of chemistry are thus completely known, and the difficulty lies only in the fact that application of these laws leads to equations that are too complex to be solved."<br>
+<b>Paul Dirac</b>
+<p style="font-size:small">
+In this quote Dirac points out that the problems of Physics do not end,
+by any means, with the determination of fundamental principles.
+They include such fundamental problems; and also problems of computation.
+<br>
+(Indeed for the subject we are going to describe here, its original
+historical development was assumed to be on the fundamental side.
+Only a better understanding of its setting later showed otherwise.)
+<br>
+<!-- Statistical Mechanics is 
+<!-- not a `reductive' theory but more -->
+<!-- an attempt to
+model useful aspects of many-body systems in the face of
+ the many-body problem noted by Dirac. 
+<br> -->
+An example of the laws that Dirac is refering to would be Newton's laws, 
+which do a good job of determining the classical dynamics of a single particle
+moving through a given force-field.
+Two-body systems are also manageable but after that, even though it may
+well still be Newtonian (or some other well-understood) laws that apply in 
+principle, exact dynamics will simply not be computationally accessible. 
+<p style="font-size:small">
+At least some understanding of the modelling of many-body systems is needed
+in order to work with a number of important materials (magnets, 
+magnetic recording materials, LCDs, non-perturbative QFT etc).
+In each such case, the key dynamical components of the system are numerous,
+and interact with each other. Thus the force fields affecting the movement of
+one, are caused by the others; and when it moves, its own field changes,
+moving the others.
+<p style="font-size:small">
+The solution:
+<p style="font-size:small">
+The equilibrium
+Statistical Mechanical approach to such problems is to try to model only
+certain special types of observation that could be made on the system.
+One then models these observations by weighted averages over all possible
+instantaneous
+states of the system.
+In other words dynamics is not modelled directly (questions about dynamics are
+not asked directly). As far as is appropriate, 
+dynamics is encoded in the weightings -- the 
+probabilities asigned to states. 
+<p style="font-size:small">
+It is most convenient to pass to an example. We shall choose 
+a bar magnet. We shall assume that the metal crystal lattice is 
+essentially fixed (the formation of the lattice is itself a significant
+problem, but we will have enough on our plate). 
+The set of states of the system that we shall allow shall be the possible orientations of the atomic magnetic dipoles (not their positions, which shall be fixed
+on the lattice sites). 
+
+What next?
+
+</div>
+<p style="font-size:small">
+
+<a onclick="switchMenu('myvar002');" title="REVEAL/CONCEAL">
+<font color="blue">
+\subsection{Classical reminders (Click Me)}
+</font>
+</a>
+	<div id="myvar002" style="overflow:hidden;display:none">
+<p style="font-size:small">
+
+A good rule of thumb when analysing a physical system is:
+"follow the energy".
+(This begs many questions, all of which we ignore.)
+
+The kinetic energy of a system of $N$ point particles with masses $m_i$
+and velocities $v_i$ is
+\[
+E_{kin} = \sum_{i=1}^{N} \frac{1}{2} m_i v_i^2
+\]
+
+What can affect a particle's subsequent velocity,
+and hence change its kinetic energy? 
+That is, what causes 
+$\frac{dv}{dt}$ to be non-zero? A force:
+\[
+F = m \frac{dv}{dt}
+\]
+Thus we also need to understand the forces acting on the particles.
+
+For example: 
+If they are really pointlike then they interact pairwise via the
+Coulomb force
+\[
+F_1 = \frac{q_1 q_2}{4 \pi \epsilon_0} \frac{\underline{r}_{12}}{r_{12}^3}
+    = -F_2
+\]
+Here $q_1,q_2$ are the charges (perhaps in coulombs); 
+$\epsilon_0$ is a constant (depending on that unit choice); 
+and $\underline{r}_{12} = \underline{r}_1 -\underline{r}_2$.
+
+For a moment we can think of this as a force field created by 
+the second particle, acting on any charged first particle. 
+This is a conservative force field; meaning that there is a function 
+$\phi(\underline{r})$ such that 
+\[
+F = - \nabla \phi
+\]
+The function $\phi(\underline{r})$ is part of the potential energy
+of the first particle. 
+In other words its `total energy' is 
+\[
+E = \frac{1}{2} m v^2 + \phi
+\]
+In practice, since $\phi$ is only defined up to an additive constant,
+$E$ itself is not so significant as <strong> changes </strong> 
+in $E$. 
+
+</div>
+<p style="font-size:small">
+
+<a onclick="switchMenu('myvar003');" title="REVEAL/CONCEAL">
+<font color="blue">
+\subsection{Stats (Click Me)}
+</font>
+</a>
+	<div id="myvar003" style="overflow:hidden;display:none">
+<p style="font-size:small">
+
+Notice that system energy 
+$E$ depends on the velocities and positions of all the atoms
+in the system.
+There are $10^{23}$ or so atoms in a handful of Earthbound matter, 
+so we are not going to be able to keep track of them all (nor do we really want to). 
+We would rather know about the bulk, averaged behaviour of the matter. 
+
+Let us call the inaccessible complete microscopic specification of all positions and 
+velocities in the system a `microstate'. Then for each microstate $\sigma$ we know, 
+in principle, the total energy $E(\sigma)$. 
+We could ask: What is the probability $P$ of finding the system, at any given instant, 
+in a specific microstate? 
+
+Then we could compute an expected value for some bulk observation 
+${\mathcal O}$ by a weighted 
+average over the microstates: 
+\begin{equation}
+\label{initexpect}
+\langle {\mathcal O} \rangle = \sum_{\sigma} {\mathcal O}(\sigma) P(\sigma) 
+\end{equation}
+
+In principle the probability $P$ could depend on every aspect of $\sigma$.
+This would make computation very hard. 
+At the other extreme, $P$ could be independent of $\sigma$.
+But this turns out to be a problematic assumption for a number of 
+Mathematical and Physical reasons. 
+Another working assumption would be that 
+ two microstates are equally likely if they have the same energy; 
+i.e. that 
+$P$ depends on $\sigma$ just through $E$.
+That is, that $P$ depends only on the total energy of the system.
+Let us try this.
+
+The next question is: How does $P$ depend on $E$? What is the function $P(E)$?
+
+If we have a large system, 
+then we could consider describing it in two parts
+(left and right side, say), separated by some notional boundary, 
+with the total microstate $\sigma$ being made up of $\sigma_L$ and $\sigma_R$.
+These halves are in contact, of course, along the boundary. 
+But 
+if the system is also in contact with other systems
+(so that energy is not required to be locally conserved), then 
+it is plausible to assume that the states of the two halves are 
+independent variables. In this case
+\[
+P(\sigma) = P(\sigma_L) P(\sigma_R)
+\]
+as for such probabilities in general. 
+Similarly, the total energy
+\[
+E = E_L + E_R + E_{int}
+\]
+(where  $ E_{int} $ 
+is the interaction energy between the halves) is reasonably approximated by 
+\[
+E \sim E_L + E_R
+\]
+(Why is this reasonable?!... 
+Clearly the kinetic energy is localised in each of the two halves.
+The potential energy is made up of contributions from all pairs,
+including pairs with one in each half. But we assume that the pair potential
+is greater for pairs that are closer together; and that the boundary is a 
+structure of lower dimension that the system overall. 
+In this sense $E_{int}$ is localised in the boundary
+(pairs that are close together but in separate halves are necessarily
+close to the boundary); 
+while being part of the overall potential energy, which is spread with
+essentially constant density over the whole system. 
+Thus $E_{int}$ is a vanishing proportion of the whole energy for a 
+large system. (We shall return to these core physical assumptions 
+of Statistical Mechanics later.))
+
+The $L$ and $R$
+subsystems will each have their own `energy-only' probability function.
+Thus we have something like
+\begin{equation}
+\label{ppp1}
+P(E_L+E_R) = P_L(E_L) P_R(E_R)
+\end{equation}
+In this expression $E_L$ and $E_R$ are independent variables, so 
+\[
+\frac{\partial P(E_L+E_R)}{\partial E_L} = 
+\frac{\partial P(E_L+E_R)}{\partial E_R}  
+\]
+so
+$
+P_L'(E_L) P_R(E_R) = P_L(E_L) P_R'(E_R)
+$,
+so
+\[
+\frac{P_L'(E_L)}{P_L(E_L)} = 
+\frac{P_R'(E_R)}{P_R(E_R)}  
+\]
+This separates. We write $-\beta$ for the constant of separation.
+We have $P'_L(E_L) = -\beta P_L(E_L)$ (and similarly for $R$).
+This is solved by a function of form
+\[
+P(E) = C \exp(-\beta E)
+\]
+where $C$ is any constant. 
+In our case $C$ is determined by 
+\[
+\sum_{\sigma} P(E(\sigma))  =1
+\]
+The separation constant $\beta$ is interesting, since it is the only thing
+(other than the form of the function itself) that connects the subsystems.
+We will see later that 
+this connection corresponds (inversely) to a notion of 
+<strong> temperature</strong>.
+
+<a onclick="switchMenu('myvar003');" title="REVEAL/CONCEAL">
+<font color="blue">
+[click to minimize subsection]</font></a>
+
+</div>
+
+%does this work?!
+
+</BODY>
+
+</HTML>
