@@ -1,0 +1,8 @@
+
+Def.11 has a typo - cf. [15].
+(Preceding constructions in this section have n = |lambda|. But in Def.11 the idea is for the
+n on the left, and the first n on the right, to be allowed to vary. But the last typed n should then
+not be n - it continues to be |lambda|= (P+1)(M+1).)
+
+See also the NOTES for the Rittenberg paper.
+
