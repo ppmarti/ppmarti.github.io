@@ -1,0 +1,48 @@
+
+Combinatorial Representation Theory: Algebra and its interfaces with Geometry, Topology and Combinatorics. 
+
+
+Version for presentation at grant app surgery:
+
+1. Programme Grants  
+ A. provide flexible funding to world-leading research groups 
+ B. to address significant major research challenges. 
+ C. support world leading researchers, 
+  bringing together best teams to undertake a variety of activities 
+ D. ...focusing on one strategic research theme. 
+ E. can be awarded for up to a six year duration. 
+ F. interdisciplinary and collaborative 
+  but can address key challenges in a single discipline. 
+ G. seen by EPSRC as critical mass investments covering phys science portfolio 
+  benefit UK research through the concentration of high performing talent. 
+ H. not just large grants but must be strategic in nature. 
+  Likely require expertise of number of internationally recognised scientists.
+
+2. Our proposal
+ABCDEFGH
+2121-
+
+B/D. Significant major research challenge / D. strategic research theme
+  What is the difference between algebra and geometry?
+  ...
+A/C. World-leading research group/ best team.
+  Baur / Marsh / Faber / Martins / Martin  / Parker (+...)
+  representation Theory
+  Representation theory
+  representation theory
+  work of Baur-Marsh on new algebraic properties of surfaces
+  of Marsh on (re)combinatorialisation of geometric structures (Lie theory) 
+  of Baur-Faber on friezes
+  of Martins on combinatorialisation of metric topological structures
+  of Martin on geometry in algebraic representation theory
+  (noncommutative) algebraic geometry
+  topology
+  applications (TQC, computational physics, fundamental physics, ...)
+  FLASH THE GRAPH
+  ...
+E. £2.8M / 5 years / multi-postdoc
+
+G. Benefit UK research
+ 
+
+
