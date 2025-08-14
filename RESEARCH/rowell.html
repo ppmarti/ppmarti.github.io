@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.or
+g/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+   <link href="../black/chem.css" rel="stylesheet" type="text/css" />
+   <title>Paul Martin, Mathematics, University of Leeds</title>
+
+   <link rel="icon" href="../cat001.png"> 
+
+</head>
+
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /*loop through a collection of all HTML elements:*/
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain attribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /*make an HTTP request using the attribute value as the file name:*/
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /*remove the attribute, and call this function once more:*/
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      }      
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /*exit the function:*/
+      return;
+    }
+  }
+};
+</script>
+
+
+<title>Paul Martin's Funding Homepages</title>
+
+<BODY BGCOLOR=white TEXT=black>
+<font face="Helvetica,Arial,Sans-Serif">
+
+	<div w3-include-html="PMLUbanner.html"></div>
+
+	<!-- 
+<table cellspacing="0">
+<tr><td>
+<table cellspacing="0" id="header">
+<tr>
+<td id="header-left"><a href="http://www.maths.leeds.ac.uk/"><img
+        src="../black/paulmar-header.gif"
+        width="380" height="100" border="0"/></a>
+</td>
+<td width="100%" id="header-fill">
+</td>
+<td id="header-right"><a href="http://www.leeds.ac.uk/"><img
+        src="../black/uol.gif"
+        alt="University of Leeds - Home Page"
+        width="270" height="100" border="0"/></a>
+</td>
+</tr>
+</table>
+</td></tr>
+</table>
+	-->
+
+<!--
+<img align=center src="../ZEROS/db.gif" width="30" height="40">
+-->
+
+
+
+
+<center>
+<H2>Project with Eric Rowell (Texas A&M)</H2>
+</center>
+
+I am host and PI at Leeds for Eric's 
+<a href="https://royalsociety.org/news/2025/06/wolfson-fellowships-2025/">Royal Society Wolfson Fellowship</a> 
+and project: Anyons, Braids and Categories. 
+
+<p>
+This project concerns the mathematical underpinnings of topological quantum 
+computation; and some practical aspects of `higher' representation theory. 
+<p>
+For now see our works on the arXiv for more information. 
+
+<ul>
+	<li> <a href="https://people.tamu.edu/~rowell/">Eric Rowell</a>
+<li> <a href="rowell2.html">Links</a>
+</ul>
+
+&nbsp
+
+<p>
+
+<hr> 
+<hr>
+
+<img align=center src="../IMAGES/uc001.png" width="60" height="40">
+* page under construction  &nbsp &nbsp 
+
+</font>
+
+	<script> 
+		includeHTML();  
+	</script>  
+
+</body>
+</html>
