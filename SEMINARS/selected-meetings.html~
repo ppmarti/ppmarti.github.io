@@ -1,39 +1,11 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.or
-g/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<HTML  xmlns="http://www.w3.org/1999/xhtml">
-
+<HTML>
 	<head>
 
 <title>Paul Martin's Leeds Research Homepage</title>
 <link rel="icon" href="cat001.png">
-
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
- <link href="black/chem.css" rel="stylesheet" type="text/css" />
-
 	</head>
 
 <BODY BGCOLOR=white TEXT=black>
-
-	<table cellspacing="0">
-<tr><td>
-<table cellspacing="0" id="header">
-<tr>
-<td id="header-left"><a href="http://www.maths.leeds.ac.uk/"><img
-        src="black/paulmar-header.gif"
-        width="380" height="100" border="0"/></a>
-</td>
-<td width="100%" id="header-fill">
-</td>
-<td id="header-right"><a href="http://www.leeds.ac.uk/"><img
-        src="black/uol.gif"
-        alt="University of Leeds - Home Page"
-        width="270" height="100" border="0"/></a>
-</td>
-</tr>
-</table>
-</td></tr>
-</table>
-
 
 <IMG SRC="puremathweb5.gif" USEMAP="#puremathweb" ALIGN="right" style='border:0px solid gray'>
 <MAP NAME="puremathweb">
@@ -92,7 +64,7 @@ Recent papers and preprints</a>
   <li> <a href="SEMINARS/LYLT.html">LYLT (Leeds-York Lie Theory)</a>
    
   <li> Leeds Algebra Seminar <a href="http://www.maths.leeds.ac.uk/Pure/algebra/alggp-allsem.html">OLD Leeds Algebra Seminar page</a> ; 
-<a href="http://www1.maths.leeds.ac.uk/~pmtemf/algebra-seminar.html"> OLD page (Faber's page) </a> 
+<a href="http://www1.maths.leeds.ac.uk/~pmtemf/algebra-seminar.html"> NEW page (Faber's page) </a> 
 </li>
 </ul>
 <li> <a href="RESEARCH/grad.html">Grad School</a></li>
@@ -101,8 +73,7 @@ Recent papers and preprints</a>
  <li> <a href="projects.html">Projects</a></li>
  <li> <a href="halloffame.html">Hall of Fame</a></li>
 </ul>
-<li> <a href="SEMINARS/selected-meetings.html">Selected Meetings </a> 
-	<!-- 
+<li> Selected Meetings 
 <ul>
 	<li> <a href="https://sites.google.com/view/yang-baxter-algebras/schedule">Yang-Baxter Algebra</a> HW Edinburgh 2024. <a href="https://ppmarti.github.io/pdf/talkdraftEdX.pdf">-my slides</a> (not used in talk, but indicative).
 <li> <a href="https://www.icms.org.uk/TopologicalQuantumComputation">Topological Quantum Computation </a> ICMS Edinburgh, October 2023.
@@ -127,14 +98,13 @@ Representations, Integrability and Physics
 <li><a href="http://www.phys.ens.fr/~jacobsen/acfta/">Advanced CFT and Applications (IHP 2011)</a>
 <li><a href="http://www.math.uu.se/Conference/">"Algebraic Representation Theory", Conference Uppsala 2011</a> 
 <li> <a href="SEMINARS/selected-meetings-older.html"> OLDER </a>
-	-->
 <!--
   <li> <a href="http://bmc2008.confonline.com/splinters.html"> BMC 2008 Algebras and Groups splinter</a>
 (provisional and incomplete) draft 
        <a href="SEMINARS/bmcsplinter.pdf"> 
 schedule </a>
-  </ul>
 -->
+  </ul>
 <li> <a href="research-sem.html">Assorted rough seminar notes/transcripts</a>
 <!--
   <ul>
@@ -151,8 +121,6 @@ schedule </a>
 <a href="http://www.ima.org.uk/"> IMA </a> ; 
 <a href="http://www.iop.org/"> IoP </a> 
 --!>
-&nbsp &nbsp
-<a href="RESEARCH/rowell.html">Project with Rowell (Texas A&M)</a>
 &nbsp &nbsp
 <a href="https://sfatimah.staffat.iium.edu.my/index.php/research/">Project with Zakaria (IIUM)</a>
 &nbsp &nbsp
@@ -181,7 +149,7 @@ LT="logic">
 </MAP>
 -->
 
-<IMG SRC="mathweb2.gif" USEMAP="#mathweb2" ALIGN="right" style='border:0px'>
+<IMG SRC="mathweb2.gif" USEMAP="#mathweb2" style='border:0px'>
 <MAP NAME="mathweb2">
 <AREA COORDS="376,96,501,146" HREF="http://www.maths.leeds.ac.uk/~ppmartin/SEMINARS/SMDG.html" 
 ALT="algebra">
