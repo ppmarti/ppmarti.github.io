@@ -1,0 +1,45 @@
+
+Fermi-Estimate the number of passengers using Leeds station in a year
+
+
+Note that this number could be useful to know for various people
+(in lectures we talked about suppliers for the various Cafes in the
+station, for example).
+
+
+Step 1: decide how to break the problem up into factors that are easier
+to estimate.
+(in lecture we found that everyone in class had used Leeds station at
+least once last year, so we've seen it in action.)
+
+We broke it up like this
+number of days in year (assuming roughly same activity each day)
+number of hours in day (...)
+number of platforms (not everyone in class liked this choice of factor - see below)
+number of trains per hour per platform
+number of carriages per train
+number of people per carriage 
+proportion of those entering or exiting at Leeds.
+
+
+
+Step 2: estimate each factor.
+days = 365 (general knowledge!) - for Fermi estimate we made it 500
+hours = 24 (general knowledge!) - for Fermi estimate we made it 20
+platforms = 17 (general knowledge, for some of us in class!)
+trains per platform per hour = 3
+   combine these two --> Fermi estimate = 50 trains per hour total
+   (which then agreed with other people's estimate by a different route)
+carriages = 10
+people per carriage = 20
+proportion entering or exiting at Leeds = .5
+
+Giving 500x20 x 50 x 10 x 20 x .5
+= 10000 x 10000 x .5 = 50,000,000
+
+ 
+Actual answer (from web, for 2018) = 31,000,000
+
+:-)
+
+

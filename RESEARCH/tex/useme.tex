@@ -1,0 +1,63 @@
+%%% Here comes PPM's TeX template of 3/12/99. (templates/mathtplt.tex)%%%
+%\def\filename{*.tex} 
+\title{}
+\author{P P Martin \and A N Other \\ \myaddress}
+\date{}
+%%% ...Or whatever title stuff is appropriate!
+%{{{ class/packages/layout/macrofiles
+\documentclass[12pt]{article} 
+\usepackage{epic} 
+\usepackage{eepic} 
+\usepackage{latexsym}
+\usepackage{amssymb}
+%\renewcommand{\baselinestretch}{1.5}       % 2=Double spacing  
+\oddsidemargin1cm \textwidth15cm \textheight25cm \topmargin-1in  
+%%%
+\input /home/ppm/common/tex/templates/martinew
+%}}}
+\begin{document} \maketitle
+%{{{ draft level and draft header 
+%%% In version submitted to journal we dont have certain stuff...
+%%% ...so choose one of the following 2 lines as appropriate:
+ \newcommand{\ignoreifnotdraft}[1]{\ignore{#1}}
+%\newcommand{\ignoreifnotdraft}[1]{#1}
+\ignoreifnotdraft{
+%%% PAGEHEADINGS (REMOVED FOR JOURNAL SUBMISSION):
+\pagestyle{myheadings} \markboth{Draft}{\today}
+}
+
+\ignoreifnotdraft{
+\noindent
+\begin{tabular}{l} 
+  {\tiny \filename (Draft)} \hspace{4.4in} Jan 1997 \\ \hline 
+\end{tabular}
+}
+%}}}
+%{{{ %abstract
+%
+%\begin{abstract}
+%These results are.
+%\end{abstract}
+%
+%\vspace{.1in}
+%}}}
+\ignoreifnotdraft{ \newpage } %%% Journal submission only %%%
+\section{Introduction}
+*
+
+%{{{ biblio new
+\bibliographystyle{amsplain}
+\bibliography{new31,main,emma}
+%}}}
+\end{document}
+%{{{ Local vars
+% § Local Variables
+
+% Local Variables:
+% eval: (standard-display-european 1)
+% mode: LaTeX
+% folded-file: t
+% End:
+
+% ¶
+%}}}

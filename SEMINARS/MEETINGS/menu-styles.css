@@ -1,0 +1,40 @@
+/* ** menu styles */
+
+BODY {
+	margin: 0px; 
+	padding: 0px;
+	background-color: #DADAFA;
+}
+
+TD.menu-head {
+	background-color: #DADAFA;
+}
+TD.menu-head IMG {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+TD.menu-sep {
+	height: 2px;
+	background-color: #FAFAFA;
+}
+
+TD.menu-cell {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: bold;
+	background-color: #DADAFA;
+}
+
+TD.menu-cell A.menu-link {
+	padding-top: 6px;
+	padding-bottom: 8px;
+}
+
+A.menu-link {
+	padding-top: 6px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+/* --- */

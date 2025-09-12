@@ -1,0 +1,160 @@
+Initial examples
+
+
+
+First, to test out socrative, and to for a first go at 
+a question.
+
+- How many children does the queen have?
+- How many students in UoL?
+- How many people live in the UK? 
+
+Is this "general knowledge", a guess, or an estimate? 
+What's the difference?	
+Is accuracy crucial?
+
+
+
+The above are questions people might *know* the answer to, but:
+
+- How many books in UoL libraries? (~2.8 million)
+- How many metres of corridor in UoL? (?)
+- How many sweets in the jar? (471)
+
+These are questions we almost certainly don't know the answer to,
+and we need to guess, or ideally, estimate. 
+
+
+
+These are also "counting" questions - we might also have questions like:
+
+- How fast, in miles per hour, does:
+ - Usain Bolt run? (~28 mph)
+ - a jumbo jet fly? (550 mph [Boeing 747])
+ - human hair grow? (~10^-8 mph)
+
+- or how far, in kilometres:
+ - is Leeds from London? (272)
+ - is Leeds from Sydney? (16,929)
+ - is Leeds from the Sun? (149,600,000)
+
+- or something like:
+ - what's the value of all the art in the world?
+ - how long would it take you to read all the books ever written?
+ - or listen to all the music ever written?
+ - which is likely to be longer?
+ - How many people do I know, or know someone who knows?
+ - How much money do I need to get to the end of my life?
+
+
+
+*** WHy are we doing this? ***
+
+- Activity: [Possibly chaotic exercise: give out around 30 or so bits of paper with things
+like "number of modules offered at Leeds", for them to put in order, between them]
+
+
+Techniques:
+
+
+Good ways to imagine big-ish numbers
+
+(Subitizing - how long does it take to "count" a bunch of things? The
+time increases pretty quickly from quite small numbers). 
+
+Things there are around 100 of:
+
+Seats in this lecture theatre;
+Number of facebook friends(?);
+other examples...
+
+Things there are around 1000 of:
+
+Bricks in a wall?
+
+
+
+Things there are around 10,000 of:
+
+Elland Road capacity: ~40,000
+Headingley: ~20,000 (either rugby or cricket)
+Albert hall: ~5000
+O2 Arena: ~20,000
+Wembley: ~90,000
+
+
+Things there around 100,000 of:
+
+The Bible has around 800,000 words
+The Hobbit: ~100,000
+Harry Potter & Prisoner of Azkaban: ~100,000
+Lord of the Rings: ~500,000
+
+Bigger numbers:
+
+Population of Yorkshire: 5,300,000
+Population of UK: 65,000,000
+Population of world: 7,000,000,000
+
+
+
+How many atoms in a grain of sand?
+78 000 000 000 000 000 000 
+
+This is getting out of hand!
+
+- Orders of magnitude/scientific notation
+
+10^5 etc - what does it mean?
+
+
+
+Fermi's method
+
+- Classic example of piano tuners in Chicago
+
+Key points:
+- only need to estimate things to an order of magnitude - fine to be imprecise
+- simplify!
+- fewer steps the better, but you might need more
+- think about the answer - does it make sense?
+- When to round up, when to round down?
+
+Practise questions:
+
+http://www.fermiquestions.com/play
+
+use socrative?
+
+Why does it work? (Roughly, estimates cancel out, perhaps give an example)
+
+
+Importance of all this:
+
+Crowd counting estimates:
+
+http://www.popularmechanics.com/science/a7121/the-curious-science-of-counting-a-crowd/
+
+http://onlinelibrary.wiley.com/doi/10.1111/j.1740-9713.2011.00502.x/abstract
+
+
+
+Homework
+-------------------------
+Estimation questions (to be cont'd - need one for each student!)
+
+- How many pints of beer are sold in the UK each week?
+- How many leaves are there in the world?
+- How many swimming pools are there in the world?
+- How many firefighters are there in Yorkshire?
+- How many kilts are there in Scotland?
+- How many cans of paint would you need to paint Buckingham Palace?
+- How long would it take to cut the grass of every Premier League ground with a flymo?
+- How many films have been made in Hollywood studios?
+- How many tennis balls get used at Wimbledon each year?
+- How many pencils are there in the UK?
+- How many bets are placed in Las Vegas each year?
+- How many pairs of football boots are there in the UK?
+- How many blades of grass are there on a golf course?
+- How many professional drummers have been born since 1900?
+- 

@@ -1,0 +1,111 @@
+
+Let's think a little more about Arrow's Theorem
+from the Voting lecture/presentation...
+
+Arrow's Theorem is the one that is about ways of converting a collection of
+individual rankings by voters of candidates A,B,C,... in an election, 
+to an election outcome - a ranking of the candidates that we may attribute 
+to society collectively.
+ 
+The starting point is to say that there are three reasonable requirements 
+for a fair way of doing it:
+  (R1) `Unanimity': if every individual voter prefers candidate A to B then the vote outcome should too;
+  (R2) `IIA': the outcome's relative ordering just of A and B should not 
+depend on someone changing where they order C, but with no change to the order of A and B;
+  AND FINALLY
+  (R3) No single person should determine the outcome.
+ 
+The Theorem says "there is no fair system"!
+
+
+Q1. Does it mean Maths is useful, or not?!
+
+
+
+Q2. How can we ``prove'' something like that Theorem?
+
+Here is a little glimpse...
+
+Recall the theorem. In particular it implies:
+Any system that obeys unanimity and IIA (Independence of Irrelevant Alternatives) is a `dictatorship'.
+(Can you see why this is what the Theorem implies?)
+
+Let's think about a claim that is clearly related:
+If every voter ranks candidate A either best or worst, then so does any vote system
+obeying the three fairness assumptions.
+
+Let's suppose this is NOT true.
+
+Then there is a voting system where there are further candidates B,C 
+and possible individual rankings by voters of the candidates (as above)
+so that the election result is B>A>C.
+(Explicitly A is NOT either first or last here.)
+
+Let's call the voting system F. And lets call the pile of completed voting
+papers S. F is a `machine' for reading S and producing an election result 
+from this collection of votes. In maths we write this result as F(S).
+(That is just a shorthand acknowledging that the result depends on 
+the set S of votes cast, and also on the method F of synthesising a decision
+from this set.)
+We think of F as a machine that takes a pile of completed voting papers
+as input and produces an election result as output.
+The input is the collection of rankings of all the candidates by the
+individual voters. And the output is society's collective decision 
+on the rankings of candidates - the election outcome.
+
+For example F might take S and simply count the number of first place votes
+for each candidate, and then rank according to this number.
+
+Notice that the `machine' F is fixed once and for all in a given electoral
+system. Different elections might produce different outcomes,
+but that is because the set S of individial votes might be different.
+That is, F(S) and F(S') might not be the same if S and S' are not the same.
+
+Now we can do a thought-experiment with our fixed voting system F by 
+considering different sets S of actual individual votes.
+Given such a set S, we could consider a slightly different set S' where
+someone has votes slightly differently. The `machine' F will tell us a
+result for the scenario S' too.
+
+So, let's start with a vote set S. And here we are assuming it is the 
+one we mentioned above in which F(S) has B>A>C.
+
+Now we will take the vote set S and use it as a starting point to 
+construct a slightly different scenario S'. 
+(We can think of this as the same election, with the same system F, 
+and the same voters i,j,k,... say; but
+taking place in a parallel universe perhaps.)
+To get S' from S 
+we will adjust the individual rankings so that if person i has 
+A ranked top, move C up to second. 
+
+And for each person j with A bottom move C top.
+
+This does not change any voter's preference between A,B.
+So by IIA the result still has B>A.
+That is, F(S') still has B>A.
+
+And similarly it has A>C. (Can you see the argument?)
+
+But now every individual has C ranked over B. 
+So... by Unanimity, C>B, and hence C>A in the result.
+A contradiction!
+
+
+....OK, that's enough for now.  :-)
+
+
+
+3. How could we try to get around it?
+
+Notice that it only applies to systems with more than 2 candidates.
+Could we find a way to reduce to a sequence of 2-candidate elections,
+and always use a fair system (majority) for those?
+
+
+
+
+References
+http://www.ssc.wisc.edu/~dquint/econ698/lecture%202.pdf
+
+

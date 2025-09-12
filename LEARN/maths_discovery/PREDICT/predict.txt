@@ -1,0 +1,38 @@
+
+Prediction: I knew you were going to say that!
+
+
+In some ways prediction is a bit like estimation.
+For example both can be more or less well-informed.
+When you are at the horse races and there is a two-horse race - one of the horses looks old and fat like Paul, and the other younger and fitter like Rob - 
+then you might predict that the Rob-horse will win.
+But when you do your numbers on the lottery, this is just a guess.
+
+Also like with estimation, it is likely to be sensible to build in 
+limits to the accuracy of a prediction.
+If you predict _exactly_ how tall a child born today will be at age 10,
+then you will get it wrong. 
+But if you guess aiming for a 5cm range of possibilities (and you do a bit of research about typical heights by age) then you have a reasonable chance. 
+
+
+One form of prediction is interpolation:
+this is prediction based on what happened before.
+What you can do in the way of interpolation depends on how much data you have on what happened before.
+Everybody's favourite is LINEAR interpolation.
+For this you have two previous data points: x1 and x2, and the prediction is:
+x3 = x2 + (x2-x1)
+Another good one is CONSTANT interpolation.
+For this you have one previous data point, and the prediction is: no change.
+If you have three previous data points then you could use something which generalises the two methods above, called QUADRATIC interpolation.
+And indeed there are a sequence of generalisations like this.
+But this is a good example of where just using the maths without a little thought is a bad idea!...
+Suppose I tell you the temperature at midday on the Headrow (in Leeds) every day for a decade. The method above will give you a complicated (but computable) formula for a prediction for the temperature tomorrow.
+But it will not be a good one.
+What would we spot if we plotted a graph of this decade's worth of data?
+And what is wrong with our (`polynomial') interpolation?
+(Discussion hints:
+What are seasons and why do they come around in a cycle?
+What is a quadratic function? And is there a quadratic function that repeats cyclically?)
+
+...Now we are on the verge of getting into... Mathematical modelling!
+

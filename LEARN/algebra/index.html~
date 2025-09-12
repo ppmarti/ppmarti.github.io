@@ -1,0 +1,272 @@
+<head>
+<TITLE>First Year Algebra at City University</TITLE>
+<BASE HREF="http://www.staff.city.ac.uk/~ra359/courses/X1Algebra/current/">
+<!-- NB, BASE was:  -->
+<!-- "http://www.city.ac.uk/mathematics/algebra/X1Algebra/" -->
+</HEAD>
+<BODY BGCOLOR="#FFFFFF"TEXT="#000000" LINK="#0000FF" VLINK="#EE0000"
+ALINK="#2FC13A" >
+<FONT FACE="Helvetica,Arial,Sans-Serif">
+<!-- {{{ --> <!-- preamble -->
+<!--
+<p>
+This page is in preparation, but you will already find some useful stuff
+here...
+-->
+
+<h1>X1 Algebra </h1>
+
+This is the course home page for X1 Algebra 
+as provided by the Centre for Mathematical Science 
+for 1st year Students.
+<p>
+
+The syllabus for this course can be found
+<a href="http://www.city.ac.uk/mathematics/Syllabus/Year1.html">
+here</a>. 
+
+Unless otherwise stated, all files for download are in .pdf format.
+
+<!-- }}} -->
+<!-- {{{ --> <!-- NEWS -->
+<h3>NEWS 2005</h3>
+
+Jan 2005: This page welcomes new lecturer: Dr Alvarez!
+<p>
+
+Jan 2005: <a href="ex1-Alvarez.pdf">Here </a> 
+are the first new set of exercises for this year (pdf format).
+
+<p>
+Feb 2005: <a href="ex2-Alvarez.pdf">Here </a> 
+are the second new set of exercises for this year (pdf format).
+
+
+<!-- }}} -->
+<!-- {{{ --> <!-- Lecture notes -->
+<h4> Selected Lecture Notes and Other Reading </h4>
+A complete set of lecture  notes are presented in class, but the 
+following sets of notes may provide a useful base for your studies.
+<ul><li>
+Some handy notes on 
+<a href="AlgebraNotes.pdf">
+SETS, COMPLEX NUMBERS,
+SEQUENCES AND SERIES, and DIFFERENCE EQUATIONS (provisional version)</a>
+- i.e. notes on ALL topics covered in the course except Matrices
+(for Matrices, all notes must be taken in class).
+</li><li>
+Some handy notes on 
+<a href="X1AlgRels.pdf"> RELATIONS (provisional version) </a> 
+</li><li>
+Some notes for more advanced students wishing to make 
+<a href="http://www.staff.city.ac.uk/~ra359/psfiles/a3.pdf">
+Algebra THE NEXT STEP (provisional version)
+</a>. 
+These notes have been used in the past to help X1 students prepare for 
+the X2 Linear Algebra course. They are not currently being used for this
+purpose, and the `Treasure hunt' refered to in the notes is not happening this
+year. 
+However, you may find some of these notes very useful as 
+collateral/support  material for X1 Algebra!  
+</li><li>
+Visit Dr Cox's X2 Linear Algebra homepage for some useful notes on matrices (and 
+much more besides!). 
+</li>
+</ul>
+
+<!-- }}} -->
+<!-- {{{ --> <!-- Exercises -->
+<h4>Exercises</h4>
+Once you have attempted an exercise from the lists below 
+you may consult your Personal Tutor, or your Friday Tutor, in tutorial, 
+to check that you have it right (or for help, if you got stuck!).
+Always take your lecture notes to tutorials.
+<ul>
+<li>
+<a href="X1AlgEx01.pdf">
+All Exercise sheets in a single pdf file (provisional version)
+</a> Print off as much as you like! 
+Sets of sheets for the individual sections of the course are below.
+See NEWS section for suggestions on which questions 
+you should now be able to do. 
+</li><li>
+<a href="X1AlgEx_Matrices.pdf">
+Exercises on Matrices </a>
+</li><li>
+<a href="http://www.city.ac.uk/mathematics/algebra/X1Algebra/X1AlgEx_Complex.pdf">
+Exercises on Complex Numbers </a>
+</li>
+<li>
+<a href="http://www.city.ac.uk/mathematics/algebra/X1Algebra/X1AlgEx_Series.pdf">
+Exercises on Series </a>
+</li>
+<li>
+<a href="X1AlgEx_Relations.pdf"> Exercises on Sets and Relations </a>
+</li>
+</ul>
+
+<!-- }}} -->
+<!-- {{{ --> <!-- coursework -->
+
+
+<h4>Coursework assignments</h4>
+
+Here are copies of the assessed courseworks for 2003/4.
+<ul>
+<li>
+<a
+href="http://www.city.ac.uk/mathematics/algebra/X1Algebra/X1AlgCW1.pdf">
+Coursework 1 
+</a> 
+and now:
+<a
+href="http://www.city.ac.uk/mathematics/algebra/X1Algebra/X1AlgCW1Answers.pdf">
+Coursework 1 ANSWERS </a>
+</li>
+<li>
+<a
+href="http://www.city.ac.uk/mathematics/algebra/X1Algebra/X1AlgCW2_2004.pdf">
+Coursework 2 
+</a> 
+</li>
+</ul>
+
+<!-- }}} -->
+<!-- {{{ --> <!-- textbooks -->
+
+<P>
+<h4>Recent additions to the list of useful textbooks</h4>
+<ul>
+<li>
+(Beginning) Finite Mathematics (Schaum Outline Series), Seymour Lipschutz.
+<br>
+(Sadly the old version of this book is out of print, and the new version is
+not due to be ready until April 2004! In the mean time we will have to go 
+back to recommending two (fortunately both very inexpensive) books - see below.)
+</li>
+<li>
+Discrete Mathematics  (Schaum Outline Series), Seymour Lipschutz.
+<br>
+(Covers Set Theory, Matrices, Recurrence Relations)
+</li>
+<li>
+Mathematical Methods for Science Students (Longman), G Stephenson. 
+<br>
+(Covers Complex Numbers, Matrices, Series, Difference Equations)
+</li>
+</ul> 
+<P>
+
+<!-- }}} -->
+<!-- {{{ --> <!-- past exams -->
+<h4>Past examination papers</h4> 
+
+<ul>
+<li>
+<a href="http://www.city.ac.uk/mathematics/Exams/2002/">Algebra 02</a>
+Exam paper.
+</li>
+<li>
+<a href="http://www.city.ac.uk/mathematics/Exams/2003/">Algebra 03</a>
+Exam paper, and 
+<a href="X1AlgExam03Ans.pdf"> Model solutions </a>.
+</li>
+<li>
+<a href="X1AlgExam03r.pdf">Algebra 03 RESIT </a>
+Exam paper, and 
+<a href="X1AlgExam03rAns.pdf"> Model solutions </a>.
+</li>
+</ul>
+<p>
+</ul>
+
+<!-- }}} -->
+<hr>
+<!-- {{{ --> <!-- NEWS 2004 -->
+
+<h3>NEWS 2004</h3>
+
+Jan 2004 : You should be able to
+download and view the Exercises (below).
+You may already be able to do the first several!
+<p>
+Feb 2004: 17/2/2004 -- Coursework 1 is now available for download. 
+Coursework 1 must be submitted by 1st March (to General Office).
+There are now some NEW downloadable lecture notes on SETS (see below).
+<p> 
+Feb 2004: You should now be able to do all the questions from 
+exercise sheet 1, and trying sheet 2. 
+<!--
+<p>
+Mar 2004: 2/3/2004 - the lecture scheduled for this day will 
+be rescheduled for a little later in the term (the Department is
+hosting an important Research Conference on 2/3/2004). 
+Please DO NOT worry about missing this lecture, or the previous week
+- we will still complete the syllabus in plenty of time!
+(Please use the time on Tuesday to study the new lecture notes on SETS 
+downloadable from this page.)
+-->
+<p>
+Mar 2004: Answers to Coursework 1 are now available for download.
+Submitted courseworks will be marked and returned by personal tutors.
+<p> Mar 2004: The SETS lecture notes below now include notes on 
+COMPLEX NUMBERS and ALL remaining topics in the course as well.
+<p> Mar 2004: Coursework 2 is now available for download.
+This coursework is to be submitted on Wednesday of the first week of
+the summer term.
+<p> Mar 2004: EXAM REVISION - 
+There are now links below to the 2003 exam paper, and to
+model solutions to that paper. It is recommended that you do not look 
+at the solutions until after you have attempted the paper as a mock exam 
+under exam conditions.
+There will be revision lectures in week 1 of summer term - be sure to have
+attempted the mock exam before this, and bring any questions you have
+along to the lectures for discussion.
+<p> April 2004: EXAM REVISION - 
+There are now links below to the 2003 RESIT exam paper, and to
+model solutions to that paper. This will serve well as another  
+mock exam for this year.
+
+<!-- }}} -->
+<!-- {{{ --> <!-- old news -->
+<h3>OLDER NEWS</h3>
+
+Jan 2003 : Happy New Year! This site is now online. 
+This year's lecturer is Prof P P Martin 
+(Last year's lecturer was Dr G Bowtell 
+- thank you, Dr Bowtell, for doing an excellent job. 
+Much of this year's course support material is based on 
+Dr Bowtell's original material.). 
+<p>
+Jan 2003 : (Some) Lecture notes, all exercise sheets and all courseworks will 
+appear here in the coming weeks. 
+<p>
+Jan 2003: Lectures have started. 
+You should now be able to do Q1, and probably Q4-Q9, from the
+exercises!
+<p>
+Feb 2003: 5/2/2003 -- Coursework 1 has been given out in class. 
+It is now also available for download. 
+Coursework 1 must be submitted by Wednesday 19th Feb.
+<p> 
+Feb 2003: You should now be able to do all the questions from 
+exercise sheets 1 and 2. 
+
+<!-- }}} -->
+<hr>
+<address> 
+Paul Martin (base=rc360)
+</address>
+Last Modified:  Mar 2004
+
+</BODY>
+
+
+
+<!--
+Local Variables:
+folded-file: t
+fold-top-mark: "<!-- {{{ -->"
+fold-bottom-mark: "<!-- }}} -->"
+End:
+-->

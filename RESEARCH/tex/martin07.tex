@@ -1,0 +1,452 @@
+%%%\def\filename{martinew.tex} 
+%%% THIS IS JUST MACROS
+%{{{ %reminder junk
+%\usepackage{epic} \usepackage{eepic} \usepackage{latexsym}
+%%\usepackage{amssymb} 
+%%\renewcommand{\baselinestretch}{1.5}       % 2=Double spacing  
+%%%\oddsidemargin1cm \textwidth15cm \textheight25cm \topmargin-1in  
+%%%% The following line for 12pt 
+%%%\oddsidemargin.51cm \textwidth15cm 
+%%%\textheight25cm  \topmargin-1.5cm %cf.kyoto offset -1cm!!! %\def\ninrm{}
+%}}}
+%{{{ global macro glossary making
+%%% Global Macro glossary making macros
+%%%
+%%% if do not require glossary use second following line 
+%\newcommand{\noglossaryignore}[1]{#1}
+\providecommand{\noglossaryignore}[1]{}
+%%%N.B. correct practice is to leave this as it is (!) and insert a 
+%%%     copy of the third line up from here (uncommented) 
+%%%     into your document if you want a glossary. 
+%
+%%% create glossary entry in format   MACRONAME   OUTPUT:
+\newcommand{\globalglossaryentry}[3]{\makebox[1.5in][l]{\tt $\backslash${#1}} 
+\makebox[1.1in][l]{{$#2$}} \makebox[2.5in][l]{{#3}}\newline} 
+%
+%%% metacommand to creat newcommand (abbreviation) and glossary entry data:
+\newcommand{\newcommandabbreviation}[3]{\newcommand{#1}{#2}%
+\noglossaryignore{\globalglossaryentry{#3}{#2}{}}}
+%
+%%% metacommand to creat renewcommand (abbreviation) and glossary entry data:
+\newcommand{\renewcommandabbreviation}[3]{\renewcommand{#1}{#2}%
+\noglossaryignore{\globalglossaryentry{#3}{#2}{}}}
+%
+%%% as above but for general macro:
+\newcommand{\newcommandmacro}[4]{\newcommand{#1}{#2}%
+\noglossaryignore{\globalglossaryentry{#3}{#2}{#4}}}
+\newcommand{\gge}[3]{\noglossaryignore{\globalglossaryentry{#1}{#2}{#3}}}
+%
+%{{{ make glossary macros (local version, not used here)
+%%%% HERE we make the glossary stuff.
+%%%%
+%%%% First the header for the glossary:
+%%%\newcommand{\glossaryhead}{\[ \] {\bf Glossary} \newline}
+%%%%
+%%%% Next the glossary entries (the format is 
+%%%% notation --- description --- TeX command name --- page):
+%%%\newcommand{\glossaryentry}[5]%
+%%%{\makebox[1in][l]{{$#2#5$}} \makebox[3.5in][l]{{#3}} 
+%%% \makebox[1in][l]{{\tt $\backslash$#4 }}\pageref{#4}\newline}
+%%%%
+%%%% Next we create the command which simultaneously creates 
+%%%% the TeX command and specifies its glossary entry:
+%%%\newcommand{\metacommand}[5]{\newcommand{#1}{#2} 
+%%%\glossaryentry{#1}{#2}{#3}{#4}{#5}}
+%%%%
+%%%% NOTE that there must be a \label{command_name} in the text 
+%%%% where the notation is defined. 
+%%%%
+%}}}
+%\glossaryhead
+%\metacommand{\Set}{{\bf Set}}{Category of sets}{Set}{} 
+%
+%
+%}}}
+%{{{ global macro defns
+%{{{ addresses (city etc)
+\newcommand{\myaddress}%
+{\parbox{3in}{\footnotesize \begin{center} 
+Mathematics Department, City University, \\  
+Northampton Square, London EC1V 0HB, UK.\end{center}}}
+%}}}
+%{{{ xfig patches
+%\def{\SetFigFont{#1}{#2}{#3}}{}
+\newcommand{\twlrm}{} \def\tenrm{} \def\ninrm{} \def\sixrm{} \def\sevrm{}
+%}}}
+%{{{ minidef and minicapt
+\newcounter{minidef}[section]
+\renewcommand{\theminidef}{\thesection.\arabic{minidef}}
+\newcommand{\mdef}{\refstepcounter{minidef} 
+\medskip \noindent ({\bf \theminidef}) }
+
+%{{{ old style macros
+\newcommand{\mystufffont}{\textsc} %% this sets up font for 
+                                   %% prop/thm/etc label.
+\newcommand{\mystart}{\medskip \noindent}  
+                                   %% this sets up start behaviour
+                                   %% for prop/def/etc
+\newcommand{\mygap}{\smallskip \newline \noindent}  
+                                   %% this sets up end behaviour
+                                   %% for prop/def/etc
+%}}}
+%{{{ newtheoremstyles: pu, puu
+%\swapnumbers
+\newtheoremstyle{pu}% name
+{7pt}%
+{7pt}%
+{\it}% body font
+{}% indent amount
+{}% {\textsc}% headfont
+{.}% puntuation
+{ }% gap
+{\thmnumber{({\bf #2}) }\thmname{\textsc{#1}}\thmnote{#3}}% headspec
+\newtheoremstyle{puu}% name
+{3pt}%
+{3pt}%
+{\rm}% body font
+{}% indent amount
+{}% {\textsc}% headfont
+{.}% puntuation
+{ }% gap
+{\thmnumber{({\bf #2}) }\thmname{\textsc{#1}}\thmnote{#3}}% headspec
+
+%}}}
+%{{{ old minidef-style stuff
+%\newcommand{\mex}{\refstepcounter{minidef} 
+%\medskip \noindent ({\bf \theminidef}) {\mystufffont{Example.}} }
+%\newcommand{\mrem}{\refstepcounter{minidef} 
+%\medskip \noindent ({\bf \theminidef}) {\mystufffont{Remark.}} }
+%\newcommand{\mpr}[1]{\refstepcounter{minidef} 
+%\mystart %\medskip \noindent 
+%({\bf \theminidef}) {\mystufffont{Proposition.}}
+%{\em #1} \mygap}
+%\newcommand{\mde}[1]{\refstepcounter{minidef} 
+%\mystart %\medskip \newline \noindent 
+%({\bf \theminidef}) {\mystufffont{Definition.}}
+%{\em #1} %\smallskip \newline \noindent 
+%\mygap}
+
+%}}}
+\theoremstyle{pu}
+\newtheorem{mmpr}[minidef]{Proposition}
+\newcommand{\mpr}[1]{\begin{mmpr} #1 \end{mmpr}}
+
+\theoremstyle{puu}
+\newtheorem{mde}[minidef]{Definition}
+\newtheorem{mex}[minidef]{Example}
+\newtheorem{mrem}[minidef]{Remark}
+
+\newcommand{\muex}{\noindent{\mystufffont{Example.}} }
+\newcommand{\mupr}{\smallskip\noindent{\mystufffont{Proposition.}} }
+
+\newcounter{minicapt}
+\newenvironment{capt}[1]
+{\refstepcounter{minicapt}\stepcounter{figure}
+\begin{center}\sf Figure \theminicapt. }{ \end{center}}
+%}}}
+%{{{ theorems
+\newtheorem{theo}{Theorem}      
+\newtheorem{cor}{Corollary}[theo]   
+\newtheorem{de}[minidef]{Definition}     
+\newtheorem{pr}[minidef]{Proposition} 
+%\newtheorem{co}{Corollary}[pr]  
+\newtheorem{co}[minidef]{Corollary} 
+\newtheorem{rem}[minidef]{Remark} 
+\newtheorem{lem}{Lemma} 
+\newtheorem{claim}[minidef]{Claim}
+\newtheorem{example}[minidef]{Example}
+%}}}
+%{{{ greek and other abbreviations
+\noglossaryignore{GREEK ETC.\newline}
+\newcommandabbreviation{\e}{\epsilon}{e}        
+\newcommandabbreviation{\lam}{\lambda}{lam}  
+\newcommandabbreviation{\la}{\langle}{la}        
+\newcommandabbreviation{\ran}{\rangle}{ran}
+\newcommandabbreviation{\ha}{\#}{ha}             
+\newcommandabbreviation{\rmap}{\rightarrow}{rmap}
+\newcommandabbreviation{\aaa}{\alpha}{aaa}        
+\newcommandabbreviation{\ab}{\alpha,\beta}{ab}
+\newcommandabbreviation{\aab}{a(\ab )}{aab}       
+%}}}
+%{{{ rings
+\noglossaryignore{\newline RINGS\newline}
+%\newcommand{\C}{{\bf C} \!\!\!\! I}        % Complex numbers
+\newcommandabbreviation{\HH}{H \!\!\! I}{HH}               % Hecke algebra
+%\newcommand{\Z}{Z \!\!\! Z}                % Integers
+%\newcommand{\N}{N \!\!\!\!\! I \;}         % Natural numbers
+\newcommandabbreviation{\C}{\mathbb C}{C}
+\newcommandabbreviation{\N}{\mathbb N}{N}   %new AMS versions (was \Bbb)!
+\newcommandabbreviation{\Z}{\mathbb Z}{Z}      % AMS versions!!!!!!
+\renewcommandabbreviation{\Re}{\mathbb R}{Re}
+\newcommandabbreviation{\R}{{\mathbb R}}{R}
+% NB, above seems to clash with prosper class, PPM.
+\newcommandabbreviation{\Q}{\mathbb Q }{Q}
+\renewcommandabbreviation{\H}{\mathbb H }{H}
+%}}}
+%{{{ symmetric group
+\noglossaryignore{\newline SYMMETRIC GROUP\newline}
+\def\Sym(#1){\Sigma(#1)}                   % generic symbol for symmetric group
+\gge{Sym(-)}{\Sym(-)}{symmetric group on - objects}
+\def\Sy(#1){\Sigma_{#1}}                   % symmetric group irrep.
+\gge{Sy(-)}{\Sy(-)}{symmetric group irreducible -}
+\def\sym(#1){\mbox{\LARGE s}(#1)}        % another generic symbol for
+ % sym gp
+\gge{sym(-)}{\sym(-)}{symmetric group on - objects (variant)}
+\def\sy(#1){\mbox{\LARGE s}({#1})}        % another symm gp irrep. 
+\gge{sy(-)}{\sy(-)}{symmetric group irreducible - (variant)}
+\newcommandmacro{\cs}{\C \, \sy(n)}{cs}{symmetric group algebra over $\C$}
+%}}}
+%{{{ partitions/sets
+\noglossaryignore{\newline PARTITIONS/SETS\newline}
+%\newcommandmacro{\Nset}{\underline{n}}{Nset}{set of natural numbers to n}
+\newcommand{\Nset}[1]{\underline{#1}}
+\gge{Nset\{-\}}{\Nset{-}}{set of natural numbers to -} %%% (default n)}
+\def\nset(#1){ \{ #1 \}_{ \underline{n} }} % the set {#1}_{n}
+\gge{nset(-)}{\nset(-)}{a set $-\times\Nset$}
+\def\ul(#1){_{\underline{#1}}}             % _underline #1
+\gge{ul(-)}{{}\ul(-)}{subscript underline -}
+\def\Ee(#1){{\bf E}_{#1}}                  % set of equiv. relations
+\gge{Ee(-)}{\Ee(-)}{set of equivalence relations on set -}
+\def\Eee(#1){{\bf E}_{\{ #1 \}_{\underline{n}}}}   %ditto for nset
+\gge{Eee(-)}{\Eee(-)}{ditto for nset}
+\def\Een(#1,#2){{\bf E}_{\{ #1 \}_{\underline{#2}}}}   %ditto for n+1set
+\def\Ssn(#1,#2){{\bf S}_{\{ #1 \}_{\underline{#2}}}}   %partitions for n+1set
+\def\Ss(#1){{\bf S}_{#1}}                  % set of partitions
+\def\Sss(#1){{\bf S}_{\{ #1 \}_{\underline{n}}}}   %ditto for nset
+\def\bbc(#1){((\beta_1)(\beta_2)...(\beta_{#1}))}      % beta singletons 
+\newcommandmacro{\Ln}{{\Gamma}^{n}}{Ln}{large index set}
+\newcommandmacro{\LnQ}{{\Gamma}^{n}_Q}{LnQ}{index set}
+\newcommandmacro{\Zz}{\zeta}{Zz}{`shape' function}
+\newcommand{\Ww}[1]{\mbox{\LARGE $w$}_{#1}}         % funny set
+%}}}
+%{{{ partition algebra
+\noglossaryignore{\newline PARTITION ALGEBRA\newline}
+\def\ka(#1){\kappa_{#1}}                   % maps AP_{n=#1}A to P_{n-1}
+\def\Sm(#1){\Sigma_{#1}}                   % image of S_lamda in P_n
+\newcommandmacro{\com}{\bullet}{com}{bullet composition}
+%%%ELEMENTS%%%
+\newcommandmacro{\enm}{\; e^n(\! m\! ) \;}{enm}{product of idempotents}
+\def\Ai(#1){ A^{ #1 \cdot } }              % A_i
+\def\Aij(#1,#2){ A^{ #1  #2 } }            % A_ij
+\newcommandmacro{\One}{\mbox{\bf $1 \!\!\! 1$}}{One}{algebra unit 1}
+\newcommand{\Ff}[2]{F_{#1}^{(#2)}}       % unnormalized idempotent
+\newcommand{\ef}[2]{\prod_{j=1}^{#2-#1}e_j} % E idempotent
+\newcommand{\efbr}[2]{\left(\prod_{j=1}^{#2-#1}e_j\right)} % (E idempotent)
+\newcommand{\Ef}[2]{E_{#1}^{(#2)}}          % notation for E idempotent
+\def\fu{
+\left( \prod_{i=1}^{n} \left( \One - \Aij(i, \; n+1) \right) \right)
+}                                          % chi idempotent 
+\def\Fu{\mbox{\Large $\chi$}}              % notation for above idempotent
+%%%MODULES%%%
+\newcommandmacro{\Bp}{B_p}{Bp}{partition basis}
+\def\Bb(#1){B_p[#1]}                       % partition basis
+\def\Pp(#1){P_n[#1]}                       % left module
+\def\Ps(#1){P_n[#1] \! /}                  % left module
+\newcommandmacro{\Ph}{\hat{P}}{Ph}{P hat  algebra}
+\def\Is(#1){\sim^{#1}}                     % is equivalent under a to
+%}}}
+%{{{ modules
+\noglossaryignore{\newline MODULES\newline}
+\def\Wm(#1){{\cal S}_{#1}}                 % Weyl module S 
+\gge{Wm(-)}{\Wm(-)}{Weyl module with index -}
+\def\wm(#1,#2){{}_{#1}{\cal S}_{#2}}       % Weyl module nS
+\gge{wm(-1,-)}{\wm(-1,-)}{Weyl module with index -}
+\def\Ind(#1,#2,#3){\mbox{Ind}_{#1}^{#2}#3} % induction
+\gge{Ind(-1,-2,-)}{\Ind(-1,-2,-)}{induction}
+\def\Res(#1,#2,#3){\mbox{Res}_{#1}^{#2}#3} % restriction
+\gge{Res(-1,-2,-)}{\Res(-1,-2,-)}{restriction}
+\newcommandabbreviation{\weyl}{standard}{weyl}
+\newcommandabbreviation{\mod}{\mbox{mod}}{mod}
+\newcommandabbreviation{\head}{\mbox{head }}{head}
+\newcommandabbreviation{\Weyl}{Weyl}{Weyl}
+\def\SS(#1){{\cal S}_{#1}}                 % Specht/Weyl module
+\gge{SS(-)}{\SS(-)}{Specht/Weyl module index -}
+\def\LL(#1){{\cal L}_{#1}}                 % Simple module
+\gge{LL(-)}{\LL(-)}{simple module index -}
+%}}}
+%{{{ functors/maps
+\noglossaryignore{\newline FUNCTORS/MAPS\newline}
+\newcommandmacro{\Gg}{{\cal G}}{Gg}{G Functor}
+\newcommandmacro{\Fg}{{\cal F}}{Fg}{F Functor}
+\newcommandmacro{\ra}{\rightarrow}{ra}{}
+\def\ses(#1,#2,#3){0\ra #1 \ra #2 \ra #3 \ra 0}   %short exact sequence
+\gge{ses(1,2,-)}{\ses(1,2,-)}{\hspace{.5in} short exact sequence}
+\def\starr(#1){ \stackrel{ #1 }{\longrightarrow} }
+\gge{starr(-)}{\starr(-)}{}
+\newcommandmacro{\doublerightarrow}{\; -\!\!\! -\!\!\!\!\!\! \gg \;}
+{doublerightarrow}{}%{ $---->>$ }
+%}}}
+%{{{ partition algebra maps
+\noglossaryignore{\newline PARTITION ALGEBRA MAPS\newline}
+\newcommandmacro{\smap}{s}{smap}{`inclusion' map}
+\newcommandmacro{\tmap}{t}{tmap}{$ P_n -> S_n$}
+\newcommandmacro{\pmap}{\psi}{pmap}{$ S_n -> P_n $}
+%}}}
+%{{{ miscellaneous
+\noglossaryignore{\newline MISC.\newline}
+\def\Amap(#1){{\cal A}_{#1}}               % variant inclusion A_Gamma
+\gge{Amap(-)}{\Amap(-)}{}
+\def\Rr(#1){R_{#1}}                        % restriction of E
+\gge{Rr(-)}{\Rr(-)}{restriction of E}
+\def\Cr(#1){C_{#1}}                        % restriction of E to N
+\gge{Cr(-)}{\Cr(-)}{restriction of E to N}
+\newcommandmacro{\Tm}{{\cal T}}{Tm}{Transfer Matrix}
+%used!%\newcommand{\Gg}{{\cal G}}                 % graph
+\def\On(#1){{\cal I}_{#1}}
+\gge{On(-)}{\On(-)}{}
+\newcommandmacro{\UU}{\underline{\sqcup}}{UU}{}  
+\newcommandmacro{\UUU}{\sqcup}{UUU}{}  
+\newcommandmacro{\Vq}{V_Q^{\otimes n}}{Vq}{Potts config. space}
+\def\bs(#1,#2){\mbox{{\Large $\ast$}}^{#1}_{#2}}  % general plumbing multiplier
+\gge{bs(-,-)}{\bs(-,-)}{general plumbing multiplier}
+%\def\ddots{{}^.._.}
+\newcommand{\ignore}[1]{}
+\gge{ignore\{-\}}{\ignore{-}}{ignore argument!}
+%}}}
+%{{{ math stuff
+\def\choo(#1,#2){ \left( \begin{array}{c} #1 \\ #2 \end{array} \right) } %choose
+\gge{choo(-1,-)}{\choo(-1,-)}{choose}
+%%\newcommand{\choose}[2]{\mbox{% 
+%%\left( \!\! \begin{array}{c} #1 \\ #2 \end{array} \!\! \right)}}
+%\newcommandmacro{\Qed}{$\Box$}{Qed}{QED}
+\newcommand{\Qed}{$\Box$}%{Qed}{QED}
+\gge{Qed}{\mbox{\Qed}}{QED}
+\def\staq(#1){\stackrel{#1}{=}}            % stack =
+\gge{staq(-)}{\staq(-)}{}
+\def\stam(#1){\stackrel{#1}{\rightarrow}}  % stack ->
+\gge{stam(-)}{\stam(-)}{}
+\def\mat{ \left( \begin{array} }    
+\def\tam{ \end{array}  \right) }
+\gge{mat/tam}{...}{matrix delimiters}
+%}}}
+%{{{ equation environments etc (draft/final)
+%%%%%%%%%%%%
+%ENVIRONMENTS:   %%%FINAL VERSION VERSION (NOT DRAFT)
+%%%%%%%%%%%%
+\newcommand{\beq}{\begin{equation} }
+\def\eql(#1){ \begin{equation} \label{#1} 
+%
+%\hspace*{-108pt} {}_{eq.(#1)} \; \hspace{72pt} \; 
+}
+\newcommand{\eq}{\end{equation} }
+\def\eqal(#1){\begin{eqnarray} \label{#1} }
+\def\eqa{\end{eqnarray} }
+\def\lab(#1){\label{#1}
+%
+%${}_{lab.(#1)} \;$
+}
+\def\prl(#1){ \begin{pr} \label{#1} 
+%
+%${}_{pr.(#1)} \;  \; $
+}
+\def\del(#1){ \begin{de} \label{#1} 
+%${}_{pr.(#1)} \;  \; $                 %(hash out in final version)
+}
+\newcommand{\smeq}[1]{\[ \mbox{\small $ #1 $} \] }    %small eqn
+\gge{smeq\{-\}}{...}{small equation}
+\newcommand{\fneq}[1]{\[ \mbox{\footnotesize $ #1 $} \] }   %vsmall eqn
+\gge{fneq\{-\}}{...}{very small equation}
+%}}}
+%\newcommand{\Ln}{{\cal L}_{n}}           % index set (! mult defined)
+%}}}
+%{{{     local defns(Hecke/blob)
+\noglossaryignore{\newline HECKE/BLOB\newline}
+\newcommandmacro{\Hnq}{H_n(q)}{Hnq}{ * freestanding symbol}
+\newcommandmacro{\Hn}{H_n}{Hn}{      *-mod etc.}
+\newcommandmacro{\A}{{\cal A}}{A}{}
+\newcommandmacro{\Cwts}{C}{Cwts}{}
+\newcommandmacro{\CA}{{\cal A}}{CA}{}
+\def\words#1{\mbox{ #1}}
+\newcommandmacro{\calA}{{\cal A}}{calA}{}
+\newcommandmacro{\modi}{\mbox{Mod} }{modi}{was mod not modi!}
+\newcommandmacro{\Wgen}{{\Bbb S}}{Wgen}{}
+\def\ol(#1){\overline{#1}}
+\newcommandmacro{\st}{\mbox{St}}{st}{}
+\def\twiddle{\~}   %  globally replaced by \tilde !!!!
+\def\CMult(#1,#2){(#1:#2)}
+\def\CM(#1,#2){( #1 : #2 )}
+\def\FMult#1,#2{(#1:#2)}
+\def\CF#1,#2{(#1:#2)}
+\def\RMod#1{#1-\!\mbox{mod}}
+\def\LMod#1{\mbox{mod}\!-#1}
+\newcommandmacro{\Top}{\mbox{Top}}{Top}{}
+\newcommandmacro{\Soc}{\mbox{Soc}}{Soc}{}
+\newcommandmacro{\Head}{\mbox{Head}}{Head}{}
+\newcommandmacro{\Filt}{{\cal F}}{Filt}{}
+\newcommandmacro{\Mod}{\mbox{mod}}{Mod}{}
+\newcommandmacro{\Resi}{\mbox{Res }}{Resi}{was without i!}
+\newcommandmacro{\Indi}{\mbox{Ind }}{Indi}{was without i!}
+\newcommand{\II}[2]{I^{#1}_{#2}}   %projection after induction (after projection)
+\def\RR(#1,#2){R^{#1}_{#2}}   %projection after restriction (after projection)
+\def\TT(#1,#2){T^{#1}_{#2}}   %translation
+\def\implies{\Rightarrow}
+\def\qSchur{S_q(n,N)}
+\def\Uq{U_q(sl_N)}
+\def\Usl{U(sl_N)}
+\def\qGroup{$q$-group}
+\def\VV{V_N^{\otimes n}}
+\def\Hom{\mbox{Hom}}
+%\def\End{\mbox{End}}
+\def\v{v}                  % soergel parameter
+\def\len{\mbox{len}}       % length order
+\def\bigplus{\mbox{\LARGE $+$}}
+\def\dom{dominance }
+\def\ldom{\unlhd}
+\def\gdom{\unrhd}
+\def\laffine{$l$-affine }
+\newcommand{\nt}[1]{{\em #1}}
+\def\Sp{\Delta}           % Specht module
+\def\Stan{\Delta}         % Standard module
+\def\Ysym{Y}
+\def\eqn#1{equation (\ref{#1}) }
+\newcommand{\eqr}[1]{equation~(\ref{#1})}
+\def\HP#1{P'_{#1}}
+\def\UP#1{P_{#1}}
+\def\HSp#1{\Sp'_{#1}}
+\def\USt#1{\Stan_{#1}}
+\def\HL#1{L'_{#1}}
+\def\UL#1{L_{#1}}
+\def\Chi{\chi}
+\def\Cartan{C}
+\def\Rad{\mbox{Rad }}
+\def\facets#1{{\cal A}_{#1}}
+\def\St{\st} % usage \St(...)
+%
+%}}}
+%{{{     local defns(partition)
+\newcommandmacro{\Ann}{\mbox{Ann}}{Ann}{}
+\newcommandmacro{\Cen}{\mbox{Cen}}{Cen}{}
+\newcommandmacro{\End}{\mbox{End}}{End}{}
+%used already!%\newcommand{\Pp}{{\cal P}}
+\newcommandabbreviation{\semisimple}{semisimple}{semisimple}
+\newcommandabbreviation{\Bratteli}{Bratteli}{Bratteli}
+\newcommandabbreviation{\JBC}{Jones Basic Construction}{JBC}
+\newcommandabbreviation{\pa}{partition algebra}{pa}
+\newcommandabbreviation{\TM}{transfer matrix}{TM}
+\newcommandabbreviation{\PM}{Potts model}{PM}
+\newcommandabbreviation{\QSC}{quantum spin chain}{QSC}
+\newcommandabbreviation{\Hamiltonian}{Hamiltonian}{Hamiltonian}
+\newcommandabbreviation{\YS}{Young symmetrizer}{YS}
+%}}}
+%{{{    %local defns (blob)
+
+%\def\TLB{TL_{B}}
+%\def\ATL{TL_{\hat{A}}}
+%\def\MW{\cite{MartinWoodcock}}
+%\def\GL{\cite{GrahamLehrer}}
+%\def\sig{\sigma}
+%\def\qbox#1{[#1]}
+%\newcommand{\qn}{{\cal A}}%ring of q-numbers
+
+%}}}
+%{{{ Local vars
+% § Local Variables
+
+% Local Variables:
+% eval: (standard-display-european 1)
+% mode: LaTeX
+% folded-file: t
+% End:
+
+% ¶
+%}}}

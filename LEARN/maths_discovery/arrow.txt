@@ -1,0 +1,65 @@
+
+Let's think a little more about Arrow's theorem...
+(This is the one that is about ways of converting a collection of
+ individual voter rankings of candidates A,B,C,... in an election, to an election
+ outcome - a ranking that we may attribute to society collectively.
+ The starting point is to say that there are three reasonable requirements for fairness:
+  `Unanimity': if every individual prefers A to B then the vote outcome should too;
+  IIA: the outcome's ordering just of A and B should not depend on someone changing where they order C, but with no change to the order of A and B;
+  AND FINALLY
+  No single person should determine the outcome.
+ The Theorem says "there is no fair system"!)
+
+
+1. Does it mean Maths is useful, or not?!
+
+
+
+2. How can we ``prove'' something like that Theorem?
+
+Here is a little glimpse...
+
+Recall the theorem:
+Any system that obeys unanimity and IIA (Independence of Irrelevant Alternatives) is a `dictatorship'.
+(Can you see why this is what the Theorem implies?)
+
+Let's think about a claim that is clearly related:
+If every voter ranks candidate A either best or worst, then so does any vote system
+obeying the three fairness assumptions.
+
+Let's suppose this is NOT true.
+
+Then there are B,C 
+and individual rankings so that the result is B>A>C.
+
+Now adjust the individual rankings so that if person i has 
+A top, move C up to second. 
+
+And for each person j with A bottom move C top.
+
+This doesn't change any voter's preference between A,B.
+So by IIA the result is still B>A.
+
+And similarly A>C.
+
+But now every individual has C ranked over B. So... by Unanimity, C>B, and hence C>A in the result.
+A contradiction!
+
+
+....OK, that's enough for now.  :-)
+
+
+
+3. How could we try to get around it?
+
+Notice that it only applies to systems with more than 2 candidates.
+Could we find a way to reduce to a sequence of 2-candidate elections,
+and always use a fair system (majority) for those?
+
+
+
+
+References
+http://www.ssc.wisc.edu/~dquint/econ698/lecture%202.pdf
+
+

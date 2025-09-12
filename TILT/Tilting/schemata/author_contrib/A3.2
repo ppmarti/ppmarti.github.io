@@ -1,0 +1,29 @@
+#!/usr/bin/perl -w
+
+use strict;
+use Tilter;
+
+Tilter::tilt
+    ('root_system' => 'A3',
+     'transient'   => [0, 1, 2],
+     'periodic'    => [3, 0, 2, 1],
+     'frames'      => 200,
+     'pause'       => 100,
+     'step'        => 10,
+     'axis'        => [1.1597019, 38.130365, 29.006065],
+     'astep'       => 0.01,
+     'ainit'       => 0.3,
+     'tstep'       => 0.01,
+     'pstep'       => 0.001,
+     'pinit'       => 0.5,
+     'rstep'       => 1.0,
+     'axes'        => 1,
+     'axes_mag'    => 20,
+     'dir'         => '/tmp/A3-2',
+     'stem'        => '',
+     'film'        => 0,
+     );
+
+# Local Variables:
+# mode: perl
+# End:
